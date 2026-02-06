@@ -123,7 +123,8 @@ export default function ContactForm() {
             className="w-full rounded-xl border border-slate-200 bg-white/80 px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-400 dark:border-slate-800 dark:bg-[#0d1324] dark:text-slate-100"
           >
             <option value="">Investimento para o projeto</option>
-            <option value="0-1000">R$ 1.000 a R$ 2.000</option>
+            <option value="0-1000">Até R$ 1.000</option>
+            <option value="1000-2000">R$ 1.000 a R$ 2.000</option>
             <option value="2000-3000">R$ 2.000 a R$ 3.000</option>
             <option value="3000-4000">R$ 3.000 a R$ 4.000</option>
             <option value="4000-5000">R$ 4.000 a R$ 5.000</option>
