@@ -1,18 +1,18 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Rubik, Geist_Mono } from "next/font/google";
+import { Rubik,  } from "next/font/google";
 import "./globals.css";
 import Provider from "@/components/Hoc/Provider";
+import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
+
 
 const rubik = Rubik({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
+
 
 export const metadata: Metadata = {
   title: "web agency | Next.js + Tailwind CSS",
@@ -27,9 +27,11 @@ export default function RootLayout({
   return (
     <html lang="PT-BR" suppressHydrationWarning={true}>
       <body
-        className={`${rubik.className} ${geistMono.className} antialiased`}
+        className={`${rubik.className} antialiased`}
       >
         <Provider>
+          
+          <ResponsiveNav />
         {children}
         </Provider>
       </body>
