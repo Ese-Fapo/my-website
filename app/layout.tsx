@@ -1,13 +1,13 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Rubik,  } from "next/font/google";
+import { Roboto} from "next/font/google";
 import "./globals.css";
 import Provider from "@/components/Hoc/Provider";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import { ThemeToggler } from "@/components/Helper/ThemeToggler";
 
 
-const rubik = Rubik({
+const roboto = Roboto({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="PT-BR" suppressHydrationWarning={true}>
       <body
-        className={`${rubik.className} antialiased`}
+        className={`${roboto.className} antialiased`}
       >
         <Provider>
           

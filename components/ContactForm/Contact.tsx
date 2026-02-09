@@ -42,20 +42,78 @@ export default function ContactForm() {
   };
 
   return (
-    <div
-      id="contact"
-      className="max-w-md mx-auto rounded-2xl border border-slate-200/70 bg-white/90 p-6 shadow-xl shadow-slate-900/10 backdrop-blur dark:border-slate-800/60 dark:bg-[#0b1020]/80"
-    >
-      <h2 className="text-xl font-bold text-center mb-2">
-        <span className="bg-linear-to-r from-lime-300 via-emerald-300 to-sky-400 bg-clip-text text-transparent">
-          Falar com Especialista!
-        </span>
-      </h2>
-      <p className="text-center text-slate-600 mb-6 dark:text-slate-300">
-        Preencha o formulário e fale com um especialista sobre o seu projeto.
-      </p>
+    <section id="contact" className="py-16 sm:py-24">
+      <div className="mx-auto w-full max-w-6xl px-5 sm:px-8">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16 items-start">
+          <div className="order-2 lg:order-1">
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8 shadow-[0_30px_120px_rgba(15,23,42,0.35)]">
+              <p className="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-cyan-200">
+                linha do tempo
+              </p>
+              <h2 className="mt-4 text-2xl sm:text-3xl font-bold text-white">
+                Como desenvolvemos seu projeto
+              </h2>
+              <p className="mt-3 text-sm sm:text-base text-slate-200/80">
+                Transparência total em cada etapa — do briefing ao lançamento.
+              </p>
 
-      <form className="space-y-4" onSubmit={handleSubmit}>
+              <ol className="mt-8 space-y-6 border-l border-white/10 pl-6">
+                <li className="relative flex gap-4">
+                  <span className="absolute -left-[13px] top-1 flex h-6 w-6 items-center justify-center rounded-full bg-cyan-400/20 text-[10px] font-bold text-white ring-1 ring-cyan-400/40">
+                    01
+                  </span>
+                  <span className="absolute left-2 top-3 h-px w-6 bg-cyan-400/40" />
+                  <div className="rounded-2xl border border-cyan-400/20 bg-cyan-400/5 p-4">
+                    <p className="mt-1 text-sm font-semibold text-white">Briefing e estratégia</p>
+                    <p className="text-sm text-slate-300/80">Entendemos seu negócio, metas e público para montar o plano ideal.</p>
+                  </div>
+                </li>
+                <li className="relative flex gap-4 sm:justify-end">
+                  <span className="absolute -left-[13px] top-1 flex h-6 w-6 items-center justify-center rounded-full bg-fuchsia-400/20 text-[10px] font-bold text-white ring-1 ring-fuchsia-400/40">
+                    02
+                  </span>
+                  <span className="absolute left-2 top-3 h-px w-6 bg-fuchsia-400/40" />
+                  <div className="rounded-2xl border border-fuchsia-400/20 bg-fuchsia-400/5 p-4 sm:max-w-[85%]">
+                    <p className="mt-1 text-sm font-semibold text-white">Design e conteúdo</p>
+                    <p className="text-sm text-slate-300/80">Criamos a identidade visual e textos que comunicam valor.</p>
+                  </div>
+                </li>
+                <li className="relative flex gap-4">
+                  <span className="absolute -left-[13px] top-1 flex h-6 w-6 items-center justify-center rounded-full bg-indigo-400/20 text-[10px] font-bold text-indigo-100 ring-1 ring-indigo-400/40">
+                    03
+                  </span>
+                  <span className="absolute left-2 top-3 h-px w-6 bg-indigo-400/40" />
+                  <div className="rounded-2xl border border-indigo-400/20 bg-indigo-400/5 p-4">
+                    <p className="mt-1 text-sm font-semibold text-white">Desenvolvimento</p>
+                    <p className="text-sm text-slate-300/80">Transformamos o design em um site rápido, responsivo e seguro.</p>
+                  </div>
+                </li>
+                <li className="relative flex gap-4 sm:justify-end">
+                  <span className="absolute -left-[13px] top-1 flex h-6 w-6 items-center justify-center rounded-full bg-emerald-400/20 text-[10px] font-bold text-emerald-100 ring-1 ring-emerald-400/40">
+                    04
+                  </span>
+                  <span className="absolute left-2 top-3 h-px w-6 bg-emerald-400/40" />
+                  <div className="rounded-2xl border border-emerald-400/20 bg-emerald-400/5 p-4 sm:max-w-[85%]">
+                    <p className="mt-1 text-sm font-semibold text-white">Lançamento e suporte</p>
+                    <p className="text-sm text-slate-300/80">Publicação, testes finais e acompanhamento pós-lançamento.</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <div className="order-1 lg:order-2">
+            <div className="max-w-md lg:max-w-none mx-auto rounded-2xl border border-slate-200/70 bg-white/90 p-6 shadow-xl shadow-slate-900/10 backdrop-blur dark:border-slate-800/60 dark:bg-[#0b1020]/80">
+              <h2 className="text-xl font-bold text-center mb-2">
+                <span className="bg-linear-to-r from-lime-300 via-emerald-300 to-sky-400 bg-clip-text text-transparent">
+                  Falar com Especialista!
+                </span>
+              </h2>
+              <p className="text-center text-slate-600 mb-6 dark:text-slate-300">
+                Preencha o formulário e fale com um especialista sobre o seu projeto.
+              </p>
+
+              <form className="space-y-4" onSubmit={handleSubmit}>
         {/* Nome */}
         <div>
           <label className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
@@ -173,7 +231,11 @@ export default function ContactForm() {
         >
           Enviar Mensagem →
         </button>
-      </form>
-    </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

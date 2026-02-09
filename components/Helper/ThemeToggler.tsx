@@ -19,12 +19,12 @@ export const ThemeToggler = () => {
 
   if (!mounted) return null
 
-  const buttonLabel = isDark ? "Dark" : "Light"
+  const buttonLabel = isDark ? "Escuro" : "Claro"
 
   return (
     <button
-      aria-label="Toggle theme"
-      title={`Theme: ${buttonLabel} (click to change)`}
+      aria-label="Alternar tema"
+      title={`Tema: ${buttonLabel} (clique para mudar)`}
       onClick={() => {
         const nextIsDark = !isDark
         setIsDark(nextIsDark)

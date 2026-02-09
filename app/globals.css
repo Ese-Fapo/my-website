@@ -2,13 +2,43 @@
 
 @layer base {
 	body {
-		background-color: #f8fafc;
-		color: #0b1020;
+		background-color: #000000;
+		color: black ;
 	}
 
 	.dark body {
-		background-color: #11172a;
+		background-color: #000000 ;
 		color: #f1f5f9;
+	}
+}
+
+@keyframes float {
+	0%,
+	100% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
+
+@keyframes orbit {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes fade-slide-up {
+	0% {
+		opacity: 0;
+		transform: translateY(12px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
 

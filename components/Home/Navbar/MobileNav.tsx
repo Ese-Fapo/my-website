@@ -84,7 +84,7 @@ const MobileNav = ({
               </span>
             </Link>
             <Link
-              href="#pricing"
+              href="#contact"
               onClick={onClose}
               className="inline-flex items-center justify-center rounded-full bg-slate-900 px-4 py-3 text-sm font-bold tracking-wide text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:bg-slate-800 dark:bg-white dark:text-[#0b1020] dark:shadow-[#0b1020]/20 dark:hover:bg-[#dce4e2]"
             >
