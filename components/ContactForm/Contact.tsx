@@ -42,7 +42,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-24">
+    <section id="contact" className="bg-[#0b1220] py-16 sm:py-24">
       <div className="mx-auto w-full max-w-6xl px-5 sm:px-8">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16 items-start">
           <div className="order-2 lg:order-1">
@@ -105,7 +105,7 @@ export default function ContactForm() {
           <div className="order-1 lg:order-2">
             <div className="max-w-md lg:max-w-none mx-auto rounded-2xl border border-slate-200/70 bg-white/90 p-6 shadow-xl shadow-slate-900/10 backdrop-blur dark:border-slate-800/60 dark:bg-[#0b1020]/80">
               <h2 className="text-xl font-bold text-center mb-2">
-                <span className="bg-linear-to-r from-lime-300 via-emerald-300 to-sky-400 bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-lime-300 via-emerald-300 to-purple-400 bg-clip-text text-transparent">
                   Falar com Especialista!
                 </span>
               </h2>
@@ -227,7 +227,7 @@ export default function ContactForm() {
         {/* Botão */}
         <button
           type="submit"
-          className="w-full mt-4 bg-linear-to-r from-lime-300 via-emerald-300 to-sky-400 text-[#0b1020] py-3 rounded-full font-bold hover:opacity-90 transition"
+          className="w-full mt-4 bg-linear-to-r from-lime-300 via-emerald-300 to-purple-400 text-[#0b1020] py-3 rounded-full font-bold hover:opacity-90 transition"
         >
           Enviar Mensagem →
         </button>

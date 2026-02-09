@@ -31,7 +31,7 @@ export const Footer = () => {
                 PS
               </span>
               <div className="leading-tight">
-                <p className="text-base font-bold tracking-wide text-white group-hover:text-cyan-200 transition-colors">Prime Site</p>
+                <p className="text-base font-bold tracking-wide text-white group-hover:text-cyan-200 transition-colors"> Site</p>
                 <p className="text-xs font-semibold tracking-wide text-slate-300">
                   Desenvolvedores
                 </p>

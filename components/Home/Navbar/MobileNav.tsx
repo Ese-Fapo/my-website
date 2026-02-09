@@ -73,7 +73,7 @@ const MobileNav = ({
             })}
           </div>
 
-          <div className="mt-auto flex flex-col gap-3">
+          <div className="">
             <Link
               href="#contact"
               onClick={onClose}
