@@ -4,7 +4,7 @@ import { Roboto} from "next/font/google";
 import "./globals.css";
 import Provider from "@/components/Hoc/Provider";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
-import { ThemeToggler } from "@/components/Helper/ThemeToggler";
+
 
 
 const roboto = Roboto({
@@ -34,7 +34,7 @@ export default function RootLayout({
           
           <ResponsiveNav />
         {children}
-        <ThemeToggler />
+    
         </Provider>
       </body>
     </html>
