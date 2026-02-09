@@ -16,7 +16,7 @@ const roboto = Roboto({
 
 
 export const metadata: Metadata = {
-  title: "web agency | Next.js + Tailwind CSS",
+  title: "Website-agency",
   description: "A modern web agency website built with Next.js and Tailwind CSS.",
 };
 
