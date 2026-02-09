@@ -37,7 +37,7 @@ const Nav = ({ links }: { links: NavLink[] }) => {
           className="hidden xl:inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-bold tracking-wide text-slate-700 shadow-sm transition hover:border-slate-300 hover:shadow-md dark:border-[#2a344f] dark:bg-[#131b31] dark:text-slate-200 dark:hover:border-[#364469]"
         >
           <span className="bg-linear-to-r from-lime-300 via-emerald-300 to-sky-400 bg-clip-text text-transparent">
-            Agendar ligação
+            Agendar ligação.
           </span>
         </Link>
         
