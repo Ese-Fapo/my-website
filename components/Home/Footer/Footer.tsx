@@ -1,5 +1,6 @@
 import React from "react"
 import Link from "next/link"
+import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa6"
 
 export const Footer = () => {
   return (
@@ -44,34 +45,28 @@ export const Footer = () => {
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="group inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-linear-to-br from-pink-500/20 via-fuchsia-500/20 to-orange-400/20 text-white/80 shadow-[0_0_0_rgba(236,72,153,0)] transition hover:text-white hover:shadow-[0_0_22px_rgba(236,72,153,0.7)]"
+                className="group inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-linear-to-br from-[#F58529]/25 via-[#DD2A7B]/25 to-[#515BD4]/25 text-white/90 shadow-[0_0_0_rgba(221,42,123,0)] transition hover:border-white/20 hover:text-white hover:shadow-[0_0_26px_rgba(221,42,123,0.85)]"
                 aria-label="Instagram"
               >
-                <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
-                  <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7zm5 3.5A3.5 3.5 0 1 1 8.5 12 3.5 3.5 0 0 1 12 8.5zm0 2A1.5 1.5 0 1 0 13.5 12 1.5 1.5 0 0 0 12 10.5zm4.75-3.25a1 1 0 1 1-1 1 1 1 0 0 1 1-1z" />
-                </svg>
+                <FaInstagram className="h-5 w-5" aria-hidden="true" />
               </a>
               <a
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="group inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-linear-to-br from-sky-500/20 via-blue-500/20 to-indigo-500/20 text-white/80 shadow-[0_0_0_rgba(59,130,246,0)] transition hover:text-white hover:shadow-[0_0_22px_rgba(59,130,246,0.7)]"
+                className="group inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-linear-to-br from-[#0A66C2]/25 via-[#0A66C2]/15 to-[#38BDF8]/15 text-white/90 shadow-[0_0_0_rgba(10,102,194,0)] transition hover:border-white/20 hover:text-white hover:shadow-[0_0_26px_rgba(10,102,194,0.85)]"
                 aria-label="LinkedIn"
               >
-                <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
-                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-9 7H7v8h3v-8zm-1.5-2.25A1.75 1.75 0 1 0 8.5 7.5 1.75 1.75 0 0 0 8.5 7.75zM17 18v-4.5a3 3 0 0 0-6 0V18h3v-4.5a1.5 1.5 0 0 1 3 0V18z" />
-                </svg>
+                <FaLinkedinIn className="h-5 w-5" aria-hidden="true" />
               </a>
               <a
                 href="https://github.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="group inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-linear-to-br from-violet-500/20 via-fuchsia-500/20 to-pink-500/20 text-white/80 shadow-[0_0_0_rgba(168,85,247,0)] transition hover:text-white hover:shadow-[0_0_22px_rgba(168,85,247,0.7)]"
+                className="group inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-linear-to-br from-[#2F2F2F]/30 via-[#0B0B0B]/30 to-[#4B5563]/25 text-white/90 shadow-[0_0_0_rgba(15,23,42,0)] transition hover:border-white/20 hover:text-white hover:shadow-[0_0_26px_rgba(148,163,184,0.7)]"
                 aria-label="GitHub"
               >
-                <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
-                  <path d="M12 .5A11.5 11.5 0 0 0 8.36 22c.6.1.82-.26.82-.58v-2c-3.34.73-4-1.44-4-1.44a3.15 3.15 0 0 0-1.32-1.75c-1.08-.74.08-.72.08-.72a2.5 2.5 0 0 1 1.82 1.24 2.54 2.54 0 0 0 3.47 1 2.54 2.54 0 0 1 .76-1.6c-2.66-.3-5.46-1.33-5.46-5.92a4.64 4.64 0 0 1 1.24-3.23 4.3 4.3 0 0 1 .12-3.18s1-.32 3.3 1.23a11.4 11.4 0 0 1 6 0C17.5 4.2 18.5 4.52 18.5 4.52a4.3 4.3 0 0 1 .12 3.18 4.64 4.64 0 0 1 1.24 3.23c0 4.6-2.8 5.62-5.48 5.92a2.85 2.85 0 0 1 .82 2.2v3.25c0 .32.22.7.82.58A11.5 11.5 0 0 0 12 .5z" />
-                </svg>
+                <FaGithub className="h-5 w-5" aria-hidden="true" />
               </a>
             </div>
           </div>
