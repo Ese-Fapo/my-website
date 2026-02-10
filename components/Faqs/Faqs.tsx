@@ -96,13 +96,13 @@ export const Faqs = () => {
               key={faq.question}
               className="group rounded-2xl border border-white/10 bg-white/5 p-5 shadow-[0_20px_70px_rgba(15,23,42,0.35)] transition hover:border-white/20"
             >
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-semibold text-cyan-200">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-semibold text-white">
                 {faq.question}
                 <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/80 transition group-open:rotate-45">
                   +
                 </span>
               </summary>
-              <p className="mt-3 text-sm leading-relaxed text-slate-300/90">
+              <p className="mt-3 text-sm leading-relaxed text-white/80">
                 {faq.answer}
               </p>
             </details>

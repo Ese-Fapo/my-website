@@ -3,7 +3,7 @@ import React from "react"
 
 const Hero = () => {
   return (
-    <section className="relative isolate overflow-hidden">
+    <section className="relative isolate overflow-hidden bg-slate-950">
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-black" />
         <div className="absolute inset-0 opacity-60 sm:opacity-35 bg-[radial-gradient(1px_1px_at_20px_30px,#94a3b8_60%,transparent_70%),radial-gradient(1px_1px_at_90px_60px,#94a3b8_60%,transparent_70%),radial-gradient(1px_1px_at_40px_100px,#94a3b8_55%,transparent_70%),radial-gradient(1px_1px_at_120px_30px,#94a3b8_50%,transparent_70%),radial-gradient(1px_1px_at_60px_140px,#94a3b8_55%,transparent_70%)] dark:opacity-90 dark:bg-[radial-gradient(1px_1px_at_20px_30px,#ffffff_80%,transparent_70%),radial-gradient(1px_1px_at_90px_60px,#ffffff_80%,transparent_70%),radial-gradient(1px_1px_at_40px_100px,#ffffff_70%,transparent_70%),radial-gradient(1px_1px_at_120px_30px,#ffffff_60%,transparent_70%),radial-gradient(1px_1px_at_60px_140px,#ffffff_70%,transparent_70%)] bg-size-[160px_160px] animate-star-drift-slow motion-reduce:animate-none" />
@@ -19,40 +19,40 @@ const Hero = () => {
         <div className="absolute left-8 bottom-10 h-56 w-56 rounded-full bg-transparent blur-2xl animate-nebula-shift motion-reduce:animate-none" />
       </div>
 
-      <div className="relative mx-auto flex min-h-[70vh] max-w-6xl flex-col items-start justify-center gap-6 px-6 py-24 sm:py-28 lg:px-8">
-        <p className="inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-white/70 px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-slate-100 sm:text-slate-700 shadow-sm backdrop-blur dark:border-white/15 dark:bg-white/5 dark:text-sky-200">
+      <div className="relative mx-auto flex min-h-[70vh] max-w-6xl flex-col items-center justify-center gap-6 px-5 py-20 text-center sm:px-8 sm:py-28 md:items-start md:text-left lg:min-h-[78vh] lg:px-10">
+        <p className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1 text-[11px] text-white/80 font-semibold uppercase tracking-[0.28em] text-slate-100 shadow-sm backdrop-blur sm:text-xs  dark:text-sky-200">
           <span className="h-2 w-2 rounded-full bg-sky-400 shadow-[0_0_12px_2px_rgba(56,189,248,0.8)]" />
             agência de sites premium
         </p>
-        <h1 className="text-4xl font-bold leading-tight text-white drop-shadow-[0_2px_10px_rgba(15,23,42,0.45)] sm:text-5xl lg:text-6xl">
+        <h1 className="max-w-3xl text-3xl font-bold leading-tight text-white drop-shadow-[0_2px_10px_rgba(15,23,42,0.45)] sm:text-5xl sm:leading-[1.08] lg:text-6xl">
           Construímos sites de alta conversão que
           <span className="block bg-linear-to-r from-cyan-300 via-sky-400 to-indigo-400 bg-clip-text text-transparent">
             fazem seu negócio crescer.
           </span>
         </h1>
-        <p className="max-w-2xl text-base text-slate-100/95 sm:text-slate-700/90 dark:text-slate-200/90 sm:text-lg">
+        <p className="max-w-2xl text-sm text-slate-100/90 sm:text-base md:text-lg dark:text-slate-200/90">
             Nosso time de especialistas cria sites incríveis, rápidos e fáceis de usar, que atraem tráfego e aumentam conversões. Vamos levar sua presença online para o próximo nível.
         </p>
-        <div className="flex flex-wrap items-center gap-4">
-          <button className="rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-[0_0_25px_rgba(56,189,248,0.25)] transition hover:-translate-y-0.5 hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:shadow-[0_0_25px_rgba(56,189,248,0.35)] dark:hover:bg-slate-100">
+        <div className="flex w-full flex-col items-center gap-3 sm:flex-row sm:justify-start">
+          <button className="w-full rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-[0_0_25px_rgba(56,189,248,0.25)] transition hover:-translate-y-0.5 hover:bg-slate-800 sm:w-auto dark:bg-white dark:text-slate-900 dark:shadow-[0_0_25px_rgba(56,189,248,0.35)] dark:hover:bg-slate-100">
             Começar agora
           </button>
-         <Link href="https://tech-blog-i77h.vercel.app/"><button className="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 backdrop-blur transition hover:border-slate-400 hover:text-slate-900 dark:border-white/30 dark:text-white/90 dark:hover:border-white/70 dark:hover:text-white">
+         <Link href="https://tech-blog-i77h.vercel.app/"><button className="w-full rounded-full border border-white/40 px-6 py-3 text-sm font-semibold  text-white backdrop-blur transition hover:border-white/70 hover:text-white sm:w-auto dark:border-white/30 dark:text-white/90 dark:hover:border-white/70 dark:hover:text-white">
             Escolha o site ideal para sua empresa
           </button></Link>
         </div>
-        <div className="mt-6 grid w-full max-w-3xl grid-cols-1 gap-4 text-sm text-slate-700/80 dark:text-slate-200/80 sm:grid-cols-3">
-          <div className="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm dark:border-white/10 dark:bg-white/5">
-            <p className="text-xs uppercase tracking-[0.2em] text-slate-500 dark:text-slate-300">criado para converter</p>
-            <p className="mt-2 text-lg font-semibold text-slate-900 dark:text-white">Seu site vende enquanto você dorme</p>
+        <div className="mt-8 grid w-full max-w-4xl grid-cols-1 gap-4 text-left text-sm text-slate-100/80 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="rounded-2xl border border-white/10 bg-white/10 p-4 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5">
+            <p className="text-[11px] uppercase tracking-[0.22em] text-white">criado para converter</p>
+            <p className="mt-2 text-lg font-semibold text-white/80">Seu site vende enquanto você dorme</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm dark:border-white/10 dark:bg-white/5">
-            <p className="text-xs uppercase tracking-[0.2em] text-slate-500 dark:text-slate-300">mobile first</p>
-            <p className="mt-2 text-lg font-semibold text-slate-900 dark:text-white">Otimizado para todos os dispositivos</p>
+          <div className="rounded-2xl border border-white/10 bg-white/10 p-4 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5">
+            <p className="text-[11px] uppercase tracking-[0.22em] text-white">mobile first</p>
+            <p className="mt-2 text-lg font-semibold text-white/80">Otimizado para todos os dispositivos</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm dark:border-white/10 dark:bg-white/5">
-            <p className="text-xs uppercase tracking-[0.2em] text-slate-500 dark:text-slate-300">design envolvente</p>
-            <p className="mt-2 text-lg font-semibold text-slate-900 dark:text-white">Visuais cativantes que prendem a atenção</p>
+          <div className="rounded-2xl border border-white/10 bg-white/10 p-4 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5">
+            <p className="text-[11px] uppercase tracking-[0.22em] text-white">design envolvente</p>
+            <p className="mt-2 text-lg font-semibold text-white/80">Visuais cativantes que prendem a atenção</p>
           </div>
         </div>
         {/**animated scroll indicator */}

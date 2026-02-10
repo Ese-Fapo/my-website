@@ -18,6 +18,9 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Website-agency",
   description: "A modern web agency website built with Next.js and Tailwind CSS.",
+  icons: {
+    icon: "/images.web/logo.png",
+  },
 };
 
 export default function RootLayout({

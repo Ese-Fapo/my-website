@@ -27,25 +27,25 @@ const MobileNav = ({
       aria-hidden={!isOpen}
     >
       <div
-        className={`absolute inset-0 bg-[#0b1020]/80 backdrop-blur-sm transition-opacity duration-300 ${
+        className={`absolute inset-0 bg-slate-900/30 backdrop-blur-sm transition-opacity duration-300 ${
           isOpen ? "opacity-100" : "opacity-0"
         }`}
         onClick={onClose}
       />
       <div
-        className={`absolute right-0 top-0 h-full w-[85%] max-w-sm bg-[#0b1226] shadow-2xl shadow-[#0b1020]/60 transition-transform duration-300 ${
+        className={`absolute right-0 top-0 h-full w-[85%] max-w-sm bg-white/95 shadow-2xl shadow-[#0b1020]/20 transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-between border-b border-white/10 px-6 py-5">
-          <div className="text-lg font-bold tracking-wide text-slate-100">
-            <span className="bg-linear-to-r from-lime-300 via-emerald-300 to-purple-400 bg-clip-text text-transparent">
+        <div className="flex items-center justify-between border-b border-slate-900/10 px-6 py-5">
+          <div className="text-lg font-bold tracking-wide text-slate-900">
+            <span className="text-slate-900">
               Menu
             </span>
           </div>
           <button
             onClick={onClose}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-slate-200 transition hover:border-white/20 hover:text-white"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-900/15 text-slate-900 transition hover:border-slate-900/30"
             aria-label="Fechar menu"
           >
             <XMarkIcon className="h-5 w-5" />
@@ -53,7 +53,7 @@ const MobileNav = ({
         </div>
 
         <div className="flex h-full flex-col gap-6 px-6 pb-10 pt-6">
-          <div className="flex flex-col gap-4 text-base font-bold tracking-wide text-slate-200">
+          <div className="flex flex-col gap-4 text-base font-bold tracking-wide text-slate-900">
             {links.map((link) => {
               const isExternal = link.url.startsWith("http")
               return (
@@ -63,9 +63,9 @@ const MobileNav = ({
                   target={isExternal ? "_blank" : undefined}
                   rel={isExternal ? "noreferrer" : undefined}
                   onClick={onClose}
-                  className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 transition hover:border-white/25 hover:bg-white/10"
+                  className="rounded-xl border border-slate-900/10 bg-white px-4 py-3 transition hover:border-slate-900/25 hover:bg-slate-100"
                 >
-                  <span className="bg-linear-to-r from-lime-300 via-emerald-300 to-purple-400 bg-clip-text text-transparent">
+                  <span className="text-slate-900">
                     {link.name}
                   </span>
                 </Link>
@@ -77,18 +77,18 @@ const MobileNav = ({
             <Link
               href="#contact"
               onClick={onClose}
-              className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/10 px-4 py-3 text-sm font-bold tracking-wide text-slate-100 shadow-sm transition hover:border-white/25 hover:bg-white/15"
+              className="inline-flex items-center justify-center rounded-full border border-slate-900/15 bg-white px-4 py-3 text-sm font-bold tracking-wide text-slate-900 shadow-sm transition hover:border-slate-900/30 hover:bg-slate-100"
             >
-              <span className="bg-linear-to-r from-lime-300 via-emerald-300 to-purple-400 bg-clip-text text-transparent">
+              <span className="text-slate-900">
                 Agendar ligação
               </span>
             </Link>
             <Link
               href="#contact"
               onClick={onClose}
-              className="inline-flex items-center justify-center rounded-full bg-[#0f172a] px-4 py-3 text-sm font-bold tracking-wide text-white shadow-lg shadow-[#0b1020]/40 transition hover:-translate-y-0.5 hover:bg-[#111c36]"
+              className="inline-flex items-center justify-center rounded-full bg-slate-900 px-4 py-3 text-sm font-bold tracking-wide text-white shadow-lg shadow-[#0b1020]/20 transition hover:-translate-y-0.5 hover:bg-slate-800"
             >
-              <span className="bg-linear-to-r from-lime-300 via-emerald-300 to-purple-400 bg-clip-text text-transparent">
+              <span className="text-white">
                 Começar
               </span>
             </Link>
