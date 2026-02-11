@@ -6,10 +6,10 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "Site institucional moderno",
+    title: "Plataforma de Educação ",
     description: "Design premium, performance alta e SEO pronto para conversão.",
-    image: "/images.web/world-wide-web.jpg",
-    link: "#contact",
+    image: "/images.web/sch-img.jpeg",
+    link: "https://www.rockstarstudyabroad.com/",
   },
   {
     title: "Landing page de alta conversão",
@@ -80,7 +80,7 @@ export default function ProjectsSection() {
   };
 
   return (
-    <section id="projects" className="bg-black py-16 sm:py-24">
+    <section id="projects" className="scroll-mt-28 bg-black py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         {/* Header */}
         <div className="mb-10 text-center sm:mb-14">
@@ -92,7 +92,7 @@ export default function ProjectsSection() {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm sm:text-base text-slate-200/80">
             Confira alguns exemplos do nosso trabalho. Veja o nosso{" "}
-            <Link href="#projects" className="font-semibold text-cyan-200 hover:text-cyan-100">
+            <Link href="https://ese-faps-xbvb.vercel.app/" className="font-semibold text-cyan-200 hover:text-cyan-100">
               portfólio completo
             </Link>
             . Quer tirar o seu projeto do papel?{" "}

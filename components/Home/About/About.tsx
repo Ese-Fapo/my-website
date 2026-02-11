@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const About = () => {
   return (
-    <section id="about" className="py-16 sm:py-24 lg:py-32">
+    <section id="about" className="scroll-mt-28 py-16 sm:py-24 lg:py-32">
       <div className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10 sm:gap-12 lg:gap-20 px-5 sm:px-8">
         {/** image */}
         <div className="relative mx-auto w-full max-w-md sm:max-w-lg lg:max-w-xl">

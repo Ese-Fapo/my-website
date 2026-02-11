@@ -42,7 +42,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="bg-[#0b1220] py-16 sm:py-24">
+    <section id="contact" className="scroll-mt-28 bg-[#0b1220] py-16 sm:py-24">
       <div className="mx-auto w-full max-w-6xl px-5 sm:px-8">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16 items-start">
           <div className="order-2 lg:order-1">

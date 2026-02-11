@@ -63,7 +63,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="bg-black py-16 sm:py-24">
+    <section id="services" className="scroll-mt-28 bg-black py-16 sm:py-24">
       <div className="mx-auto w-full max-w-6xl px-5 sm:px-8">
         <div className="text-center">
           <p className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-8 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-emerald-200">
