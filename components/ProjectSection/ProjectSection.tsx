@@ -12,10 +12,10 @@ const projects = [
     link: "https://www.rockstarstudyabroad.com/",
   },
   {
-    title: "Landing page de alta conversão",
-    description: "Estrutura focada em captação de leads com CTA estratégico.",
-    image: "/images.web/hand-young-black-woman-l.avif",
-    link: "#contact",
+    title: "Barbearia",
+    description: "Design moderno, performance otimizada e SEO para atrair clientes locais.",
+    image: "/images.web/image_berber.jpeg",
+    link: "https://berber-shop-ruby.vercel.app/",
   },
   {
     title: "Projeto de blog tech",
