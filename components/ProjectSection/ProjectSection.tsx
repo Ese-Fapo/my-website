@@ -9,7 +9,7 @@ const projects = [
     title: "Plataforma de Educação ",
     description: "Design premium, performance alta e SEO pronto para conversão.",
     image: "/images.web/sch-img.jpeg",
-    link: "https://www.rockstarstudyabroad.com/",
+    link: "https://rockstarstudyabroad.com/GitHub/index.html",
   },
   {
     title: "Barbearia",
@@ -18,10 +18,10 @@ const projects = [
     link: "https://berber-shop-ruby.vercel.app/",
   },
   {
-    title: "Projeto de blog tech",
-    description: "Conteúdo escalável, performance e navegação fluida.",
-    image: "/images.web/diffrent-screen.jpg",
-    link: "https://tech-blog-i77h.vercel.app/",
+    title: "Projeto de mini e-commerce",
+    description: "Design elegante, performance otimizada e SEO para atrair clientes.",
+    image: "/images.web/e-commerce.jpeg",
+    link: "https://dotman-s-store-3eax.vercel.app/",
   },
    {
     title: "Projeto de blog tech",
