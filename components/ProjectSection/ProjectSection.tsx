@@ -30,33 +30,12 @@ const projects = [
     link: "https://tech-blog-i77h.vercel.app/",
   },
 
-  {
-    title: "Projeto de blog tech",
-    description: "Conteúdo escalável, performance e navegação fluida.",
-    image: "/images.web/diffrent-screen.jpg",
-    link: "https://tech-blog-i77h.vercel.app/",
-  },
+ 
 
-  {
-    title: "Projeto de blog tech",
-    description: "Conteúdo escalável, performance e navegação fluida.",
-    image: "/images.web/diffrent-screen.jpg",
-    link: "https://tech-blog-i77h.vercel.app/",
-  },
+ 
 
-  {
-    title: "Projeto de blog tech",
-    description: "Conteúdo escalável, performance e navegação fluida.",
-    image: "/images.web/diffrent-screen.jpg",
-    link: "https://tech-blog-i77h.vercel.app/",
-  },
 
-  {
-    title: "Projeto de blog tech",
-    description: "Conteúdo escalável, performance e navegação fluida.",
-    image: "/images.web/diffrent-screen.jpg",
-    link: "https://tech-blog-i77h.vercel.app/",
-  },
+ 
 ];
 
 export default function ProjectsSection() {

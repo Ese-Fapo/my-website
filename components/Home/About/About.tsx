@@ -54,7 +54,7 @@ const About = () => {
             Criamos sites que transformam ideias em crescimento.
           </h2>
           <p className="mt-5 sm:mt-6 text-base sm:text-lg leading-relaxed text-slate-200/90">
-           A Prime Site Developer é uma agência de desenvolvimento web focada em criar sites de alto desempenho que geram resultados reais. Desenvolvemos websites rápidos, responsivos, seguros e pensados para oferecer a melhor experiência ao usuário.
+           A Bem Site Developer é uma agência de desenvolvimento web focada em criar sites de alto desempenho que geram resultados reais. Desenvolvemos websites rápidos, responsivos, seguros e pensados para oferecer a melhor experiência ao usuário.
           </p>
           <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-200/90">
            Unimos design moderno, tecnologia atual e estratégias de SEO para que seu site não apenas tenha uma ótima aparência, mas também seja encontrado no Google e converta visitantes em clientes.
@@ -62,7 +62,7 @@ const About = () => {
           <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-200/90">
            Seja um site institucional, landing page, e-commerce ou aplicação web personalizada, entregamos soluções sob medida para o seu negócio — nada de modelos genéricos.
            <br />
-           Na Prime Site Developer, sua presença online se transforma em um ativo que impulsiona o crescimento da sua marca.
+           Na Bem Site Developer, sua presença online se transforma em um ativo que impulsiona o crescimento da sua marca.
           </p>
 
           <div className="mt-6 sm:mt-8 flex flex-wrap justify-center lg:justify-start gap-3">

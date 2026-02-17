@@ -71,7 +71,12 @@ const faqs = [
     question: "Quais serviços adicionais vocês podem oferecer?",
     answer:
       "Oferecemos serviços como criação de conteúdo, marketing digital, integração com redes sociais, criação de logotipo, papel timbrado, cartão digital, desenvolvimento de aplicativos e consultoria em estratégias online. ",
-        }
+        },
+  {
+    question: "Vocês criam todos os tipos de sites?",
+    answer:
+      "Desenvolvemos a maioria dos tipos de sites, incluindo sites institucionais, lojas virtuais, portfólios, blogs, landing pages e muito mais. No entanto, não criamos sites que promovam pornografia, drogas ilegais, práticas religiosas enganosas, discurso de ódio, golpes ou qualquer atividade ilegal ou prejudicial. Nosso objetivo é desenvolver soluções digitais profissionais, éticas e alinhadas a valores que gerem impacto positivo para empresas e para a sociedade.",
+  }
 ];
 
 export const Faqs = () => {

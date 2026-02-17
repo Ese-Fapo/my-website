@@ -103,8 +103,8 @@ export const Footer = () => {
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-slate-300">
               <li>
-                <a className="transition hover:text-cyan-200" href="mailto:contato@primesite.dev">
-                  contato@primesite.dev
+                <a className="transition hover:text-cyan-200" href="mailto:esefapohunda@gmail.com">
+                  Email: esefapohunda@gmail.com
                 </a>
               </li>
               <li>
@@ -118,7 +118,7 @@ export const Footer = () => {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-slate-400 sm:flex-row">
-          <p>© {new Date().getFullYear()} Prime Site. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Bem Site Developer. Todos os direitos reservados.</p>
           <div className="flex items-center gap-4">
             <Link href="#" className="transition hover:text-white hover:underline">Política de privacidade</Link>
             <Link href="#" className="transition hover:text-white hover:underline">Termos de uso</Link>

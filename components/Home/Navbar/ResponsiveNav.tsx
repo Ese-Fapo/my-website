@@ -18,7 +18,7 @@ const ResponsiveNav = () => {
           <Link href="/" className="flex items-center gap-3">
             <Image
               src={logoIcon}
-              alt="Prime Site"
+              alt="Bem Site Developer"
               width={64}
               height={64}
               className="h-16 w-16"
@@ -27,7 +27,7 @@ const ResponsiveNav = () => {
             <div className="leading-tight">
               <p className="text-base font-bold tracking-wide">
                 <span className="inline-flex items-center gap-2 text-slate-900 text-2xl">
-                  Prime Site
+                  Bem Site Developer
                 
                 </span>
               </p>
