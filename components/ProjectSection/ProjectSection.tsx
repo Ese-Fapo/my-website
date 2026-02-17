@@ -9,7 +9,7 @@ const projects = [
     title: "Plataforma de Educação ",
     description: "Design premium, performance alta e SEO pronto para conversão.",
     image: "/images.web/sch-img.jpeg",
-    link: "https://rockstarstudyabroad.com/GitHub/index.html",
+    link: "https://rockstarstudyabroad.com/index.html  ",
   },
   {
     title: "Barbearia",
