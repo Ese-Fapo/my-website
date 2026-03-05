@@ -45,7 +45,7 @@ export const Footer = () => {
             </p>
             <div className="mt-5 flex items-center gap-4">
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/easy_ese_1/"
                 target="_blank"
                 rel="noreferrer"
                 className="group inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-linear-to-br from-[#F58529]/25 via-[#DD2A7B]/25 to-[#515BD4]/25 text-white/90 shadow-[0_0_0_rgba(221,42,123,0)] transition hover:border-white/20 hover:text-white hover:shadow-[0_0_26px_rgba(221,42,123,0.85)]"
@@ -54,7 +54,7 @@ export const Footer = () => {
                 <FaInstagram className="h-5 w-5" aria-hidden="true" />
               </a>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/ese-fapohunda-118594360/"
                 target="_blank"
                 rel="noreferrer"
                 className="group inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-linear-to-br from-[#0A66C2]/25 via-[#0A66C2]/15 to-[#38BDF8]/15 text-white/90 shadow-[0_0_0_rgba(10,102,194,0)] transition hover:border-white/20 hover:text-white hover:shadow-[0_0_26px_rgba(10,102,194,0.85)]"
@@ -63,7 +63,7 @@ export const Footer = () => {
                 <FaLinkedinIn className="h-5 w-5" aria-hidden="true" />
               </a>
               <a
-                href="https://github.com/"
+                href="https://github.com/Ese-Fapo"
                 target="_blank"
                 rel="noreferrer"
                 className="group inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-linear-to-br from-[#2F2F2F]/30 via-[#0B0B0B]/30 to-[#4B5563]/25 text-white/90 shadow-[0_0_0_rgba(15,23,42,0)] transition hover:border-white/20 hover:text-white hover:shadow-[0_0_26px_rgba(148,163,184,0.7)]"

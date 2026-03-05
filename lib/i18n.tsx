@@ -741,13 +741,39 @@ type LanguageContextValue = {
 
 const LanguageContext = createContext<LanguageContextValue | null>(null)
 
+const getDeviceLanguage = (): Locale => {
+  if (typeof window === "undefined") return "pt"
+  
+  const browserLang = navigator.language || navigator.languages?.[0] || "pt"
+  const langCode = browserLang.split("-")[0].toLowerCase()
+  
+  const supportedLocales: Locale[] = ["pt", "en", "es"]
+  if (supportedLocales.includes(langCode as Locale)) {
+    return langCode as Locale
+  }
+  
+  return "pt"
+}
+
 export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
-  const [locale, setLocaleState] = useState<Locale>("pt")
+  const [locale, setLocaleState] = useState<Locale>(() => {
+    if (typeof window === "undefined") return "pt"
+    
+    const storedLocale = window.localStorage.getItem("site-locale") as Locale | null
+    if (storedLocale && translations[storedLocale]) {
+      return storedLocale
+    }
+    
+    return getDeviceLanguage()
+  })
 
   useEffect(() => {
     const storedLocale = window.localStorage.getItem("site-locale") as Locale | null
     if (storedLocale && translations[storedLocale]) {
       setLocaleState(storedLocale)
+    } else {
+      const deviceLang = getDeviceLanguage()
+      setLocaleState(deviceLang)
     }
   }, [])
 
