@@ -2,7 +2,6 @@ import React from "react"
 import Link from "next/link"
 import { XMarkIcon } from "@heroicons/react/24/outline"
 import { useLanguage } from "@/lib/i18n"
-import LanguageSwitcher from "@/components/LanguageSwitcher/LanguageSwitcher"
 
 
 
@@ -96,9 +95,6 @@ const MobileNav = ({
                 {t.nav.start}
               </span>
             </Link>
-            <div className="pt-2">
-              <LanguageSwitcher compact />
-            </div>
           </div>
         </div>
       </div>

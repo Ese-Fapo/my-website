@@ -61,7 +61,8 @@ const ResponsiveNav = () => {
             <LanguageSwitcher />
           </div>
 
-          <div className="lg:hidden">
+          <div className="flex items-center gap-3 lg:hidden">
+            <LanguageSwitcher />
             <button
               onClick={() => setOpen(true)}
               className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-900/15 bg-white/70 text-slate-900 shadow-[0_12px_26px_-18px_rgba(15,23,42,0.25)] transition hover:border-slate-900/30 hover:bg-white hover:text-slate-900"
