@@ -8,9 +8,12 @@ import ProjectsSection from "../ProjectSection/ProjectSection"
 import Services from "../Service/Services"
 import { Faqs } from "../Faqs/Faqs"
 import { Footer } from "./Footer/Footer"
+import { useLanguage } from "@/lib/i18n"
 
 
 const Home = () => {
+  const { t } = useLanguage()
+
   return (
     <div className="min-h-screen overflow-hidden bg-black text-slate-900 dark:bg-black dark:text-white">
       <Hero />
@@ -25,7 +28,7 @@ const Home = () => {
         href="https://wa.me/554891817031"
         target="_blank"
         rel="noreferrer"
-        aria-label="Falar no WhatsApp"
+        aria-label={t.home.whatsappAria}
         className="fixed bottom-6 right-6 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_12px_30px_rgba(37,211,102,0.45)] transition hover:scale-105 hover:shadow-[0_16px_36px_rgba(37,211,102,0.6)]"
       >
         <svg viewBox="0 0 24 24" className="h-7 w-7" fill="currentColor" aria-hidden="true">

@@ -1,8 +1,11 @@
 import React from "react"
 import Link from "next/link"
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa6"
+import { useLanguage } from "@/lib/i18n"
 
 export const Footer = () => {
+  const { t } = useLanguage()
+
   return (
     <footer className="relative overflow-hidden bg-black border-t border-white/10">
       <div className="pointer-events-none absolute -top-24 right-10 h-64 w-64 rounded-full bg-cyan-500/20 blur-3xl" />
@@ -11,16 +14,16 @@ export const Footer = () => {
         <div className="mb-10 rounded-3xl border border-white/10 bg-linear-to-r from-cyan-500/15 via-fuchsia-500/10 to-indigo-500/15 p-6 sm:p-8 shadow-[0_30px_120px_rgba(15,23,42,0.45)]">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="text-sm uppercase tracking-[0.25em] text-slate-300">pronto para acelerar?</p>
+              <p className="text-sm uppercase tracking-[0.25em] text-slate-300">{t.footer.ctaTag}</p>
               <h3 className="mt-2 text-2xl font-bold text-white sm:text-3xl">
-                Vamos criar sua próxima experiência digital
+                {t.footer.ctaTitle}
               </h3>
             </div>
             <Link
               href="#contact"
               className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#0b1020] shadow-lg shadow-white/10 transition hover:opacity-90"
             >
-              Falar com um especialista →
+              {t.footer.ctaButton}
             </Link>
           </div>
         </div>
@@ -33,12 +36,12 @@ export const Footer = () => {
               <div className="leading-tight">
                 <p className="text-base font-bold tracking-wide text-white group-hover:text-cyan-200 transition-colors"> Site</p>
                 <p className="text-xs font-semibold tracking-wide text-slate-300">
-                  Desenvolvedores
+                  {t.nav.brandSub}
                 </p>
               </div>
             </Link>
             <p className="mt-4 text-sm text-slate-300/80">
-              Criamos experiências digitais rápidas, bonitas e focadas em conversão.
+              {t.footer.brandText}
             </p>
             <div className="mt-5 flex items-center gap-4">
               <a
@@ -73,33 +76,31 @@ export const Footer = () => {
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-200">
-              Navegação
+              {t.footer.navigation}
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-slate-300">
-              <li><Link className="transition hover:text-cyan-200" href="#about">Sobre</Link></li>
-              <li><Link className="transition hover:text-emerald-200" href="#services">Serviços</Link></li>
-              <li><Link className="transition hover:text-indigo-200" href="#projects">Projetos</Link></li>
-              <li><Link className="transition hover:text-fuchsia-200" href="#faqs">Dúvidas</Link></li>
-              <li><Link className="transition hover:text-sky-200" href="#contact">Contato</Link></li>
+              <li><Link className="transition hover:text-cyan-200" href="#about">{t.footer.navigationLinks.about}</Link></li>
+              <li><Link className="transition hover:text-emerald-200" href="#services">{t.footer.navigationLinks.services}</Link></li>
+              <li><Link className="transition hover:text-indigo-200" href="#projects">{t.footer.navigationLinks.projects}</Link></li>
+              <li><Link className="transition hover:text-fuchsia-200" href="#faqs">{t.footer.navigationLinks.faqs}</Link></li>
+              <li><Link className="transition hover:text-sky-200" href="#contact">{t.footer.navigationLinks.contact}</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-200">
-              Serviços
+              {t.footer.services}
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-slate-300">
-              <li className="transition hover:text-white">Sites institucionais</li>
-              <li className="transition hover:text-white">Landing pages</li>
-              <li className="transition hover:text-white">E-commerce</li>
-              <li className="transition hover:text-white">SEO & Performance</li>
-              <li className="transition hover:text-white">Manutenção</li>
+              {t.footer.serviceItems.map((item) => (
+                <li key={item} className="transition hover:text-white">{item}</li>
+              ))}
             </ul>
           </div>
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-200">
-              Contato
+              {t.footer.contact}
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-slate-300">
               <li>
@@ -112,16 +113,16 @@ export const Footer = () => {
                   WhatsApp: (48) 9181-7031
                 </a>
               </li>
-              <li>Brasil • Atendimento remoto</li>
+              <li>{t.footer.remoteSupport}</li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-slate-400 sm:flex-row">
-          <p>© {new Date().getFullYear()} Bem Site Developer. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Bem Site Developer. {t.footer.rights}</p>
           <div className="flex items-center gap-4">
-            <Link href="#" className="transition hover:text-white hover:underline">Política de privacidade</Link>
-            <Link href="#" className="transition hover:text-white hover:underline">Termos de uso</Link>
+            <Link href="#" className="transition hover:text-white hover:underline">{t.footer.privacy}</Link>
+            <Link href="#" className="transition hover:text-white hover:underline">{t.footer.terms}</Link>
           </div>
         </div>
       </div>

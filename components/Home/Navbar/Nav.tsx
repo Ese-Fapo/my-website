@@ -1,5 +1,6 @@
 import React from "react"
 import Link from "next/link"
+import { useLanguage } from "@/lib/i18n"
 
 
 
@@ -10,6 +11,8 @@ type NavLink = {
 }
 
 const Nav = ({ links }: { links: NavLink[] }) => {
+  const { t } = useLanguage()
+
   return (
     <div className="hidden lg:flex items-center gap-8">
       <div className="flex items-center gap-6 text-sm font-bold tracking-wide text-slate-700">
@@ -37,7 +40,7 @@ const Nav = ({ links }: { links: NavLink[] }) => {
           className="hidden xl:inline-flex items-center rounded-full border border-slate-900/15 bg-white/60 px-4 py-2 text-sm font-bold tracking-wide text-slate-900 shadow-sm transition hover:border-slate-900/30 hover:bg-white"
         >
           <span className="text-slate-900">
-            Agendar ligação.
+            {t.nav.scheduleCall}
           </span>
         </Link>
         

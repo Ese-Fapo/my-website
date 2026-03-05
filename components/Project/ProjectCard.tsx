@@ -7,6 +7,7 @@ type ProjectProps = {
   description: string;
   image: string;
   link: string;
+  ctaLabel: string;
 };
 
 export default function ProjectCard({
@@ -14,6 +15,7 @@ export default function ProjectCard({
   description,
   image,
   link,
+  ctaLabel,
 }: ProjectProps) {
   const isExternal = link.startsWith("http")
   return (
@@ -37,7 +39,7 @@ export default function ProjectCard({
         rel={isExternal ? "noreferrer" : undefined}
         className="inline-flex items-center gap-2 w-fit rounded-full bg-white text-[#0b1020] px-5 py-2 text-sm font-semibold transition hover:opacity-90"
       >
-        Ver projeto →
+        {ctaLabel}
       </Link>
     </div>
   );
