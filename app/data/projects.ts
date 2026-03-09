@@ -25,7 +25,7 @@ export const projects = [
     description:
       "A complete food restaurant platform with online ordering, dynamic menu, and admin dashboard.",
     image: "/images.web/resturant.jpeg",
-    link: "/projects/full-stack-restaurant-app",
+    link: "https://my-website-beta-lovat.vercel.app/",
   },
    {
     title: "Barber Site",
