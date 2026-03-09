@@ -444,7 +444,7 @@ const translations: Record<Locale, TranslationSchema> = {
           title: "Full-stack restaurant app",
           description: "Complete app for online orders, dynamic menu management, and admin operations.",
           image: "/images.web/resturant.jpeg",
-          link: "https://my-website-beta-lovat.vercel.app/",
+          link: "https://resturant-templete.vercel.app/",
         },
         {
           title: "Tech blog",
