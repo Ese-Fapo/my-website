@@ -20,6 +20,13 @@ export const projects = [
     image: "/images/hero-gallery.jpg",
     link: "/projects/hero-gallery",
   },
+  {
+    title: "Full Stack Restaurant App",
+    description:
+      "A complete food restaurant platform with online ordering, dynamic menu, and admin dashboard.",
+    image: "/images.web/resturant.jpeg",
+    link: "/projects/full-stack-restaurant-app",
+  },
    {
     title: "Barber Site",
     description:
@@ -27,6 +34,9 @@ export const projects = [
     image: "/images/hero-gallery.jpg",
     link: "/projects/hero-gallery",
   },
+
+   
+
 
 
 

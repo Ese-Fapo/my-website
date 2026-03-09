@@ -234,6 +234,12 @@ const translations: Record<Locale, TranslationSchema> = {
           link: "https://dotman-s-store-3eax.vercel.app/",
         },
         {
+          title: "App full stack para restaurante",
+          description: "Aplicação completa para pedidos online, cardápio dinâmico e gestão administrativa.",
+          image: "/images.web/resturant.jpeg",
+          link: "#",
+        },
+        {
           title: "Blog tech",
           description: "Conteúdo escalável, performance e navegação fluida.",
           image: "/images.web/diffrent-screen.jpg",
@@ -435,6 +441,12 @@ const translations: Record<Locale, TranslationSchema> = {
           link: "https://dotman-s-store-3eax.vercel.app/",
         },
         {
+          title: "Full-stack restaurant app",
+          description: "Complete app for online orders, dynamic menu management, and admin operations.",
+          image: "/images.web/resturant.jpeg",
+          link: "#",
+        },
+        {
           title: "Tech blog",
           description: "Scalable content, strong performance, and smooth navigation.",
           image: "/images.web/diffrent-screen.jpg",
@@ -630,6 +642,12 @@ const translations: Record<Locale, TranslationSchema> = {
           description: "Diseño elegante, rendimiento optimizado y SEO para atraer clientes.",
           image: "/images.web/e-commerce.jpeg",
           link: "https://dotman-s-store-3eax.vercel.app/",
+        },
+        {
+          title: "App full stack para restaurante",
+          description: "Aplicación completa para pedidos en línea, menú dinámico y gestión administrativa.",
+          image: "/images.web/resturant.jpeg",
+          link: "#",
         },
         {
           title: "Blog tech",
