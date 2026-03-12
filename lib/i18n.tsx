@@ -222,6 +222,12 @@ const translations: Record<Locale, TranslationSchema> = {
           link: "https://rockstarstudyabroad.com/index.html",
         },
         {
+          title: "App de Lista de Compras com Orçamento",
+          description: "Interface intuitiva para organizar compras, acompanhar gastos em tempo real e manter o orçamento sob controle.",
+          image: "/images.web/budget.jpeg",
+          link: "https://budget-eight-bay.vercel.app/",
+        },
+        {
           title: "Barbearia",
           description: "Design moderno, performance otimizada e SEO para atrair clientes locais.",
           image: "/images.web/image_berber.jpeg",
@@ -429,6 +435,12 @@ const translations: Record<Locale, TranslationSchema> = {
           link: "https://rockstarstudyabroad.com/index.html",
         },
         {
+          title: "Budget Shopping App",
+          description: "An intuitive shopping app to organize lists, track spending in real time, and keep every purchase within budget.",
+          image: "/images.web/budget.jpeg",
+          link: "https://budget-eight-bay.vercel.app/",
+        },
+        {
           title: "Barbershop",
           description: "Modern design, optimized performance, and SEO to attract local customers.",
           image: "/images.web/image_berber.jpeg",
@@ -630,6 +642,12 @@ const translations: Record<Locale, TranslationSchema> = {
           description: "Diseño premium, alto rendimiento y SEO listo para conversión.",
           image: "/images.web/sch-img.jpeg",
           link: "https://rockstarstudyabroad.com/index.html",
+        },
+        {
+          title: "App de Compras con Presupuesto",
+          description: "App intuitiva para organizar compras, seguir gastos en tiempo real y mantener cada compra dentro del presupuesto.",
+          image: "/images.web/budget.jpeg",
+          link: "https://budget-eight-bay.vercel.app/",
         },
         {
           title: "Barbería",

@@ -34,6 +34,15 @@ export const projects = [
     image: "/images/hero-gallery.jpg",
     link: "/projects/hero-gallery",
   },
+  {
+    title: "Budget Shopping App",
+    description:
+      "A smart shopping list app to plan purchases, track budget, and avoid overspending.",
+    image: "/images.web/budget.jpeg",
+    link: "https://budget-eight-bay.vercel.app/",
+  },
+  
+
 
    
 
