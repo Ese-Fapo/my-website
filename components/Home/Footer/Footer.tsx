@@ -119,7 +119,7 @@ export const Footer = () => {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-slate-400 sm:flex-row">
-          <p>© {new Date().getFullYear()} Bem Site Developer. {t.footer.rights}</p>
+          <p>© {new Date().getFullYear()} {t.nav.brandName}. {t.footer.rights}</p>
           <div className="flex items-center gap-4">
             <Link href="#" className="transition hover:text-white hover:underline">{t.footer.privacy}</Link>
             <Link href="#" className="transition hover:text-white hover:underline">{t.footer.terms}</Link>

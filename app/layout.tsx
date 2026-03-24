@@ -16,7 +16,7 @@ const roboto = Roboto({
 
 
 export const metadata: Metadata = {
-  title: "Website-agency",
+  title: "Sites Profissionais | Professional Websites | Sitios Profesionales",
   description: "Somos uma agência web que cria sites incríveis para nossos clientes. Desenvolvemos sites personalizados, adaptados às necessidades e objetivos de cada cliente. Nossa equipe de designers e desenvolvedores trabalha de perto com os clientes para entregar sites bonitos, funcionais e fáceis de usar.",
   icons: {
     icon: "/images.web/logo.png",

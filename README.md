@@ -1,4 +1,4 @@
-# Bem Site Developer - Next.js Project
+# Sites Profissionais / Professional Websites - Next.js Project
 
 This project is configured for **static export** so it can be deployed on shared hosting providers like **Hostinger**.
 

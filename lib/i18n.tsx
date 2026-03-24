@@ -6,6 +6,7 @@ export type Locale = "pt" | "en" | "es"
 
 type TranslationSchema = {
   nav: {
+    brandName: string
     brandSub: string
     openMenu: string
     closeMenu: string
@@ -139,6 +140,7 @@ type TranslationSchema = {
 const translations: Record<Locale, TranslationSchema> = {
   pt: {
     nav: {
+      brandName: "Sites Profissionais",
       brandSub: "Desenvolvedores",
       openMenu: "Abrir menu",
       closeMenu: "Fechar menu",
@@ -182,9 +184,9 @@ const translations: Record<Locale, TranslationSchema> = {
       badge: "Sobre nós",
       title: "Criamos sites que transformam ideias em crescimento.",
       paragraphs: [
-        "A Bem Site Developer é uma agência de desenvolvimento web focada em criar sites de alto desempenho que geram resultados reais. Desenvolvemos websites rápidos, responsivos, seguros e pensados para oferecer a melhor experiência ao usuário.",
+        "A Sites Profissionais é uma agência de desenvolvimento web focada em criar sites de alto desempenho que geram resultados reais. Desenvolvemos websites rápidos, responsivos, seguros e pensados para oferecer a melhor experiência ao usuário.",
         "Unimos design moderno, tecnologia atual e estratégias de SEO para que seu site não apenas tenha uma ótima aparência, mas também seja encontrado no Google e converta visitantes em clientes.",
-        "Seja um site institucional, landing page, e-commerce ou aplicação web personalizada, entregamos soluções sob medida para o seu negócio — nada de modelos genéricos. Na Bem Site Developer, sua presença online se transforma em um ativo que impulsiona o crescimento da sua marca.",
+        "Seja um site institucional, landing page, e-commerce ou aplicação web personalizada, entregamos soluções sob medida para o seu negócio — nada de modelos genéricos. Na Sites Profissionais, sua presença online se transforma em um ativo que impulsiona o crescimento da sua marca.",
       ],
       pills: ["UX em primeiro lugar", "Foco em conversão", "Rápido como um raio"],
     },
@@ -352,6 +354,7 @@ const translations: Record<Locale, TranslationSchema> = {
   },
   en: {
     nav: {
+      brandName: "Professional Websites",
       brandSub: "Developers",
       openMenu: "Open menu",
       closeMenu: "Close menu",
@@ -395,7 +398,7 @@ const translations: Record<Locale, TranslationSchema> = {
       badge: "About us",
       title: "We build websites that turn ideas into growth.",
       paragraphs: [
-        "Bem Site Developer is a web development agency focused on high-performance websites that generate real results.",
+        "Professional Websites is a web development agency focused on high-performance websites that generate real results.",
         "We combine modern design, current technology, and SEO strategies so your website both looks great and gets found on Google.",
         "From institutional websites and landing pages to e-commerce and custom web apps, we deliver tailor-made solutions for your business.",
       ],
@@ -561,6 +564,7 @@ const translations: Record<Locale, TranslationSchema> = {
   },
   es: {
     nav: {
+      brandName: "Sitios Profesionales",
       brandSub: "Desarrolladores",
       openMenu: "Abrir menú",
       closeMenu: "Cerrar menú",
@@ -604,7 +608,7 @@ const translations: Record<Locale, TranslationSchema> = {
       badge: "Sobre nosotros",
       title: "Creamos sitios que convierten ideas en crecimiento.",
       paragraphs: [
-        "Bem Site Developer es una agencia de desarrollo web enfocada en sitios de alto rendimiento que generan resultados reales.",
+        "Sitios Profesionales es una agencia de desarrollo web enfocada en sitios de alto rendimiento que generan resultados reales.",
         "Combinamos diseño moderno, tecnología actual y estrategias SEO para que tu sitio luzca increíble y sea encontrado en Google.",
         "Desde sitios corporativos y landing pages hasta e-commerce y apps web personalizadas, entregamos soluciones a medida.",
       ],
