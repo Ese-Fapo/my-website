@@ -36,13 +36,19 @@ const LanguageSwitcher = ({ compact = false }: { compact?: boolean }) => {
         }`}
         aria-label="Switch language"
         aria-expanded={open}
+        aria-haspopup="menu"
+        aria-controls="language-switcher-menu"
       >
         <GlobeAltIcon className="h-5 w-5" />
         <span>{locale.toUpperCase()}</span>
       </button>
 
       {open ? (
-        <div className="absolute right-0 mt-2 min-w-30 rounded-2xl border border-slate-900/10 bg-white p-2 shadow-xl">
+        <div
+          id="language-switcher-menu"
+          role="menu"
+          className="absolute right-0 mt-2 min-w-30 rounded-2xl border border-slate-900/10 bg-white p-2 shadow-xl"
+        >
           {localeOptions.map((option) => (
             <button
               key={option.value}
@@ -56,6 +62,8 @@ const LanguageSwitcher = ({ compact = false }: { compact?: boolean }) => {
                   ? "bg-slate-900 text-white"
                   : "text-slate-800 hover:bg-slate-100"
               }`}
+              role="menuitemradio"
+              aria-checked={locale === option.value}
             >
               {option.label}
             </button>

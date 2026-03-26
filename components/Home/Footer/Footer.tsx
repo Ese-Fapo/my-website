@@ -10,7 +10,7 @@ export const Footer = () => {
     <footer className="relative overflow-hidden bg-black border-t border-white/10">
       <div className="pointer-events-none absolute -top-24 right-10 h-64 w-64 rounded-full bg-cyan-500/20 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-24 left-10 h-64 w-64 rounded-full bg-fuchsia-500/20 blur-3xl" />
-      <div className="mx-auto w-full max-w-7xl px-5 py-14 sm:px-8 animate-[fade-slide-up_0.8s_ease-out]">
+      <div className="mx-auto w-full max-w-7xl px-5 py-14 sm:px-8">
         <div className="mb-10 rounded-3xl border border-white/10 bg-linear-to-r from-cyan-500/15 via-fuchsia-500/10 to-indigo-500/15 p-6 sm:p-8 shadow-[0_30px_120px_rgba(15,23,42,0.45)]">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
             <div>

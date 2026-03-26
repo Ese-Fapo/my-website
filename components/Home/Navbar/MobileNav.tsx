@@ -36,9 +36,14 @@ const MobileNav = ({
         onClick={onClose}
       />
       <div
+        id="mobile-nav-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-label={t.nav.menuTitle}
         className={`absolute right-0 top-0 h-full w-[85%] max-w-sm bg-white/95 shadow-2xl shadow-[#0b1020]/20 transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
+        hidden={!isOpen}
       >
         <div className="flex items-center justify-between border-b border-slate-900/10 px-6 py-5">
           <div className="text-lg font-bold tracking-wide text-slate-900">

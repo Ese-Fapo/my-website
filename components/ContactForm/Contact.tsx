@@ -118,12 +118,14 @@ export default function ContactForm() {
               <form className="space-y-4" onSubmit={handleSubmit}>
         {/* Nome */}
         <div>
-          <label className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
+          <label htmlFor="contact-name" className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
             {t.contact.labels.name}
           </label>
           <input
+            id="contact-name"
             type="text"
             name="name"
+            autoComplete="name"
             placeholder={t.contact.placeholders.name}
             required
             className="w-full rounded-xl border border-slate-200 bg-white/80 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 dark:border-slate-800 dark:bg-[#0d1324] dark:text-slate-100"
@@ -132,12 +134,14 @@ export default function ContactForm() {
 
         {/* Email */}
         <div>
-          <label className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
+          <label htmlFor="contact-email" className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
             {t.contact.labels.email}
           </label>
           <input
+            id="contact-email"
             type="email"
             name="email"
+            autoComplete="email"
             placeholder={t.contact.placeholders.email}
             required
             className="w-full rounded-xl border border-slate-200 bg-white/80 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 dark:border-slate-800 dark:bg-[#0d1324] dark:text-slate-100"
@@ -146,12 +150,14 @@ export default function ContactForm() {
 
         {/* Telefone */}
         <div>
-          <label className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
+          <label htmlFor="contact-phone" className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
             {t.contact.labels.phone}
           </label>
           <input
+            id="contact-phone"
             type="tel"
             name="phone"
+            autoComplete="tel"
             placeholder={t.contact.placeholders.phone}
             required
             className="w-full rounded-xl border border-slate-200 bg-white/80 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 dark:border-slate-800 dark:bg-[#0d1324] dark:text-slate-100"
@@ -160,10 +166,11 @@ export default function ContactForm() {
 
         {/* Segmento */}
         <div>
-          <label className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
+          <label htmlFor="contact-segment" className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
             {t.contact.labels.segment}
           </label>
           <input
+            id="contact-segment"
             type="text"
             name="segment"
             placeholder={t.contact.placeholders.segment}
@@ -173,10 +180,11 @@ export default function ContactForm() {
 
         {/* Investimento */}
         <div>
-          <label className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
+          <label htmlFor="contact-budget" className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
             {t.contact.labels.budget}
           </label>
           <select
+            id="contact-budget"
             name="budget"
             value={budget}
             onChange={(e) => setBudget(e.target.value)}
@@ -194,10 +202,11 @@ export default function ContactForm() {
 
         {/* Mensagem */}
         <div>
-          <label className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
+          <label htmlFor="contact-message" className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
             {t.contact.labels.message}
           </label>
           <textarea
+            id="contact-message"
             name="message"
             rows={4}
             placeholder={t.contact.placeholders.message}
