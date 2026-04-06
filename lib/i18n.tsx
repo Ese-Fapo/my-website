@@ -114,6 +114,14 @@ type TranslationSchema = {
     description: string
     items: Array<{ question: string; answer: string }>
   }
+  reviews: {
+    badge: string
+    title: string
+    description: string
+    summaryLabel: string
+    countLabel: string
+    items: Array<{ name: string; business: string; text: string }>
+  }
   footer: {
     ctaTag: string
     ctaTitle: string
@@ -162,16 +170,16 @@ const translations: Record<Locale, TranslationSchema> = {
     },
     hero: {
       badge: "agência de sites premium",
-      title: "Construímos sites de alta conversão que",
-      titleHighlight: "fazem seu negócio crescer.",
+      title: "Criamos sites",
+      titleHighlight: "que ajudam você a conseguir clientes",
       description:
-        "Nosso time de especialistas cria sites incríveis, rápidos e fáceis de usar, que atraem tráfego e aumentam conversões. Vamos levar sua presença online para o próximo nível.",
-      primaryCta: "Criar meu site agora",
-      secondaryCta: "Ver nossos projetos",
+        "Fazemos sites simples e rápidos para as pessoas encontrarem seu negócio e falarem com você.",
+      primaryCta: "Quero meu site",
+      secondaryCta: "Ver exemplos",
       cards: [
-        { label: "criado para converter", value: "Seu site vende enquanto você dorme" },
-        { label: "mobile first", value: "Otimizado para todos os dispositivos" },
-        { label: "design envolvente", value: "Visuais cativantes que prendem a atenção" },
+        { label: "Mais clientes online", value: "Seu site trabalha por você" },
+        { label: "Funciona no celular e computador", value: "Fácil de usar em qualquer tela" },
+        { label: "Visual limpo e profissional", value: "Passa confiança para quem visita" },
       ],
     },
     about: {
@@ -182,27 +190,27 @@ const translations: Record<Locale, TranslationSchema> = {
         reviews: "avaliações",
       },
       badge: "Sobre nós",
-      title: "Criamos sites que transformam ideias em crescimento.",
+      title: "Criamos sites simples que ajudam seu negócio a crescer.",
       paragraphs: [
-        "A Sites Profissionais é uma agência de desenvolvimento web focada em criar sites de alto desempenho que geram resultados reais. Desenvolvemos websites rápidos, responsivos, seguros e pensados para oferecer a melhor experiência ao usuário.",
-        "Unimos design moderno, tecnologia atual e estratégias de SEO para que seu site não apenas tenha uma ótima aparência, mas também seja encontrado no Google e converta visitantes em clientes.",
-        "Seja um site institucional, landing page, e-commerce ou aplicação web personalizada, entregamos soluções sob medida para o seu negócio — nada de modelos genéricos. Na Sites Profissionais, sua presença online se transforma em um ativo que impulsiona o crescimento da sua marca.",
+        "Criamos sites rápidos, bonitos e fáceis de usar para sua empresa.",
+        "Seu site ajuda mais pessoas a encontrar seu negócio no Google e falar com você.",
+        "Fazemos um site do seu jeito para mostrar seu trabalho e trazer mais clientes.",
       ],
-      pills: ["UX em primeiro lugar", "Foco em conversão", "Rápido como um raio"],
+      pills: ["Fácil de usar", "Mais clientes", "Site rápido"],
     },
     services: {
       badge: "serviços",
-      title: "Tudo o que um desenvolvedor web entrega",
-      description: "Soluções completas para criar, escalar e converter com uma presença digital de alto nível.",
+      title: "O que fazemos para o seu negócio",
+      description: "Criamos soluções simples para ajudar sua empresa a crescer online.",
       items: [
-        { title: "Sites institucionais", description: "Presença profissional, performance alta e experiência premium para sua marca." },
-        { title: "Landing pages", description: "Páginas focadas em conversão com CTA estratégico e copy persuasiva." },
-        { title: "E-commerce", description: "Lojas rápidas, seguras e integradas com pagamentos e logística." },
-        { title: "Hospedagem e domínio", description: "Serviço de hospedagem com alto desempenho, estabilidade e segurança, além de gerenciamento completo de domínio." },
-        { title: "Site otimizado", description: "Páginas rápidas e otimizadas para melhor desempenho e experiência do usuário." },
-        { title: "Manutenção e suporte", description: "Atualizações contínuas, segurança e acompanhamento pós-lançamento." },
-        { title: "Integrações", description: "Conectamos seu site a CRM, automações, WhatsApp e ferramentas de marketing." },
-        { title: "Criação de logo e branding", description: "Identidade visual, logotipo e paleta de cores para fortalecer sua marca." },
+        { title: "Site para empresa", description: "Um site bonito e profissional para mostrar seu negócio." },
+        { title: "Landing page", description: "Uma página feita para receber mais mensagens e clientes." },
+        { title: "Loja online", description: "Vendemos seus produtos com uma loja simples e segura." },
+        { title: "Hospedagem e domínio", description: "Ajudamos você a colocar seu site no ar." },
+        { title: "Site rápido", description: "Seu site abre rápido e funciona bem." },
+        { title: "Suporte e manutenção", description: "Cuidamos do seu site depois que ele estiver pronto." },
+        { title: "Integrações", description: "Ligamos seu site ao WhatsApp e outras ferramentas." },
+        { title: "Logo e marca", description: "Criamos sua logo e a imagem da sua marca." },
       ],
     },
     projects: {
@@ -325,9 +333,18 @@ const translations: Record<Locale, TranslationSchema> = {
         {question : "Vocês oferecem serviços de SEO?", answer: "Sim. Aplicamos técnicas de SEO on-page, como otimização de palavras-chave, meta tags, estrutura de URL e desempenho do site para melhorar a visibilidade nos motores de busca."},
         {question : "Vocês criam sites para quais setores?", answer: "Criamos sites personalizados para uma ampla variedade de setores, incluindo comércio eletrônico, educação, saúde, tecnologia, serviços profissionais, entretenimento e muito mais. Nosso objetivo é desenvolver soluções digitais que atendam às necessidades específicas de cada setor e ajudem nossos clientes a alcançar seus objetivos de negócios."},
         {question : "Quais são os prazos para desenvolvimento?", answer: "O prazo para desenvolvimento de um site pode variar dependendo da complexidade do projeto, número de páginas, funcionalidades e integrações necessárias. Em média, o processo leva de 2 a 4 semanas, mas projetos mais simples podem ser concluídos em menos tempo, enquanto projetos mais complexos podem levar um pouco mais. Durante a fase de briefing, discutiremos o escopo do projeto e forneceremos uma estimativa de prazo mais precisa com base nas suas necessidades específicas."},
-
-
-
+      ],
+    },
+    reviews: {
+      badge: "avaliações",
+      title: "Clientes falam bem do nosso trabalho",
+      description: "Veja o que nossos clientes dizem depois de criar um site com a gente.",
+      summaryLabel: "Nota média dos clientes",
+      countLabel: "Baseado em 32 avaliações",
+      items: [
+        { name: "Emma Parker", business: "Loja de roupas", text: "My website looks great and I started getting more WhatsApp messages from new clients." },
+        { name: "Daniel Brooks", business: "Barbearia", text: "The service was fast and my business looks much more professional online now." },
+        { name: "Sofia Bennett", business: "Clínica estética", text: "People find my business more easily and trust my brand much more now." },
       ],
     },
     footer: {
@@ -376,16 +393,16 @@ const translations: Record<Locale, TranslationSchema> = {
     },
     hero: {
       badge: "premium web agency",
-      title: "We build high-converting websites that",
-      titleHighlight: "help your business grow.",
+      title: "We build websites",
+      titleHighlight: "that help you get clients ",
       description:
-        "Our team creates beautiful, fast, easy-to-use websites that attract traffic and increase conversions. Let’s take your online presence to the next level.",
-      primaryCta: "Build my website now",
-      secondaryCta: "View our projects",
+      "“We design simple, fast websites that help people find your business and contact you.”",
+      primaryCta: "Get my website",
+      secondaryCta: "See examples",
       cards: [
-        { label: "built to convert", value: "Your website sells while you sleep" },
-        { label: "mobile first", value: "Optimized for every device" },
-        { label: "engaging design", value: "Captivating visuals that hold attention" },
+        { label: "Get more customers online", value: "Your website sells while you sleep" },
+        { label: "Works on phone and computer", value: "Optimized for every device" },
+        { label: "Looks clean and professional", value: "Captivating visuals that hold attention" },
       ],
     },
     about: {
@@ -396,27 +413,27 @@ const translations: Record<Locale, TranslationSchema> = {
         reviews: "reviews",
       },
       badge: "About us",
-      title: "We build websites that turn ideas into growth.",
+      title: "We make simple websites that help your business grow.",
       paragraphs: [
-        "Professional Websites is a web development agency focused on high-performance websites that generate real results.",
-        "We combine modern design, current technology, and SEO strategies so your website both looks great and gets found on Google.",
-        "From institutional websites and landing pages to e-commerce and custom web apps, we deliver tailor-made solutions for your business.",
+        "We build fast, clean, easy-to-use websites for your business.",
+        "Your website helps more people find you on Google and contact you.",
+        "We create a site that shows your work clearly and helps bring in more clients.",
       ],
-      pills: ["UX first", "Conversion focused", "Lightning fast"],
+      pills: ["Easy to use", "More clients", "Fast website"],
     },
     services: {
       badge: "services",
-      title: "Everything a web developer delivers",
-      description: "Complete solutions to build, scale, and convert with a premium digital presence.",
+      title: "What we do for your business",
+      description: "We make simple solutions to help your business grow online.",
       items: [
-        { title: "Business websites", description: "Professional presence, high performance, and premium experience for your brand." },
-        { title: "Landing pages", description: "Conversion-focused pages with strategic CTA and persuasive copy." },
-        { title: "E-commerce", description: "Fast, secure stores integrated with payments and logistics." },
-        { title: "Hosting and domain", description: "Reliable hosting with high-performance servers and complete domain management." },
-        { title: "Optimized website", description: "Fast pages optimized for performance and user experience." },
-        { title: "Maintenance and support", description: "Ongoing updates, security, and post-launch support." },
-        { title: "Integrations", description: "We connect your website to CRM, automations, WhatsApp, and marketing tools." },
-        { title: "Logo and branding", description: "Visual identity, logo creation, and color palette for stronger brand presence." },
+        { title: "Business website", description: "A clean, professional website for your business." },
+        { title: "Landing page", description: "A page made to help you get more messages and clients." },
+        { title: "Online store", description: "A simple and safe shop to sell your products online." },
+        { title: "Hosting and domain", description: "We help put your website online." },
+        { title: "Fast website", description: "Your website loads fast and works well." },
+        { title: "Support and updates", description: "We take care of your website after it goes live." },
+        { title: "Integrations", description: "We connect your site to WhatsApp and other tools." },
+        { title: "Logo and branding", description: "We create your logo and brand look." },
       ],
     },
     projects: {
@@ -540,6 +557,18 @@ const translations: Record<Locale, TranslationSchema> = {
 
       ],
     },
+    reviews: {
+      badge: "reviews",
+      title: "Clients say great things about our work",
+      description: "See what business owners say after launching their website with us.",
+      summaryLabel: "Average client rating",
+      countLabel: "Based on 32 reviews",
+      items: [
+        { name: "Emma Parker", business: "Fashion store", text: "My website looks great and I started getting more WhatsApp messages from new clients." },
+        { name: "Daniel Brooks", business: "Barbershop", text: "The service was fast and my business looks much more professional online now." },
+        { name: "Sofia Bennett", business: "Beauty clinic", text: "People find my business more easily and trust my brand much more now." },
+      ],
+    },
     footer: {
       ctaTag: "ready to grow?",
       ctaTitle: "Let’s build your next digital experience",
@@ -586,16 +615,16 @@ const translations: Record<Locale, TranslationSchema> = {
     },
     hero: {
       badge: "agencia web premium",
-      title: "Construimos sitios de alta conversión que",
-      titleHighlight: "hacen crecer tu negocio.",
+      title: "Creamos sitios web",
+      titleHighlight: "que te ayudan a conseguir clientes",
       description:
-        "Nuestro equipo crea sitios increíbles, rápidos y fáciles de usar que atraen tráfico y aumentan conversiones.",
-      primaryCta: "Crear mi sitio ahora",
-      secondaryCta: "Ver nuestros proyectos",
+        "Hacemos sitios simples y rápidos para que la gente encuentre tu negocio y te escriba.",
+      primaryCta: "Quiero mi sitio",
+      secondaryCta: "Ver ejemplos",
       cards: [
-        { label: "hecho para convertir", value: "Tu sitio vende mientras duermes" },
-        { label: "mobile first", value: "Optimizado para todos los dispositivos" },
-        { label: "diseño envolvente", value: "Visuales cautivadores que retienen atención" },
+        { label: "Más clientes en internet", value: "Tu sitio trabaja por ti" },
+        { label: "Funciona en celular y computadora", value: "Se ve bien en cualquier pantalla" },
+        { label: "Se ve limpio y profesional", value: "Da confianza a tus clientes" },
       ],
     },
     about: {
@@ -606,27 +635,27 @@ const translations: Record<Locale, TranslationSchema> = {
         reviews: "reseñas",
       },
       badge: "Sobre nosotros",
-      title: "Creamos sitios que convierten ideas en crecimiento.",
+      title: "Creamos sitios simples que ayudan a tu negocio a crecer.",
       paragraphs: [
-        "Sitios Profesionales es una agencia de desarrollo web enfocada en sitios de alto rendimiento que generan resultados reales.",
-        "Combinamos diseño moderno, tecnología actual y estrategias SEO para que tu sitio luzca increíble y sea encontrado en Google.",
-        "Desde sitios corporativos y landing pages hasta e-commerce y apps web personalizadas, entregamos soluciones a medida.",
+        "Hacemos sitios rápidos, bonitos y fáciles de usar para tu negocio.",
+        "Tu sitio ayuda a más personas a encontrarte en Google y escribirte.",
+        "Creamos un sitio a tu medida para mostrar tu trabajo y traer más clientes.",
       ],
-      pills: ["UX primero", "Enfoque en conversión", "Rápido como un rayo"],
+      pills: ["Fácil de usar", "Más clientes", "Sitio rápido"],
     },
     services: {
       badge: "servicios",
-      title: "Todo lo que ofrece un desarrollador web",
-      description: "Soluciones completas para crear, escalar y convertir con una presencia digital de alto nivel.",
+      title: "Lo que hacemos por tu negocio",
+      description: "Creamos soluciones simples para ayudar a tu empresa a crecer en internet.",
       items: [
-        { title: "Sitios corporativos", description: "Presencia profesional, alto rendimiento y experiencia premium para tu marca." },
-        { title: "Landing pages", description: "Páginas enfocadas en conversión con CTA estratégico y copy persuasivo." },
-        { title: "E-commerce", description: "Tiendas rápidas y seguras integradas con pagos y logística." },
-        { title: "Hosting y dominio", description: "Hosting estable y seguro con gestión completa de dominio." },
-        { title: "Sitio optimizado", description: "Páginas rápidas y optimizadas para rendimiento y experiencia de usuario." },
-        { title: "Mantenimiento y soporte", description: "Actualizaciones continuas, seguridad y seguimiento post-lanzamiento." },
-        { title: "Integraciones", description: "Conectamos tu sitio con CRM, automatizaciones, WhatsApp y marketing." },
-        { title: "Logo y branding", description: "Identidad visual, creación de logotipo y paleta de colores para fortalecer tu marca." },
+        { title: "Sitio para negocio", description: "Un sitio limpio y profesional para mostrar tu empresa." },
+        { title: "Landing page", description: "Una página hecha para recibir más mensajes y clientes." },
+        { title: "Tienda online", description: "Una tienda simple y segura para vender tus productos." },
+        { title: "Hosting y dominio", description: "Te ayudamos a poner tu sitio en internet." },
+        { title: "Sitio rápido", description: "Tu sitio carga rápido y funciona bien." },
+        { title: "Soporte y mantenimiento", description: "Cuidamos tu sitio después de publicarlo." },
+        { title: "Integraciones", description: "Conectamos tu sitio con WhatsApp y otras herramientas." },
+        { title: "Logo y marca", description: "Creamos tu logo y la imagen de tu marca." },
       ],
     },
     projects: {
@@ -749,6 +778,18 @@ const translations: Record<Locale, TranslationSchema> = {
         { question: "¿Cuáles son los plazos de desarrollo?", answer: "El plazo para el desarrollo de un sitio web puede variar según la complejidad del proyecto, número de páginas, funcionalidades e integraciones necesarias. En promedio, el proceso toma de 2 a 4 semanas, pero proyectos más simples pueden completarse en menos tiempo, mientras que proyectos más complejos pueden tardar un poco más. Durante la fase de briefing, discutiremos el alcance del proyecto y proporcionaremos una estimación de plazo más precisa según sus necesidades específicas." },
       ],
     },
+    reviews: {
+      badge: "reseñas",
+      title: "Nuestros clientes hablan muy bien de nuestro trabajo",
+      description: "Mira lo que dicen después de lanzar su sitio con nosotros.",
+      summaryLabel: "Nota media de clientes",
+      countLabel: "Basado en 32 reseñas",
+      items: [
+        { name: "Emma Parker", business: "Tienda de ropa", text: "My website looks great and I started getting more WhatsApp messages from new clients." },
+        { name: "Daniel Brooks", business: "Barbería", text: "The service was fast and my business looks much more professional online now." },
+        { name: "Sofia Bennett", business: "Clínica estética", text: "People find my business more easily and trust my brand much more now." },
+      ],
+    },
     footer: {
       ctaTag: "¿listo para acelerar?",
       ctaTitle: "Creemos tu próxima experiencia digital",
@@ -796,32 +837,34 @@ const getDeviceLanguage = (): Locale => {
 }
 
 export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
-  const [locale, setLocaleState] = useState<Locale>(() => {
-    if (typeof window === "undefined") return "pt"
-    
-    const storedLocale = window.localStorage.getItem("site-locale") as Locale | null
-    if (storedLocale && translations[storedLocale]) {
-      return storedLocale
-    }
-    
-    return getDeviceLanguage()
-  })
+  const [locale, setLocaleState] = useState<Locale>("pt")
+  const [isHydrated, setIsHydrated] = useState(false)
 
   useEffect(() => {
-    const storedLocale = window.localStorage.getItem("site-locale") as Locale | null
-    if (storedLocale && translations[storedLocale]) {
-      setLocaleState(storedLocale)
-    } else {
-      const deviceLang = getDeviceLanguage()
-      setLocaleState(deviceLang)
+    let nextLocale: Locale = "pt"
+
+    try {
+      const storedLocale = window.localStorage.getItem("site-locale") as Locale | null
+      if (storedLocale && translations[storedLocale]) {
+        nextLocale = storedLocale
+      } else {
+        nextLocale = getDeviceLanguage()
+      }
+    } catch {
+      nextLocale = "pt"
     }
+
+    setLocaleState(nextLocale)
+    setIsHydrated(true)
   }, [])
 
   useEffect(() => {
+    if (!isHydrated) return
+
     const htmlLang = locale === "pt" ? "pt-BR" : locale
     document.documentElement.lang = htmlLang
     window.localStorage.setItem("site-locale", locale)
-  }, [locale])
+  }, [locale, isHydrated])
 
   const setLocale = (nextLocale: Locale) => {
     setLocaleState(nextLocale)

@@ -2,7 +2,6 @@
 import Link from "next/link";
 import React from "react";
 import { useLanguage } from "@/lib/i18n";
-import WebBackground from "./WebBackground";
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -12,16 +11,13 @@ const Hero = () => {
       id="home"
       className="relative isolate scroll-mt-28 overflow-hidden bg-slate-950"
     >
-      {/* ── Animated network / web background ── */}
       <div className="absolute inset-0 -z-10">
-        {/* deep base */}
-        <div className="absolute inset-0 bg-linear-to-b from-slate-950 via-slate-900 to-black" />
-        {/* canvas web */}
-        <WebBackground />
-        {/* subtle top radial glow so the content reads clearly */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_50%_0%,rgba(14,165,233,0.10)_0%,transparent_75%)]" />
-        {/* bottom fade */}
-        <div className="absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-slate-950 to-transparent" />
+        <div
+          className="absolute inset-0 bg-cover bg-center blur-md scale-105"
+          style={{ backgroundImage: "url('/images.web/diffrent-screen.jpg')" }}
+        />
+        <div className="absolute inset-0 bg-slate-950/50" />
+        <div className="absolute inset-0 bg-linear-to-b from-slate-950/20 via-slate-950/45 to-black/80" />
       </div>
 
       <div className="relative mx-auto flex min-h-[70vh] max-w-6xl flex-col items-center justify-center gap-6 px-5 py-20 text-center sm:px-8 sm:py-28 md:items-start md:text-left lg:min-h-[78vh] lg:px-10">

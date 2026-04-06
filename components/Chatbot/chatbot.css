@@ -1,0 +1,92 @@
+.chatbot-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.chatbot-box {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  overflow: hidden;
+  z-index: 9999;
+  animation: slideUp 0.3s ease;
+}
+
+.chatbot-header {
+  background: #25D366;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chatbot-body {
+  padding: 15px;
+}
+
+.option {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+.chatbot-btn {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  background: #25D366;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* 📱 Mobile Optimization */
+@media (max-width: 768px) {
+  .chatbot-box {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .chatbot-bubble {
+    bottom: 15px;
+    right: 15px;
+  }
+}
