@@ -18,6 +18,7 @@ type TranslationSchema = {
       about: string
       projects: string
       services: string
+      pricing: string
       contact: string
       blog: string
       portfolio: string
@@ -52,6 +53,14 @@ type TranslationSchema = {
     title: string
     description: string
     items: Array<{ title: string; description: string }>
+  }
+  pricing: {
+    badge: string
+    title: string
+    description: string
+    note: string
+    cta: string
+    items: Array<{ title: string; description: string; price: string }>
   }
   projects: {
     badge: string
@@ -160,6 +169,7 @@ const translations: Record<Locale, TranslationSchema> = {
         about: "Sobre",
         projects: "Projetos",
         services: "Serviços",
+        pricing: "Preços",
         contact: "Contato",
         blog: "Blog",
         portfolio: "Portfólio",
@@ -211,6 +221,19 @@ const translations: Record<Locale, TranslationSchema> = {
         { title: "Suporte e manutenção", description: "Cuidamos do seu site depois que ele estiver pronto." },
         { title: "Integrações", description: "Ligamos seu site ao WhatsApp e outras ferramentas." },
         { title: "Logo e marca", description: "Criamos sua logo e a imagem da sua marca." },
+      ],
+    },
+    pricing: {
+      badge: "preços",
+      title: "Valores iniciais dos serviços",
+      description: "Veja uma faixa de investimento em real brasileiro para os serviços mais pedidos.",
+      note: "Valores em BRL (R$) e podem variar de projeto para projeto, conforme as necessidades de cada cliente. Novos clientes ainda podem receber 20% de desconto no primeiro projeto.",
+      cta: "Pedir orçamento",
+      items: [
+        { title: "Landing page", description: "Página focada em conversão, WhatsApp e captação de leads.", price: "R$ 900" },
+        { title: "Site institucional", description: "Site profissional para apresentar sua empresa e serviços.", price: "R$ 1.500" },
+        { title: "Loja virtual", description: "E-commerce com catálogo, carrinho e finalização de pedido.", price: "R$ 3.500" },
+        { title: "Suporte mensal", description: "Atualizações, pequenos ajustes e acompanhamento contínuo.", price: "R$ 300/mês" },
       ],
     },
     projects: {
@@ -383,6 +406,7 @@ const translations: Record<Locale, TranslationSchema> = {
         about: "About",
         projects: "Projects",
         services: "Services",
+        pricing: "Pricing",
         contact: "Contact",
         blog: "Blog",
         portfolio: "Portfolio",
@@ -434,6 +458,19 @@ const translations: Record<Locale, TranslationSchema> = {
         { title: "Support and updates", description: "We take care of your website after it goes live." },
         { title: "Integrations", description: "We connect your site to WhatsApp and other tools." },
         { title: "Logo and branding", description: "We create your logo and brand look." },
+      ],
+    },
+    pricing: {
+      badge: "pricing",
+      title: "Starting prices for services",
+      description: "Here is a BRL price guide for the services clients request most often.",
+      note: "All prices are in Brazilian Real (R$) and may vary from project to project depending on each client's needs. New clients can still qualify for 20% off the first project.",
+      cta: "Request a quote",
+      items: [
+        { title: "Landing page", description: "A conversion-focused page with WhatsApp and lead capture.", price: "R$ 900" },
+        { title: "Business website", description: "A professional website to present your company and services.", price: "R$ 1,500" },
+        { title: "Online store", description: "E-commerce with catalog, cart, and checkout flow.", price: "R$ 3,500" },
+        { title: "Monthly support", description: "Updates, minor improvements, and ongoing support.", price: "R$ 300/month" },
       ],
     },
     projects: {
@@ -605,6 +642,7 @@ const translations: Record<Locale, TranslationSchema> = {
         about: "Sobre",
         projects: "Proyectos",
         services: "Servicios",
+        pricing: "Precios",
         contact: "Contacto",
         blog: "Blog",
         portfolio: "Portafolio",
@@ -656,6 +694,19 @@ const translations: Record<Locale, TranslationSchema> = {
         { title: "Soporte y mantenimiento", description: "Cuidamos tu sitio después de publicarlo." },
         { title: "Integraciones", description: "Conectamos tu sitio con WhatsApp y otras herramientas." },
         { title: "Logo y marca", description: "Creamos tu logo y la imagen de tu marca." },
+      ],
+    },
+    pricing: {
+      badge: "precios",
+      title: "Precios iniciales de los servicios",
+      description: "Consulta una guía de inversión en real brasileño para los servicios más solicitados.",
+      note: "Todos los valores están en real brasileño (R$) y pueden variar de un proyecto a otro según las necesidades de cada cliente. Los nuevos clientes aún pueden recibir 20% de descuento en el primer proyecto.",
+      cta: "Solicitar presupuesto",
+      items: [
+        { title: "Landing page", description: "Página enfocada en conversión, WhatsApp y captación de leads.", price: "R$ 900" },
+        { title: "Sitio institucional", description: "Sitio profesional para presentar tu empresa y servicios.", price: "R$ 1.500" },
+        { title: "Tienda online", description: "E-commerce con catálogo, carrito y finalización de pedido.", price: "R$ 3.500" },
+        { title: "Soporte mensual", description: "Actualizaciones, ajustes menores y acompañamiento continuo.", price: "R$ 300/mes" },
       ],
     },
     projects: {

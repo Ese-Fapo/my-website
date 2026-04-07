@@ -18,9 +18,10 @@ const ResponsiveNav = () => {
       { id: 2, url: "#about", name: t.nav.links.about },
       { id: 3, url: "#projects", name: t.nav.links.projects },
       { id: 4, url: "#services", name: t.nav.links.services },
-      { id: 5, url: "#contact", name: t.nav.links.contact },
-      { id: 6, url: "https://tech-blog-i77h.vercel.app/", name: t.nav.links.blog },
-      { id: 7, url: "https://ese-faps-xbvb.vercel.app/", name: t.nav.links.portfolio },
+      { id: 5, url: "#pricing", name: t.nav.links.pricing },
+      { id: 6, url: "#contact", name: t.nav.links.contact },
+      { id: 7, url: "https://tech-blog-i77h.vercel.app/", name: t.nav.links.blog },
+      { id: 8, url: "https://ese-faps-xbvb.vercel.app/", name: t.nav.links.portfolio },
     ],
     [t]
   )

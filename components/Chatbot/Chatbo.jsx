@@ -1,53 +1,57 @@
 "use client";
 
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useLanguage } from "@/lib/i18n";
 
 const chatbotCopy = {
   pt: {
-    badge: "Resposta rápida",
-    title: "Precisa de ajuda com seu site?",
-    subtitle: "Fale com a gente em poucos passos.",
-    welcome: "Olá 👋 Eu posso ajudar você a escolher o melhor tipo de site para o seu negócio.",
+    badge: "20% OFF no primeiro projeto",
+    title: "Quer um site com desconto especial?",
+    subtitle: "Clique e fale com a gente quando quiser.",
+    welcome:
+      "Olá 👋 Posso ajudar você a criar o site ideal para o seu negócio.",
+    offer: "🎉 Novos clientes ganham 20% de desconto no primeiro projeto.",
     prompt: "O que você precisa agora?",
     options: ["Quero um site novo", "Melhorar meu site", "Criar uma loja online"],
-    reply: "Perfeito! Podemos ajudar com isso.",
+    reply: "Perfeito! E seu primeiro projeto pode sair com 20% OFF.",
     whatsappCta: "Falar no WhatsApp",
     examplesCta: "Ver projetos",
     restart: "Escolher outra opção",
     openLabel: "Abrir chat",
     closeLabel: "Fechar chat",
-    bubbleLabel: "Ajuda",
+    bubbleLabel: "20% OFF",
   },
   en: {
-    badge: "Fast reply",
-    title: "Need help with your website?",
-    subtitle: "Talk to us in a few simple steps.",
-    welcome: "Hi 👋 I can help you choose the best website for your business.",
+    badge: "20% OFF for new clients",
+    title: "Need a website with a special discount?",
+    subtitle: "Click and chat with us whenever you're ready.",
+    welcome: "Hi 👋 I can help you choose the right website for your business.",
+    offer: "🎉 New clients get 20% off their first project.",
     prompt: "What do you need right now?",
     options: ["I need a new website", "Improve my current site", "Build an online store"],
-    reply: "Great! We can help with that.",
+    reply: "Great! Your first project can qualify for 20% OFF.",
     whatsappCta: "Chat on WhatsApp",
     examplesCta: "See projects",
     restart: "Choose another option",
     openLabel: "Open chat",
     closeLabel: "Close chat",
-    bubbleLabel: "Help",
+    bubbleLabel: "20% OFF",
   },
   es: {
-    badge: "Respuesta rápida",
-    title: "¿Necesitas ayuda con tu sitio?",
-    subtitle: "Habla con nosotros en pocos pasos.",
+    badge: "20% OFF para nuevos clientes",
+    title: "¿Quieres un sitio con descuento especial?",
+    subtitle: "Haz clic y habla con nosotros cuando quieras.",
     welcome: "Hola 👋 Puedo ayudarte a elegir el mejor sitio para tu negocio.",
+    offer: "🎉 Los nuevos clientes reciben 20% de descuento en su primer proyecto.",
     prompt: "¿Qué necesitas ahora?",
     options: ["Quiero un sitio nuevo", "Mejorar mi sitio", "Crear una tienda online"],
-    reply: "¡Perfecto! Podemos ayudarte con eso.",
+    reply: "¡Perfecto! Tu primer proyecto puede tener 20% OFF.",
     whatsappCta: "Hablar por WhatsApp",
     examplesCta: "Ver proyectos",
     restart: "Elegir otra opción",
     openLabel: "Abrir chat",
     closeLabel: "Cerrar chat",
-    bubbleLabel: "Ayuda",
+    bubbleLabel: "20% OFF",
   },
 };
 
@@ -57,29 +61,13 @@ export default function Chatbot() {
   const [open, setOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState("");
 
-  useEffect(() => {
-    const timer = window.setTimeout(() => {
-      try {
-        const shown = window.sessionStorage.getItem("chatbotShown");
-        if (!shown) {
-          setOpen(true);
-          window.sessionStorage.setItem("chatbotShown", "true");
-        }
-      } catch {
-        setOpen(false);
-      }
-    }, 3500);
-
-    return () => window.clearTimeout(timer);
-  }, []);
-
   const whatsappLink = useMemo(() => {
-    const message = `${copy.welcome}\n\n${copy.prompt}\n${selectedOption || "-"}`;
+    const message = `${copy.welcome}\n${copy.offer}\n\n${copy.prompt}\n${selectedOption || "-"}`;
     return `https://wa.me/554891817031?text=${encodeURIComponent(message)}`;
   }, [copy, selectedOption]);
 
   return (
-    <div className="fixed bottom-6 right-6 z-[60] flex flex-col items-end gap-3">
+    <div className="fixed bottom-6 right-6 z-60 flex flex-col items-end gap-3">
       {open ? (
         <div className="w-[min(92vw,24rem)] overflow-hidden rounded-3xl border border-white/10 bg-slate-950/95 text-white shadow-[0_20px_80px_rgba(15,23,42,0.45)] backdrop-blur-xl">
           <div className="bg-linear-to-r from-emerald-500 via-cyan-500 to-indigo-500 p-4">
@@ -105,6 +93,10 @@ export default function Chatbot() {
           <div className="space-y-3 p-4">
             <div className="rounded-2xl bg-white/5 p-3 text-sm leading-6 text-slate-100">
               {copy.welcome}
+            </div>
+
+            <div className="rounded-2xl border border-emerald-400/30 bg-emerald-500/10 p-3 text-sm font-medium text-emerald-50">
+              {copy.offer}
             </div>
 
             <div>
@@ -175,8 +167,8 @@ export default function Chatbot() {
         aria-label={open ? copy.closeLabel : copy.openLabel}
         className="group relative inline-flex items-center gap-2 rounded-full bg-linear-to-r from-emerald-400 via-cyan-400 to-indigo-500 px-4 py-3 font-bold text-slate-950 shadow-[0_12px_30px_rgba(34,211,238,0.35)] transition hover:-translate-y-0.5"
       >
-        <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-white text-[10px] font-bold text-emerald-600">
-          1
+        <span className="absolute -right-2 -top-2 flex h-7 min-w-7 items-center justify-center rounded-full bg-white px-1 text-[9px] font-bold text-emerald-600">
+          20%
         </span>
         <span className="text-lg">💬</span>
         <span className="hidden text-sm sm:inline">{copy.bubbleLabel}</span>

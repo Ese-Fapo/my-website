@@ -6,6 +6,7 @@ import About from "./About/About"
 import React from "react"
 import ProjectsSection from "../ProjectSection/ProjectSection"
 import Services from "../Service/Services"
+import Pricing from "../Pricing/Pricing"
 import Reviews from "@/components/Reviews/Reviews"
 import { Faqs } from "../Faqs/Faqs"
 import { Footer } from "./Footer/Footer"
@@ -22,6 +23,7 @@ const Home = () => {
         <Hero />
         <About />
         <Services />
+        <Pricing />
         <ProjectsSection />
         <Reviews />
         <ContactForm />
