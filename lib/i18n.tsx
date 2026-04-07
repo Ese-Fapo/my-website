@@ -479,7 +479,7 @@ const translations: Record<Locale, TranslationSchema> = {
       descriptionBeforePortfolio: "Check out some of our work. See our",
       portfolioLink: "full portfolio",
       descriptionAfterPortfolio: ". Ready to launch your project?",
-      contactLink: "Let’s build something amazing together!",
+      contactLink: "Let's build something amazing together!",
       loadMore: "Load more projects",
       loading: "Loading...",
       noMore: "Check out our portfolio for more projects.",
