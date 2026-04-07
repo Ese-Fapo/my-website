@@ -1,12 +1,13 @@
-name: Build & Deploy to Hostinger
+name: Build Site for Manual Upload
 
 on:
   push:
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,30 +23,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build (static export)
+      - name: Build static site
         run: npm run build
 
-      - name: Validate FTP settings
-        run: |
-          if [ -z "${{ secrets.FTP_SERVER || vars.FTP_SERVER }}" ]; then
-            echo "Missing FTP_SERVER. Add it in GitHub > Settings > Secrets and variables > Actions."
-            exit 1
-          fi
-          if [ -z "${{ secrets.FTP_USERNAME || vars.FTP_USERNAME }}" ]; then
-            echo "Missing FTP_USERNAME. Add it in GitHub > Settings > Secrets and variables > Actions."
-            exit 1
-          fi
-          if [ -z "${{ secrets.FTP_PASSWORD || vars.FTP_PASSWORD }}" ]; then
-            echo "Missing FTP_PASSWORD. Add it in GitHub > Settings > Secrets and variables > Actions."
-            exit 1
-          fi
-
-      - name: Deploy to Hostinger via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
         with:
-          server: ${{ secrets.FTP_SERVER || vars.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME || vars.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD || vars.FTP_PASSWORD }}
-          local-dir: ./out/
-          server-dir: /public_html/
-          dangerous-clean-slate: false
+          name: site-out
+          path: out/
