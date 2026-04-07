@@ -321,7 +321,7 @@ const translations: Record<Locale, TranslationSchema> = {
       budgetOptions: ["Até R$ 1.000", "R$ 1.000 a R$ 2.000", "R$ 2.000 a R$ 3.000", "R$ 3.000 a R$ 4.000", "R$ 4.000 a R$ 5.000", "Acima de R$ 5.000"],
       yes: "Sim",
       no: "Não",
-      whatsappIntro: "Olá! Gostaria de falar sobre meu projeto.",
+      whatsappIntro: "Olá! Vim pelo site e gostaria de um orçamento para meu projeto.",
       whatsappFields: {
         name: "Nome",
         email: "E-mail",
@@ -558,7 +558,7 @@ const translations: Record<Locale, TranslationSchema> = {
       budgetOptions: ["Up to R$ 1,000", "R$ 1,000 to R$ 2,000", "R$ 2,000 to R$ 3,000", "R$ 3,000 to R$ 4,000", "R$ 4,000 to R$ 5,000", "Above R$ 5,000"],
       yes: "Yes",
       no: "No",
-      whatsappIntro: "Hi! I would like to talk about my project.",
+      whatsappIntro: "Hi! I came from the website and would like a quote for my project.",
       whatsappFields: {
         name: "Name",
         email: "Email",
@@ -794,7 +794,7 @@ const translations: Record<Locale, TranslationSchema> = {
       budgetOptions: ["Hasta R$ 1.000", "R$ 1.000 a R$ 2.000", "R$ 2.000 a R$ 3.000", "R$ 3.000 a R$ 4.000", "R$ 4.000 a R$ 5.000", "Más de R$ 5.000"],
       yes: "Sí",
       no: "No",
-      whatsappIntro: "¡Hola! Me gustaría hablar sobre mi proyecto.",
+      whatsappIntro: "¡Hola! Vengo del sitio web y me gustaría solicitar un presupuesto para mi proyecto.",
       whatsappFields: {
         name: "Nombre",
         email: "Correo",

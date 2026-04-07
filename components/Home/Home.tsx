@@ -16,6 +16,7 @@ import { useLanguage } from "@/lib/i18n"
 
 const Home = () => {
   const { t } = useLanguage()
+  const whatsappQuickMessage = encodeURIComponent("Olá! Vim pelo site e gostaria de um orçamento para meu projeto.")
 
   return (
     <div className="min-h-screen overflow-hidden bg-black text-slate-900 dark:bg-black dark:text-white">
@@ -34,7 +35,7 @@ const Home = () => {
       <Chatbot />
 
       <a
-        href="https://wa.me/554891817031"
+        href={`https://wa.me/554898127673?text=${whatsappQuickMessage}`}
         target="_blank"
         rel="noreferrer"
         aria-label={t.home.whatsappAria}

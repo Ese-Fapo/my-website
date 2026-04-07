@@ -35,7 +35,7 @@ export default function ContactForm() {
       messageValue || "-",
     ].join("\n");
 
-    const whatsappNumber = "554891817031";
+    const whatsappNumber = "554898127673";
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
       whatsappMessage
     )}`;
