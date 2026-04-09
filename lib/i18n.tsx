@@ -34,6 +34,10 @@ type TranslationSchema = {
     description: string
     primaryCta: string
     secondaryCta: string
+    livePreviewTag: string
+    livePreviewTitle: string
+    livePreviewDescription: string
+    livePreviewStatus: string
     cards: Array<{ label: string; value: string }>
   }
   about: {
@@ -194,6 +198,10 @@ const translations: Record<Locale, TranslationSchema> = {
         "Fazemos sites simples e rápidos para as pessoas encontrarem seu negócio e falarem com você.",
       primaryCta: "Quero meu site",
       secondaryCta: "Ver exemplos",
+      livePreviewTag: "veja seu site",
+      livePreviewTitle: "Veja seu site ao vivo",
+      livePreviewDescription: "Nós enviamos um link para você acompanhar seu site enquanto ele está sendo feito. Você pode ver a qualquer hora, de qualquer lugar.",
+      livePreviewStatus: "online",
       cards: [
         { label: "Mais clientes online", value: "Seu site trabalha por você" },
         { label: "Funciona no celular e computador", value: "Fácil de usar em qualquer tela" },
@@ -486,6 +494,10 @@ const translations: Record<Locale, TranslationSchema> = {
       "“We design simple, fast websites that help people find your business and contact you.”",
       primaryCta: "Get my website",
       secondaryCta: "See examples",
+      livePreviewTag: "see your website",
+      livePreviewTitle: "See your website live",
+      livePreviewDescription: "We give you a link to watch your website as we build it. You can check it anytime, from anywhere.",
+      livePreviewStatus: "online",
       cards: [
         { label: "Get more customers online", value: "Your website sells while you sleep" },
         { label: "Works on phone and computer", value: "Optimized for every device" },
@@ -777,6 +789,10 @@ const translations: Record<Locale, TranslationSchema> = {
         "Hacemos sitios simples y rápidos para que la gente encuentre tu negocio y te escriba.",
       primaryCta: "Quiero mi sitio",
       secondaryCta: "Ver ejemplos",
+      livePreviewTag: "mira tu sitio",
+      livePreviewTitle: "Mira tu sitio en vivo",
+      livePreviewDescription: "Te damos un enlace para ver tu sitio mientras lo estamos creando. Puedes revisarlo en cualquier momento y desde cualquier lugar.",
+      livePreviewStatus: "online",
       cards: [
         { label: "Más clientes en internet", value: "Tu sitio trabaja por ti" },
         { label: "Funciona en celular y computadora", value: "Se ve bien en cualquier pantalla" },

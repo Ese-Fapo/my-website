@@ -9,11 +9,16 @@ interface Particle {
   r: number;
 }
 
-const NODE_COUNT = 90;
-const MAX_DIST = 160;
-const LINE_ALPHA = 0.28;
-const DOT_ALPHA = 0.75;
-const SPEED = 0.45;
+const MAX_DIST = 140;
+const LINE_ALPHA = 0.22;
+const DOT_ALPHA = 0.7;
+const SPEED = 0.35;
+
+const getNodeCount = (width: number) => {
+  if (width < 640) return 22;
+  if (width < 1024) return 36;
+  return 52;
+};
 
 export default function WebBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -24,37 +29,45 @@ export default function WebBackground() {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    let rafId: number;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let rafId = 0;
     let particles: Particle[] = [];
 
     const init = () => {
       const { width, height } = canvas.getBoundingClientRect();
-      canvas.width = width;
-      canvas.height = height;
+      const ratio = Math.min(window.devicePixelRatio || 1, 1.5);
 
-      particles = Array.from({ length: NODE_COUNT }, () => ({
+      canvas.width = Math.max(1, Math.floor(width * ratio));
+      canvas.height = Math.max(1, Math.floor(height * ratio));
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+
+      particles = Array.from({ length: getNodeCount(width) }, () => ({
         x: Math.random() * width,
         y: Math.random() * height,
         vx: (Math.random() - 0.5) * SPEED * 2,
         vy: (Math.random() - 0.5) * SPEED * 2,
-        r: Math.random() * 1.4 + 0.6,
+        r: Math.random() * 1.2 + 0.6,
       }));
     };
 
     const draw = () => {
-      const w = canvas.width;
-      const h = canvas.height;
+      const w = canvas.clientWidth;
+      const h = canvas.clientHeight;
       ctx.clearRect(0, 0, w, h);
 
-      // move particles
       for (const p of particles) {
         p.x += p.vx;
         p.y += p.vy;
-        if (p.x <= 0 || p.x >= w) { p.vx *= -1; p.x = Math.max(0, Math.min(w, p.x)); }
-        if (p.y <= 0 || p.y >= h) { p.vy *= -1; p.y = Math.max(0, Math.min(h, p.y)); }
+        if (p.x <= 0 || p.x >= w) {
+          p.vx *= -1;
+          p.x = Math.max(0, Math.min(w, p.x));
+        }
+        if (p.y <= 0 || p.y >= h) {
+          p.vy *= -1;
+          p.y = Math.max(0, Math.min(h, p.y));
+        }
       }
 
-      // draw connecting lines
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
           const dx = particles[i].x - particles[j].x;
@@ -72,39 +85,41 @@ export default function WebBackground() {
         }
       }
 
-      // draw nodes
       for (const p of particles) {
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
         ctx.fillStyle = `rgba(125,211,252,${DOT_ALPHA})`;
         ctx.fill();
-
-        // subtle glow ring on larger nodes
-        if (p.r > 1.5) {
-          ctx.beginPath();
-          ctx.arc(p.x, p.y, p.r + 2.5, 0, Math.PI * 2);
-          ctx.strokeStyle = "rgba(56,189,248,0.18)";
-          ctx.lineWidth = 1;
-          ctx.stroke();
-        }
       }
 
-      rafId = requestAnimationFrame(draw);
+      if (!reducedMotion && !document.hidden) {
+        rafId = requestAnimationFrame(draw);
+      }
     };
-
-    init();
-    draw();
 
     const onResize = () => {
       cancelAnimationFrame(rafId);
       init();
       draw();
     };
+
+    const onVisibilityChange = () => {
+      cancelAnimationFrame(rafId);
+      if (!document.hidden) {
+        draw();
+      }
+    };
+
+    init();
+    draw();
+
     window.addEventListener("resize", onResize);
+    document.addEventListener("visibilitychange", onVisibilityChange);
 
     return () => {
       cancelAnimationFrame(rafId);
       window.removeEventListener("resize", onResize);
+      document.removeEventListener("visibilitychange", onVisibilityChange);
     };
   }, []);
 

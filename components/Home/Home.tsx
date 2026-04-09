@@ -1,17 +1,19 @@
 "use client"
 
-import ContactForm from "@/components/ContactForm/Contact"
-import Hero from "./Hero/Hero"
-import About from "./About/About"
+import dynamic from "next/dynamic"
 import React from "react"
-import ProjectsSection from "../ProjectSection/ProjectSection"
-import Services from "../Service/Services"
-import Pricing from "../Pricing/Pricing"
-import Reviews from "@/components/Reviews/Reviews"
-import { Faqs } from "../Faqs/Faqs"
-import { Footer } from "./Footer/Footer"
-import Chatbot from "@/components/Chatbot/Chatbo"
+import Hero from "./Hero/Hero"
 import { useLanguage } from "@/lib/i18n"
+
+const About = dynamic(() => import("./About/About"))
+const Services = dynamic(() => import("../Service/Services"))
+const ProjectsSection = dynamic(() => import("../ProjectSection/ProjectSection"))
+const Pricing = dynamic(() => import("../Pricing/Pricing"))
+const Reviews = dynamic(() => import("@/components/Reviews/Reviews"))
+const ContactForm = dynamic(() => import("@/components/ContactForm/Contact"))
+const Faqs = dynamic(() => import("../Faqs/Faqs").then((mod) => mod.Faqs))
+const Footer = dynamic(() => import("./Footer/Footer").then((mod) => mod.Footer))
+const Chatbot = dynamic(() => import("@/components/Chatbot/Chatbo"), { ssr: false })
 
 
 const Home = () => {
@@ -22,14 +24,31 @@ const Home = () => {
     <div className="min-h-screen overflow-hidden bg-black text-slate-900 dark:bg-black dark:text-white">
       <main id="main-content">
         <Hero />
-        <About />
-        <Services />
-        <ProjectsSection />
-        <Pricing />
-        <Reviews />
-        <ContactForm />
-        <Faqs />
-        <Footer />
+
+        <div className="[content-visibility:auto] [contain-intrinsic-size:1px_900px]">
+          <About />
+        </div>
+        <div className="[content-visibility:auto] [contain-intrinsic-size:1px_900px]">
+          <Services />
+        </div>
+        <div className="[content-visibility:auto] [contain-intrinsic-size:1px_1000px]">
+          <ProjectsSection />
+        </div>
+        <div className="[content-visibility:auto] [contain-intrinsic-size:1px_900px]">
+          <Pricing />
+        </div>
+        <div className="[content-visibility:auto] [contain-intrinsic-size:1px_800px]">
+          <Reviews />
+        </div>
+        <div className="[content-visibility:auto] [contain-intrinsic-size:1px_1000px]">
+          <ContactForm />
+        </div>
+        <div className="[content-visibility:auto] [contain-intrinsic-size:1px_800px]">
+          <Faqs />
+        </div>
+        <div className="[content-visibility:auto] [contain-intrinsic-size:1px_500px]">
+          <Footer />
+        </div>
       </main>
 
       <Chatbot />
