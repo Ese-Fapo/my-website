@@ -540,7 +540,7 @@ const translations: Record<Locale, TranslationSchema> = {
       paragraphs: [
         "We build fast, clean, easy-to-use websites for your business.",
         "Your website helps more people find you on Google and contact you.",
-        "We create a site that shows your work clearly and helps bring in more clients.",
+        "We create a site that shows your work clearly and helps bring in more Clients.",
       ],
       pills: ["Easy to use", "More clients", "Fast website"],
     },
