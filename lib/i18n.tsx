@@ -143,6 +143,16 @@ type TranslationSchema = {
     countLabel: string
     items: Array<{ name: string; business: string; text: string }>
   }
+  localSeo: {
+    badge: string
+    title: string
+    description: string
+    cityLabel: string
+    cities: string[]
+    highlights: Array<{ title: string; description: string }>
+    mapTitle: string
+    mapDescription: string
+  }
   footer: {
     ctaTag: string
     ctaTitle: string
@@ -169,7 +179,7 @@ type TranslationSchema = {
 const translations: Record<Locale, TranslationSchema> = {
   pt: {
     nav: {
-      brandName: "Sites Profissionais",
+      brandName: "Sites ProfissionAI",
       brandSub: "Desenvolvedores",
       openMenu: "Abrir menu",
       closeMenu: "Fechar menu",
@@ -191,7 +201,7 @@ const translations: Record<Locale, TranslationSchema> = {
       whatsappAria: "Falar no WhatsApp",
     },
     hero: {
-      badge: "agência de sites premium",
+      badge: "agência de sites Santa Caterina",
       title: "Criamos sites",
       titleHighlight: "que ajudam você a conseguir clientes",
       description:
@@ -220,7 +230,7 @@ const translations: Record<Locale, TranslationSchema> = {
       paragraphs: [
         "Criamos sites rápidos, bonitos e fáceis de usar para sua empresa.",
         "Seu site ajuda mais pessoas a encontrar seu negócio no Google e falar com você.",
-        "Fazemos um site do seu jeito para mostrar seu trabalho e trazer mais clientes.",
+        "Atendemos empresas em Florianópolis, São José, Joinville e Balneário Camboriú com sites rápidos e SEO local.",
       ],
       pills: ["Fácil de usar", "Mais clientes", "Site rápido"],
     },
@@ -235,7 +245,7 @@ const translations: Record<Locale, TranslationSchema> = {
         { title: "Hospedagem e domínio", description: "Ajudamos você a colocar seu site no ar." },
         { title: "Site rápido", description: "Seu site abre rápido e funciona bem." },
         { title: "Suporte e manutenção", description: "Cuidamos do seu site depois que ele estiver pronto." },
-        { title: "Integrações", description: "Ligamos seu site ao WhatsApp e outras ferramentas." },
+        { title: "Google Business e Maps", description: "Integramos seu site ao Perfil da Empresa no Google e ao Google Maps para atrair clientes locais." },
         { title: "Logo e marca", description: "Criamos sua logo e a imagem da sua marca." },
       ],
     },
@@ -430,9 +440,9 @@ const translations: Record<Locale, TranslationSchema> = {
       ],
     },
     reviews: {
-      badge: "avaliações",
-      title: "Clientes falam bem do nosso trabalho",
-      description: "Veja o que nossos clientes dizem depois de criar um site com a gente.",
+      badge: "resultados reais",
+      title: "Resultados reais de clientes",
+      description: "Veja o que empresas atendidas em Santa Catarina dizem depois de lançar um site com a gente.",
       summaryLabel: "Nota média dos clientes",
       countLabel: "Baseado em 32 avaliações",
       items: [
@@ -440,6 +450,20 @@ const translations: Record<Locale, TranslationSchema> = {
         { name: "Daniel Brooks", business: "Barbearia", text: "The service was fast and my business looks much more professional online now." },
         { name: "Sofia Bennett", business: "Clínica estética", text: "People find my business more easily and trust my brand much more now." },
       ],
+    },
+    localSeo: {
+      badge: "presença local em SC",
+      title: "Atendendo empresas em Florianópolis, São José, Joinville e Balneário Camboriú",
+      description: "Criamos sites com SEO local para Santa Catarina, foco em resultados reais de clientes e integração com Google Business Profile e Google Maps.",
+      cityLabel: "Principais cidades atendidas",
+      cities: ["Florianópolis", "São José", "Joinville", "Balneário Camboriú"],
+      highlights: [
+        { title: "Resultados reais de clientes", description: "Sites pensados para gerar mais mensagens, orçamentos e confiança para empresas locais." },
+        { title: "Google Business + Maps", description: "Integramos seu site ao Perfil da Empresa no Google e ao Google Maps para fortalecer sua presença local." },
+        { title: "SEO local em Santa Catarina", description: "Estratégia para aparecer melhor nas buscas por criação de sites nas cidades da região." },
+      ],
+      mapTitle: "Cobertura em Santa Catarina",
+      mapDescription: "Presença digital para negócios de Florianópolis, São José, Joinville e Balneário Camboriú.",
     },
     footer: {
       ctaTag: "pronto para acelerar?",
@@ -465,7 +489,7 @@ const translations: Record<Locale, TranslationSchema> = {
   },
   en: {
     nav: {
-      brandName: "Professional Websites",
+      brandName: "Sites ProfissionAI",
       brandSub: "Developers",
       openMenu: "Open menu",
       closeMenu: "Close menu",
@@ -531,7 +555,7 @@ const translations: Record<Locale, TranslationSchema> = {
         { title: "Hosting and domain", description: "We help put your website online." },
         { title: "Fast website", description: "Your website loads fast and works well." },
         { title: "Support and updates", description: "We take care of your website after it goes live." },
-        { title: "Integrations", description: "We connect your site to WhatsApp and other tools." },
+        { title: "Google Business and Maps", description: "We connect your website to Google Business Profile and Google Maps for stronger local visibility." },
         { title: "Logo and branding", description: "We create your logo and brand look." },
       ],
     },
@@ -725,9 +749,9 @@ const translations: Record<Locale, TranslationSchema> = {
       ],
     },
     reviews: {
-      badge: "reviews",
-      title: "Clients say great things about our work",
-      description: "See what business owners say after launching their website with us.",
+      badge: "real results",
+      title: "Real client results",
+      description: "See what business owners say after launching a high-converting website with us.",
       summaryLabel: "Average client rating",
       countLabel: "Based on 32 reviews",
       items: [
@@ -735,6 +759,20 @@ const translations: Record<Locale, TranslationSchema> = {
         { name: "Daniel Brooks", business: "Barbershop", text: "The service was fast and my business looks much more professional online now." },
         { name: "Sofia Bennett", business: "Beauty clinic", text: "People find my business more easily and trust my brand much more now." },
       ],
+    },
+    localSeo: {
+      badge: "local reach in SC",
+      title: "Serving businesses in Florianópolis, São José, Joinville, and Balneário Camboriú",
+      description: "We build websites focused on local SEO in Santa Catarina, real client results, and Google Business Profile plus Google Maps integration.",
+      cityLabel: "Main cities served",
+      cities: ["Florianópolis", "São José", "Joinville", "Balneário Camboriú"],
+      highlights: [
+        { title: "Real client results", description: "Websites designed to bring more inquiries, quotes, and trust for local businesses." },
+        { title: "Google Business + Maps", description: "We connect your website with Google Business Profile and Google Maps to strengthen your local presence." },
+        { title: "Local SEO in Santa Catarina", description: "Strategy built to help your business show up better in searches across the region." },
+      ],
+      mapTitle: "Santa Catarina coverage",
+      mapDescription: "Digital presence for companies in Florianópolis, São José, Joinville, and Balneário Camboriú.",
     },
     footer: {
       ctaTag: "ready to grow?",
@@ -760,7 +798,7 @@ const translations: Record<Locale, TranslationSchema> = {
   },
   es: {
     nav: {
-      brandName: "Sitios Profesionales",
+      brandName: "Sites ProfissionAI",
       brandSub: "Desarrolladores",
       openMenu: "Abrir menú",
       closeMenu: "Cerrar menú",
@@ -826,7 +864,7 @@ const translations: Record<Locale, TranslationSchema> = {
         { title: "Hosting y dominio", description: "Te ayudamos a poner tu sitio en internet." },
         { title: "Sitio rápido", description: "Tu sitio carga rápido y funciona bien." },
         { title: "Soporte y mantenimiento", description: "Cuidamos tu sitio después de publicarlo." },
-        { title: "Integraciones", description: "Conectamos tu sitio con WhatsApp y otras herramientas." },
+        { title: "Google Business y Maps", description: "Conectamos tu sitio con Google Business Profile y Google Maps para mejorar la visibilidad local." },
         { title: "Logo y marca", description: "Creamos tu logo y la imagen de tu marca." },
       ],
     },
@@ -1019,9 +1057,9 @@ const translations: Record<Locale, TranslationSchema> = {
       ],
     },
     reviews: {
-      badge: "reseñas",
-      title: "Nuestros clientes hablan muy bien de nuestro trabajo",
-      description: "Mira lo que dicen después de lanzar su sitio con nosotros.",
+      badge: "resultados reales",
+      title: "Resultados reales de clientes",
+      description: "Mira lo que dicen los negocios después de lanzar su sitio con nosotros.",
       summaryLabel: "Nota media de clientes",
       countLabel: "Basado en 32 reseñas",
       items: [
@@ -1029,6 +1067,20 @@ const translations: Record<Locale, TranslationSchema> = {
         { name: "Daniel Brooks", business: "Barbería", text: "The service was fast and my business looks much more professional online now." },
         { name: "Sofia Bennett", business: "Clínica estética", text: "People find my business more easily and trust my brand much more now." },
       ],
+    },
+    localSeo: {
+      badge: "presencia local en SC",
+      title: "Atendiendo empresas en Florianópolis, São José, Joinville y Balneário Camboriú",
+      description: "Creamos sitios enfocados en SEO local en Santa Catarina, resultados reales de clientes e integración con Google Business Profile y Google Maps.",
+      cityLabel: "Principales ciudades atendidas",
+      cities: ["Florianópolis", "São José", "Joinville", "Balneário Camboriú"],
+      highlights: [
+        { title: "Resultados reales de clientes", description: "Sitios pensados para generar más mensajes, presupuestos y confianza para negocios locales." },
+        { title: "Google Business + Maps", description: "Conectamos tu sitio con Google Business Profile y Google Maps para reforzar tu presencia local." },
+        { title: "SEO local en Santa Catarina", description: "Estrategia para ayudarte a aparecer mejor en búsquedas de la región." },
+      ],
+      mapTitle: "Cobertura en Santa Catarina",
+      mapDescription: "Presencia digital para negocios en Florianópolis, São José, Joinville y Balneário Camboriú.",
     },
     footer: {
       ctaTag: "¿listo para acelerar?",

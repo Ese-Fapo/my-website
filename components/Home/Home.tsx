@@ -10,6 +10,7 @@ const Services = dynamic(() => import("../Service/Services"))
 const ProjectsSection = dynamic(() => import("../ProjectSection/ProjectSection"))
 const Pricing = dynamic(() => import("../Pricing/Pricing"))
 const Reviews = dynamic(() => import("@/components/Reviews/Reviews"))
+const LocalSeo = dynamic(() => import("@/components/LocalSeo/LocalSeo"))
 const ContactForm = dynamic(() => import("@/components/ContactForm/Contact"))
 const Faqs = dynamic(() => import("../Faqs/Faqs").then((mod) => mod.Faqs))
 const Footer = dynamic(() => import("./Footer/Footer").then((mod) => mod.Footer))
@@ -39,6 +40,9 @@ const Home = () => {
         </div>
         <div className="[content-visibility:auto] [contain-intrinsic-size:1px_800px]">
           <Reviews />
+        </div>
+        <div className="[content-visibility:auto] [contain-intrinsic-size:1px_850px]">
+          <LocalSeo />
         </div>
         <div className="[content-visibility:auto] [contain-intrinsic-size:1px_1000px]">
           <ContactForm />

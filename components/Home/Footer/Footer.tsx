@@ -31,10 +31,12 @@ export const Footer = () => {
           <div>
             <Link href="/" className="inline-flex items-center gap-2 group">
               <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-linear-to-br from-[#5fffd2] via-[#599692] to-[#3de0c7] text-[#0b1020] shadow-lg shadow-[#0b1020]/30">
-                PS
+                SP
               </span>
               <div className="leading-tight">
-                <p className="text-base font-bold tracking-wide text-white group-hover:text-cyan-200 transition-colors"> Site</p>
+                <p className="text-base font-bold tracking-wide text-white transition-colors group-hover:text-cyan-200">
+                  {t.nav.brandName}
+                </p>
                 <p className="text-xs font-semibold tracking-wide text-slate-300">
                   {t.nav.brandSub}
                 </p>
@@ -119,7 +121,7 @@ export const Footer = () => {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-slate-400 sm:flex-row">
-          <p>© {new Date().getFullYear()} {t.nav.brandName}. {t.footer.rights}</p>
+          <p>© 2026 Sites ProfissionAI</p>
           <div className="flex items-center gap-4">
             <Link href="#" className="transition hover:text-white hover:underline">{t.footer.privacy}</Link>
             <Link href="#" className="transition hover:text-white hover:underline">{t.footer.terms}</Link>

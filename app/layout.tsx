@@ -8,8 +8,28 @@ import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 
 
 export const metadata: Metadata = {
-  title: "Sites Profissionais | Professional Websites | Sitios Profesionales",
-  description: "Somos uma agência web que cria sites incríveis para nossos clientes. Desenvolvemos sites personalizados, adaptados às necessidades e objetivos de cada cliente. Nossa equipe de designers e desenvolvedores trabalha de perto com os clientes para entregar sites bonitos, funcionais e fáceis de usar.",
+  title: {
+    default: "Sites ProfissionAI | Criação de Sites em Santa Catarina",
+    template: "%s | Sites ProfissionAI",
+  },
+  description: "Criação de sites em Santa Catarina para empresas de Florianópolis, São José, Joinville e Balneário Camboriú, com SEO local, Google Business e integração com Maps.",
+  applicationName: "Sites ProfissionAI",
+  keywords: [
+    "criação de sites em santa catarina",
+    "criação de sites em florianópolis",
+    "criação de sites em são josé sc",
+    "criação de sites em joinville",
+    "criação de sites em balneário camboriú",
+    "seo local santa catarina",
+    "google business profile",
+    "google maps integração",
+  ],
+  openGraph: {
+    title: "Sites ProfissionAI | Criação de Sites em Santa Catarina",
+    description: "Criação de sites em Santa Catarina para empresas de Florianópolis, São José, Joinville e Balneário Camboriú, com SEO local, Google Business e integração com Maps.",
+    locale: "pt_BR",
+    type: "website",
+  },
   icons: {
     icon: "/images.web/logo.png",
   },
