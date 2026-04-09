@@ -38,11 +38,11 @@ const Home = () => {
         <div className="[content-visibility:auto] [contain-intrinsic-size:1px_900px]">
           <Pricing />
         </div>
-        <div className="[content-visibility:auto] [contain-intrinsic-size:1px_800px]">
-          <Reviews />
-        </div>
         <div className="[content-visibility:auto] [contain-intrinsic-size:1px_850px]">
           <LocalSeo />
+        </div>
+        <div className="[content-visibility:auto] [contain-intrinsic-size:1px_800px]">
+          <Reviews />
         </div>
         <div className="[content-visibility:auto] [contain-intrinsic-size:1px_1000px]">
           <ContactForm />
