@@ -67,9 +67,9 @@ export default function Chatbot() {
   }, [copy, selectedOption]);
 
   return (
-    <div className="fixed bottom-6 right-6 z-60 flex flex-col items-end gap-3">
+    <div className="fixed bottom-4 right-4 z-60 flex max-w-[calc(100vw-1rem)] flex-col items-end gap-3 sm:bottom-6 sm:right-6">
       {open ? (
-        <div className="w-[min(92vw,24rem)] overflow-hidden rounded-3xl border border-white/10 bg-slate-950/95 text-white shadow-[0_20px_80px_rgba(15,23,42,0.45)] backdrop-blur-xl">
+        <div className="w-[min(calc(100vw-1rem),24rem)] overflow-hidden rounded-3xl border border-white/10 bg-slate-950/95 text-white shadow-[0_20px_80px_rgba(15,23,42,0.45)] backdrop-blur-xl sm:w-[24rem]">
           <div className="bg-linear-to-r from-emerald-500 via-cyan-500 to-indigo-500 p-4">
             <div className="flex items-start justify-between gap-3">
               <div>
@@ -90,7 +90,7 @@ export default function Chatbot() {
             </div>
           </div>
 
-          <div className="space-y-3 p-4">
+          <div className="max-h-[58vh] space-y-3 overflow-y-auto p-4 sm:max-h-none">
             <div className="rounded-2xl bg-white/5 p-3 text-sm leading-6 text-slate-100">
               {copy.welcome}
             </div>
@@ -165,7 +165,7 @@ export default function Chatbot() {
         type="button"
         onClick={() => setOpen((prev) => !prev)}
         aria-label={open ? copy.closeLabel : copy.openLabel}
-        className="group relative inline-flex items-center gap-2 rounded-full bg-linear-to-r from-emerald-400 via-cyan-400 to-indigo-500 px-4 py-3 font-bold text-slate-950 shadow-[0_12px_30px_rgba(34,211,238,0.35)] transition hover:-translate-y-0.5"
+        className="group relative inline-flex items-center gap-2 rounded-full bg-linear-to-r from-emerald-400 via-cyan-400 to-indigo-500 px-3.5 py-3 font-bold text-slate-950 shadow-[0_12px_30px_rgba(34,211,238,0.35)] transition hover:-translate-y-0.5 sm:px-4"
       >
         <span className="absolute -right-2 -top-2 flex h-7 min-w-7 items-center justify-center rounded-full bg-white px-1 text-[9px] font-bold text-emerald-600">
           20%

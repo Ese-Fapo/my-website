@@ -60,7 +60,15 @@ type TranslationSchema = {
     description: string
     note: string
     cta: string
-    items: Array<{ title: string; description: string; price: string }>
+    discountLabel: string
+    optionalBadge: string
+    optionalSubtext: string
+    items: Array<{
+      title: string
+      description: string
+      price: string
+      features: Array<{ label: string; included: boolean }>
+    }>
   }
   projects: {
     badge: string
@@ -229,11 +237,66 @@ const translations: Record<Locale, TranslationSchema> = {
       description: "Veja uma faixa de investimento em real brasileiro para os serviços mais pedidos.",
       note: "Valores em BRL (R$) e podem variar de projeto para projeto, conforme as necessidades de cada cliente. Novos clientes ainda podem receber 20% de desconto no primeiro projeto.",
       cta: "Pedir orçamento",
+      discountLabel: "desc.",
+      optionalBadge: "opcional",
+      optionalSubtext: "extra",
       items: [
-        { title: "Landing page", description: "Página focada em conversão, WhatsApp e captação de leads.", price: "R$ 900" },
-        { title: "Site institucional", description: "Site profissional para apresentar sua empresa e serviços.", price: "R$ 1.500" },
-        { title: "Loja virtual", description: "E-commerce com catálogo, carrinho e finalização de pedido.", price: "R$ 3.500" },
-        { title: "Suporte mensal", description: "Atualizações, pequenos ajustes e acompanhamento contínuo.", price: "R$ 300/mês" },
+        {
+          title: "Landing page",
+          description: "Página focada em conversão, WhatsApp e captação de leads.",
+          price: "R$ 900",
+          features: [
+            { label: "Design responsivo", included: true },
+            { label: "Botão para WhatsApp", included: true },
+            { label: "Captação de leads", included: true },
+            { label: "SEO básico", included: true },
+            { label: "Entrega rápida", included: true },
+            { label: "Painel de pedidos", included: false },
+            { label: "Checkout online", included: false },
+          ],
+        },
+        {
+          title: "Site institucional",
+          description: "Site profissional para apresentar sua empresa e serviços.",
+          price: "R$ 1.500",
+          features: [
+            { label: "Até 5 páginas", included: true },
+            { label: "SEO básico", included: true },
+            { label: "Formulário de contato", included: true },
+            { label: "Integração com WhatsApp", included: true },
+            { label: "Layout profissional", included: true },
+            { label: "Área do cliente", included: false },
+            { label: "Carrinho de compras", included: false },
+          ],
+        },
+        {
+          title: "Loja virtual",
+          description: "E-commerce com catálogo, carrinho e finalização de pedido.",
+          price: "R$ 3.500",
+          features: [
+            { label: "Catálogo de produtos", included: true },
+            { label: "Carrinho e checkout", included: true },
+            { label: "Pagamento online", included: true },
+            { label: "Gestão de pedidos", included: true },
+            { label: "Cupons de desconto", included: true },
+            { label: "App nativo", included: false },
+            { label: "ERP avançado", included: false },
+          ],
+        },
+        {
+          title: "Suporte mensal",
+          description: "Atualizações, pequenos ajustes e acompanhamento contínuo.",
+          price: "R$ 300/mês",
+          features: [
+            { label: "Ajustes mensais", included: true },
+            { label: "Atualização de conteúdo", included: true },
+            { label: "Suporte técnico", included: true },
+            { label: "Correções rápidas", included: true },
+            { label: "Acompanhamento contínuo", included: true },
+            { label: "Novo site completo", included: false },
+            { label: "Redesign total", included: false },
+          ],
+        },
       ],
     },
     projects: {
@@ -466,11 +529,66 @@ const translations: Record<Locale, TranslationSchema> = {
       description: "Here is a BRL price guide for the services clients request most often.",
       note: "All prices are in Brazilian Real (R$) and may vary from project to project depending on each client's needs. New clients can still qualify for 20% off the first project.",
       cta: "Request a quote",
+      discountLabel: "off",
+      optionalBadge: "optional",
+      optionalSubtext: "add-on",
       items: [
-        { title: "Landing page", description: "A conversion-focused page with WhatsApp and lead capture.", price: "R$ 900" },
-        { title: "Business website", description: "A professional website to present your company and services.", price: "R$ 1,500" },
-        { title: "Online store", description: "E-commerce with catalog, cart, and checkout flow.", price: "R$ 3,500" },
-        { title: "Monthly support", description: "Updates, minor improvements, and ongoing support.", price: "R$ 300/month" },
+        {
+          title: "Landing page",
+          description: "A conversion-focused page with WhatsApp and lead capture.",
+          price: "R$ 900",
+          features: [
+            { label: "Responsive design", included: true },
+            { label: "WhatsApp button", included: true },
+            { label: "Lead capture", included: true },
+            { label: "Basic SEO", included: true },
+            { label: "Fast delivery", included: true },
+            { label: "Order dashboard", included: false },
+            { label: "Online checkout", included: false },
+          ],
+        },
+        {
+          title: "Business website",
+          description: "A professional website to present your company and services.",
+          price: "R$ 1500",
+          features: [
+            { label: "Up to 5 pages", included: true },
+            { label: "Basic SEO", included: true },
+            { label: "Contact form", included: true },
+            { label: "WhatsApp integration", included: true },
+            { label: "Professional layout", included: true },
+            { label: "Client portal", included: false },
+            { label: "Shopping cart", included: false },
+          ],
+        },
+        {
+          title: "Online store",
+          description: "E-commerce with catalog, cart, and checkout flow.",
+          price: "R$ 3500",
+          features: [
+            { label: "Product catalog", included: true },
+            { label: "Cart and checkout", included: true },
+            { label: "Online payments", included: true },
+            { label: "Order management", included: true },
+            { label: "Discount coupons", included: true },
+            { label: "Native app", included: false },
+            { label: "Advanced ERP", included: false },
+          ],
+        },
+        {
+          title: "Monthly support",
+          description: "Updates, minor improvements, and ongoing support.",
+          price: "R$ 300/month",
+          features: [
+            { label: "Monthly adjustments", included: true },
+            { label: "Content updates", included: true },
+            { label: "Technical support", included: true },
+            { label: "Quick fixes", included: true },
+            { label: "Ongoing follow-up", included: true },
+            { label: "Full new website", included: false },
+            { label: "Full redesign", included: false },
+          ],
+        },
       ],
     },
     projects: {
@@ -702,11 +820,66 @@ const translations: Record<Locale, TranslationSchema> = {
       description: "Consulta una guía de inversión en real brasileño para los servicios más solicitados.",
       note: "Todos los valores están en real brasileño (R$) y pueden variar de un proyecto a otro según las necesidades de cada cliente. Los nuevos clientes aún pueden recibir 20% de descuento en el primer proyecto.",
       cta: "Solicitar presupuesto",
+      discountLabel: "dto.",
+      optionalBadge: "opcional",
+      optionalSubtext: "extra",
       items: [
-        { title: "Landing page", description: "Página enfocada en conversión, WhatsApp y captación de leads.", price: "R$ 900" },
-        { title: "Sitio institucional", description: "Sitio profesional para presentar tu empresa y servicios.", price: "R$ 1.500" },
-        { title: "Tienda online", description: "E-commerce con catálogo, carrito y finalización de pedido.", price: "R$ 3.500" },
-        { title: "Soporte mensual", description: "Actualizaciones, ajustes menores y acompañamiento continuo.", price: "R$ 300/mes" },
+        {
+          title: "Landing page",
+          description: "Página enfocada en conversión, WhatsApp y captación de leads.",
+          price: "R$ 900",
+          features: [
+            { label: "Diseño responsivo", included: true },
+            { label: "Botón de WhatsApp", included: true },
+            { label: "Captación de leads", included: true },
+            { label: "SEO básico", included: true },
+            { label: "Entrega rápida", included: true },
+            { label: "Panel de pedidos", included: false },
+            { label: "Checkout online", included: false },
+          ],
+        },
+        {
+          title: "Sitio institucional",
+          description: "Sitio profesional para presentar tu empresa y servicios.",
+          price: "R$ 1.500",
+          features: [
+            { label: "Hasta 5 páginas", included: true },
+            { label: "SEO básico", included: true },
+            { label: "Formulario de contacto", included: true },
+            { label: "Integración con WhatsApp", included: true },
+            { label: "Diseño profesional", included: true },
+            { label: "Área de cliente", included: false },
+            { label: "Carrito de compras", included: false },
+          ],
+        },
+        {
+          title: "Tienda online",
+          description: "E-commerce con catálogo, carrito y finalización de pedido.",
+          price: "R$ 3.500",
+          features: [
+            { label: "Catálogo de productos", included: true },
+            { label: "Carrito y checkout", included: true },
+            { label: "Pagos online", included: true },
+            { label: "Gestión de pedidos", included: true },
+            { label: "Cupones de descuento", included: true },
+            { label: "App nativa", included: false },
+            { label: "ERP avanzado", included: false },
+          ],
+        },
+        {
+          title: "Soporte mensual",
+          description: "Actualizaciones, ajustes menores y acompañamiento continuo.",
+          price: "R$ 300/mes",
+          features: [
+            { label: "Ajustes mensuales", included: true },
+            { label: "Actualización de contenido", included: true },
+            { label: "Soporte técnico", included: true },
+            { label: "Correcciones rápidas", included: true },
+            { label: "Acompañamiento continuo", included: true },
+            { label: "Nuevo sitio completo", included: false },
+            { label: "Rediseño total", included: false },
+          ],
+        },
       ],
     },
     projects: {
