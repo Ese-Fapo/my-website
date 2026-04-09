@@ -119,10 +119,10 @@ const Hero = () => {
               <div className="mt-5 rounded-2xl border border-cyan-400/15 bg-cyan-400/5 p-3">
                 <div className="flex items-center justify-between text-[11px] font-semibold uppercase tracking-[0.24em] text-cyan-100/90">
                   <span>Project progress</span>
-                  <span>72%</span>
+                  <span>82%</span>
                 </div>
                 <div className="mt-2 h-2 rounded-full bg-white/10">
-                  <div className="h-2 w-[72%] rounded-full bg-linear-to-r from-cyan-400 via-sky-400 to-emerald-300" />
+                  <div className="h-2 w-[82%] rounded-full bg-linear-to-r from-rose-400 via-amber-400 to-emerald-500" />
                 </div>
               </div>
 
