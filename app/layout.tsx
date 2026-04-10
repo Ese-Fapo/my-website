@@ -4,16 +4,22 @@ import "./globals.css";
 import Provider from "@/components/Hoc/Provider";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 
-
-
+const siteUrl = "https://sitesprofissionai.com";
+const siteTitle = "Sites ProfissionAI | Criação de Sites em Santa Catarina";
+const siteDescription =
+  "Criação de sites profissionais em Santa Catarina para empresas de Florianópolis, São José, Joinville e Balneário Camboriú, com SEO local, Google Business Profile e integração com Google Maps.";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Sites ProfissionAI | Criação de Sites em Santa Catarina",
+    default: siteTitle,
     template: "%s | Sites ProfissionAI",
   },
-  description: "Criação de sites profissionais em Santa Catarina para empresas de Florianópolis, São José, Joinville e Balneário Camboriú, com SEO local, Google Business Profile e integração com Google Maps.",
+  description: siteDescription,
   applicationName: "Sites ProfissionAI",
+  alternates: {
+    canonical: "/",
+  },
   keywords: [
     "criação de sites em santa catarina",
     "site profissional em florianópolis",
@@ -26,11 +32,38 @@ export const metadata: Metadata = {
     "agência de sites santa catarina",
     "sites para empresas sc",
   ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
-    title: "Sites ProfissionAI | Criação de Sites em Santa Catarina",
-    description: "Criação de sites profissionais em Santa Catarina para empresas de Florianópolis, São José, Joinville e Balneário Camboriú, com SEO local, Google Business Profile e integração com Google Maps.",
+    title: siteTitle,
+    description: siteDescription,
+    url: siteUrl,
+    siteName: "Sites ProfissionAI",
     locale: "pt_BR",
     type: "website",
+    images: [
+      {
+        url: "/images.web/logo.png",
+        width: 512,
+        height: 512,
+        alt: "Sites ProfissionAI logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/images.web/logo.png"],
   },
   icons: {
     icon: "/images.web/logo.png",
