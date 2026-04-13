@@ -33,12 +33,12 @@ const getDiscountedPrice = (price: string) => {
     return price
   }
 
-  const discountedAmount = numericAmount * (1 - DISCOUNT_PERCENT / 100)
+  const discountedAmount = Math.round(numericAmount * (1 - DISCOUNT_PERCENT / 100))
   const suffix = price.slice(match.index + rawAmount.length)
   const formattedAmount = new Intl.NumberFormat("pt-BR", {
     style: "currency",
     currency: "BRL",
-    maximumFractionDigits: Number.isInteger(discountedAmount) ? 0 : 2,
+    maximumFractionDigits: 0,
   }).format(discountedAmount)
 
   return `${formattedAmount}${suffix}`

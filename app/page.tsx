@@ -13,7 +13,7 @@ const localBusinessSchema = {
   logo: `${siteUrl}/images.web/logo.png`,
   telephone: "+554898127673",
   description:
-    "Web development services in São José, Florianópolis, Joinville, and Balneário Camboriú.",
+    "Serviços de desenvolvimento de sites em São José, Florianópolis, Joinville e Balneário Camboriú, com profissional que faz site com foco em performance e SEO local.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "São José",

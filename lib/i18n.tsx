@@ -205,7 +205,7 @@ const translations: Record<Locale, TranslationSchema> = {
       title: "Criamos sites profissionais",
       titleHighlight: "para sua empresa atrair mais clientes",
       description:
-        "Desenvolvemos sites rápidos, responsivos e otimizados para o Google, ajudando empresas de Florianópolis, São José, Joinville e Balneário Camboriú a gerar mais contatos e vendas.",
+        "Desenvolvemos sites rápidos, responsivos e otimizados para o Google. Se você procura um profissional que faz site, ajudamos empresas de Florianópolis, São José, Joinville e Balneário Camboriú a gerar mais contatos e vendas.",
       primaryCta: "Quero meu site",
       secondaryCta: "Ver exemplos",
       livePreviewTag: "veja seu site",
@@ -262,7 +262,7 @@ const translations: Record<Locale, TranslationSchema> = {
         {
           title: "Landing page",
           description: "Página focada em conversão, WhatsApp e captação de leads.",
-          price: "R$ 900",
+          price: "R$ 749",
           features: [
             { label: "Design responsivo", included: true },
             { label: "Botão para WhatsApp", included: true },
@@ -574,7 +574,7 @@ const translations: Record<Locale, TranslationSchema> = {
         {
           title: "Landing page",
           description: "A conversion-focused page with WhatsApp and lead capture.",
-          price: "R$ 900",
+          price: "R$ 749",
           features: [
             { label: "Responsive design", included: true },
             { label: "WhatsApp button", included: true },
@@ -885,7 +885,7 @@ const translations: Record<Locale, TranslationSchema> = {
         {
           title: "Landing page",
           description: "Página enfocada en conversión, WhatsApp y captación de leads.",
-          price: "R$ 900",
+          price: "R$ 749",
           features: [
             { label: "Diseño responsivo", included: true },
             { label: "Botón de WhatsApp", included: true },

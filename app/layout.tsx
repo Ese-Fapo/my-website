@@ -7,7 +7,7 @@ import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 const siteUrl = "https://sitesprofissionai.com";
 const siteTitle = "Sites ProfissionAI | Criação de Sites em Santa Catarina";
 const siteDescription =
-  "Criação de sites profissionais em Santa Catarina para empresas de Florianópolis, São José, Joinville e Balneário Camboriú, com SEO local, Google Business Profile e integração com Google Maps.";
+  "Criação de sites profissionais em Santa Catarina para empresas de Florianópolis, São José, Joinville e Balneário Camboriú. Se você busca um profissional que faz site com foco em SEO local, Google Business Profile e integração com Google Maps, nós podemos ajudar.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -32,6 +32,8 @@ export const metadata: Metadata = {
     "seo local santa catarina",
     "google business profile",
     "google maps integração",
+    "profissional que faz site",
+    "profissional que faz site em santa catarina",
     "agência de sites santa catarina",
     "sites para empresas sc",
   ],
