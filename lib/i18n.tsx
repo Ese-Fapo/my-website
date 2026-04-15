@@ -330,6 +330,12 @@ const translations: Record<Locale, TranslationSchema> = {
       cardCta: "Ver projeto →",
       items: [
         {
+          title: "Site para escritório de contabilidade",
+          description: "Site profissional para uma firma de contabilidade, com visual premium, apresentação clara dos serviços e foco em confiança, compliance e consultoria financeira.",
+          image: "/images.web/accountant screenshoot.jpeg",
+          link: "https://acc-busayo.vercel.app/",
+        },
+        {
           title: "Plataforma de educação",
           description: "Design premium, performance alta e SEO (Visibilidade) pronto para conversão.",
           image: "/images.web/sch-img.jpeg",
@@ -642,6 +648,12 @@ const translations: Record<Locale, TranslationSchema> = {
       cardCta: "View project →",
       items: [
         {
+          title: "Accounting firm website",
+          description: "A professional website for an accounting firm with a premium look, clear service presentation, and a strong focus on trust, compliance, and financial advisory support.",
+          image: "/images.web/accountant screenshoot.jpeg",
+          link: "https://acc-busayo.vercel.app/",
+        },
+        {
           title: "Education platform",
           description: "Premium design, high performance, and SEO (Visibility) ready for conversion.",
           image: "/images.web/sch-img.jpeg",
@@ -952,6 +964,12 @@ const translations: Record<Locale, TranslationSchema> = {
       noMore: "Revisa nuestro portafolio para ver más proyectos.",
       cardCta: "Ver proyecto →",
       items: [
+        {
+          title: "Sitio web para firma contable",
+          description: "Sitio profesional para una firma contable, con imagen premium, presentación clara de servicios y enfoque en confianza, cumplimiento y asesoría financiera.",
+          image: "/images.web/accountant screenshoot.jpeg",
+          link: "https://acc-busayo.vercel.app/",
+        },
         {
           title: "Plataforma educativa",
           description: "Diseño premium, alto rendimiento y SEO (Visibilidad) listo para conversión.",

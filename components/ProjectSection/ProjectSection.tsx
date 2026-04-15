@@ -13,7 +13,7 @@ export default function ProjectsSection() {
 
   const visibleProjects = useMemo(
     () => projects.slice(0, visibleCount),
-    [visibleCount]
+    [projects, visibleCount]
   );
 
   const hasMore = visibleCount < projects.length;
