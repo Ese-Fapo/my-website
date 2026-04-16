@@ -9,27 +9,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: siteUrl,
+      url: `${siteUrl}/`,
       lastModified,
     },
     {
-      url: `${siteUrl}/about`,
+      url: `${siteUrl}/about/`,
       lastModified,
     },
     {
-      url: `${siteUrl}/services`,
+      url: `${siteUrl}/services/`,
       lastModified,
     },
     {
-      url: `${siteUrl}/projects`,
+      url: `${siteUrl}/projects/`,
       lastModified,
     },
     {
-      url: `${siteUrl}/pricing`,
+      url: `${siteUrl}/pricing/`,
       lastModified,
     },
     {
-      url: `${siteUrl}/contact`,
+      url: `${siteUrl}/contact/`,
       lastModified,
     },
   ]

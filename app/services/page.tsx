@@ -4,11 +4,11 @@ import Services from "@/components/Service/Services"
 import { Footer } from "@/components/Home/Footer/Footer"
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Serviços",
   description:
-    "Explore website development, landing page, e-commerce, branding, maintenance, and local SEO services from Sites ProfissionAI.",
+    "Explore os serviços de criação de sites, landing pages, e-commerce, branding, manutenção e SEO local da Sites ProfissionAI.",
   alternates: {
-    canonical: "/services",
+    canonical: "/services/",
   },
 }
 

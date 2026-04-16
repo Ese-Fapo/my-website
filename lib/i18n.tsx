@@ -1128,6 +1128,12 @@ const translations: Record<Locale, TranslationSchema> = {
   },
 }
 
+const LOCALE_STORAGE_KEY = "site-locale-preference"
+
+const isSupportedLocale = (value: string | null): value is Locale => {
+  return value === "pt" || value === "en" || value === "es"
+}
+
 type LanguageContextValue = {
   locale: Locale
   setLocale: (locale: Locale) => void
@@ -1150,25 +1156,28 @@ const getDeviceLanguage = (): Locale => {
   return "pt"
 }
 
+const getInitialLocale = (): Locale => {
+  if (typeof window === "undefined") return "pt"
+
+  try {
+    const storedLocale = window.localStorage.getItem(LOCALE_STORAGE_KEY)
+
+    if (isSupportedLocale(storedLocale)) {
+      return storedLocale
+    }
+  } catch {
+    return getDeviceLanguage()
+  }
+
+  return getDeviceLanguage()
+}
+
 export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
   const [locale, setLocaleState] = useState<Locale>("pt")
   const [isHydrated, setIsHydrated] = useState(false)
 
   useEffect(() => {
-    let nextLocale: Locale = "pt"
-
-    try {
-      const storedLocale = window.localStorage.getItem("site-locale") as Locale | null
-      if (storedLocale && translations[storedLocale]) {
-        nextLocale = storedLocale
-      } else {
-        nextLocale = getDeviceLanguage()
-      }
-    } catch {
-      nextLocale = "pt"
-    }
-
-    setLocaleState(nextLocale)
+    setLocaleState(getInitialLocale())
     setIsHydrated(true)
   }, [])
 
@@ -1177,11 +1186,16 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
 
     const htmlLang = locale === "pt" ? "pt-BR" : locale
     document.documentElement.lang = htmlLang
-    window.localStorage.setItem("site-locale", locale)
   }, [locale, isHydrated])
 
   const setLocale = (nextLocale: Locale) => {
     setLocaleState(nextLocale)
+
+    try {
+      window.localStorage.setItem(LOCALE_STORAGE_KEY, nextLocale)
+    } catch {
+      // Ignore storage errors and keep the in-memory locale.
+    }
   }
 
   const value = useMemo(

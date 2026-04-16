@@ -4,11 +4,11 @@ import ProjectsSection from "@/components/ProjectSection/ProjectSection"
 import { Footer } from "@/components/Home/Footer/Footer"
 
 export const metadata: Metadata = {
-  title: "Projects",
+  title: "Projetos",
   description:
-    "See recent website, app, and e-commerce projects built by Sites ProfissionAI for businesses in Santa Catarina and beyond.",
+    "Veja projetos recentes de sites, aplicativos e e-commerce desenvolvidos pela Sites ProfissionAI para empresas em Santa Catarina e além.",
   alternates: {
-    canonical: "/projects",
+    canonical: "/projects/",
   },
 }
 

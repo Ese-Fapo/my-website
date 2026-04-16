@@ -4,11 +4,11 @@ import Pricing from "@/components/Pricing/Pricing"
 import { Footer } from "@/components/Home/Footer/Footer"
 
 export const metadata: Metadata = {
-  title: "Pricing",
+  title: "Preços",
   description:
-    "View starting prices for landing pages, business websites, e-commerce, and ongoing support from Sites ProfissionAI.",
+    "Veja os preços iniciais de landing pages, sites institucionais, e-commerce e suporte contínuo da Sites ProfissionAI.",
   alternates: {
-    canonical: "/pricing",
+    canonical: "/pricing/",
   },
 }
 

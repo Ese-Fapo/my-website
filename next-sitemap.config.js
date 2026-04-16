@@ -3,6 +3,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sitesprofissionai.c
 
 module.exports = {
   siteUrl,
+  exclude: ["/sitemap.xml", "/robots.txt"],
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   outDir: "out",

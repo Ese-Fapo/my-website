@@ -4,11 +4,11 @@ import ContactForm from "@/components/ContactForm/Contact"
 import { Footer } from "@/components/Home/Footer/Footer"
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contato",
   description:
-    "Contact Sites ProfissionAI to request a quote for web development, landing pages, local SEO, or e-commerce services.",
+    "Entre em contato com a Sites ProfissionAI para solicitar um orçamento de criação de sites, landing pages, SEO local ou e-commerce.",
   alternates: {
-    canonical: "/contact",
+    canonical: "/contact/",
   },
 }
 

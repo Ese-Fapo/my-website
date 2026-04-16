@@ -5,6 +5,15 @@ import pluginReact from "eslint-plugin-react";
 import { defineConfig } from "eslint/config";
 
 export default defineConfig([
+  {
+    ignores: [".next/**", "out/**", "node_modules/**"],
+  },
+  {
+    files: ["**/*.config.{js,mjs,cjs,ts,mts,cts}", "next-sitemap.config.js"],
+    languageOptions: {
+      globals: globals.node,
+    },
+  },
   { files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"], plugins: { js }, extends: ["js/recommended"], languageOptions: { globals: globals.browser } },
   tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
