@@ -6,7 +6,7 @@ import { Footer } from "@/components/Home/Footer/Footer"
 export const metadata: Metadata = {
   title: "Projetos",
   description:
-    "Veja projetos recentes de sites, aplicativos e e-commerce desenvolvidos pela Sites ProfissionAI para empresas em Santa Catarina e além.",
+    "Veja projetos recentes de sites, aplicativos e e-commerce desenvolvidos pela Sites Profissionai para empresas em Santa Catarina e além.",
   alternates: {
     canonical: "/projects/",
   },

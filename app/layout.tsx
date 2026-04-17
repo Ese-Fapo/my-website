@@ -5,7 +5,7 @@ import Provider from "@/components/Hoc/Provider";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import { SITE_URL } from "@/lib/site";
 
-const siteTitle = "Sites ProfissionAI | Criação de Sites em Santa Catarina";
+const siteTitle = "Sites Profissionai | Criação de Sites em Santa Catarina";
 const siteDescription =
   "Criação de sites profissionais em Santa Catarina para empresas de Florianópolis, São José, Joinville e Balneário Camboriú. Se você busca um profissional que faz site com foco em SEO local, Google Business Profile e integração com Google Maps, nós podemos ajudar.";
 
@@ -13,10 +13,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: siteTitle,
-    template: "%s | Sites ProfissionAI",
+    template: "%s | Sites Profissionai",
   },
   description: siteDescription,
-  applicationName: "Sites ProfissionAI",
+  applicationName: "Sites Profissionai",
   verification: {
     google: "googlea7763214ff9959e3",
   },
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title: siteTitle,
     description: siteDescription,
     url: `${SITE_URL}/`,
-    siteName: "Sites ProfissionAI",
+    siteName: "Sites Profissionai",
     locale: "pt_BR",
     type: "website",
     images: [
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
         url: "/images.web/logo.png",
         width: 512,
         height: 512,
-        alt: "Sites ProfissionAI logo",
+        alt: "Sites Profissionai logo",
       },
     ],
   },

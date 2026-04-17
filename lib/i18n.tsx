@@ -182,7 +182,7 @@ type TranslationSchema = {
 const translations: Record<Locale, TranslationSchema> = {
   pt: {
     nav: {
-      brandName: "Sites ProfissionAI",
+      brandName: "Sites Profissionai",
       brandSub: "Desenvolvedores",
       openMenu: "Abrir menu",
       closeMenu: "Fechar menu",
@@ -501,7 +501,7 @@ const translations: Record<Locale, TranslationSchema> = {
   },
   en: {
     nav: {
-      brandName: "Sites ProfissionAI",
+      brandName: "Sites Profissionai",
       brandSub: "Developers",
       openMenu: "Open menu",
       closeMenu: "Close menu",
@@ -823,7 +823,7 @@ const translations: Record<Locale, TranslationSchema> = {
   },
   es: {
     nav: {
-      brandName: "Sites ProfissionAI",
+      brandName: "Sites Profissionai",
       brandSub: "Desarrolladores",
       openMenu: "Abrir menú",
       closeMenu: "Cerrar menú",

@@ -6,7 +6,7 @@ import { Footer } from "@/components/Home/Footer/Footer"
 export const metadata: Metadata = {
   title: "Sobre",
   description:
-    "Conheça melhor a Sites ProfissionAI e nossos serviços de criação de sites para empresas em Santa Catarina.",
+    "Conheça melhor a Sites Profissionai e nossos serviços de criação de sites para empresas em Santa Catarina.",
   alternates: {
     canonical: "/about/",
   },

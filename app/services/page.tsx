@@ -6,7 +6,7 @@ import { Footer } from "@/components/Home/Footer/Footer"
 export const metadata: Metadata = {
   title: "Serviços",
   description:
-    "Explore os serviços de criação de sites, landing pages, e-commerce, branding, manutenção e SEO local da Sites ProfissionAI.",
+    "Explore os serviços de criação de sites, landing pages, e-commerce, branding, manutenção e SEO local da Sites Profissionai.",
   alternates: {
     canonical: "/services/",
   },

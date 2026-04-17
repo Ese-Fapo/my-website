@@ -7,7 +7,7 @@ const whatsappUrl = "https://wa.me/554898127673"
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Sites ProfissionAI",
+  name: "Sites Profissionai",
   url: SITE_URL,
   image: `${SITE_URL}/images.web/logo.png`,
   logo: `${SITE_URL}/images.web/logo.png`,

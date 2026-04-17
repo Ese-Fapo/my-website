@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "sitemap": "next-sitemap",
-    "export": "next export",
+    "export": "next build",
     "start": "next start",
     "lint": "eslint"
   },

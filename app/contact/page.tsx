@@ -6,7 +6,7 @@ import { Footer } from "@/components/Home/Footer/Footer"
 export const metadata: Metadata = {
   title: "Contato",
   description:
-    "Entre em contato com a Sites ProfissionAI para solicitar um orçamento de criação de sites, landing pages, SEO local ou e-commerce.",
+    "Entre em contato com a Sites Profissionai para solicitar um orçamento de criação de sites, landing pages, SEO local ou e-commerce.",
   alternates: {
     canonical: "/contact/",
   },
