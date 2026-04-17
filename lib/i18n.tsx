@@ -71,6 +71,9 @@ type TranslationSchema = {
       title: string
       description: string
       price: string
+      discountPercent?: number
+      discountBadgeText?: string
+      discountedPrice?: string
       features: Array<{ label: string; included: boolean }>
     }>
   }
@@ -263,6 +266,9 @@ const translations: Record<Locale, TranslationSchema> = {
           title: "Landing page",
           description: "Página focada em conversão, WhatsApp e captação de leads.",
           price: "R$ 749",
+          discountPercent: 33,
+          discountBadgeText: "R$ 250",
+          discountedPrice: "R$ 499",
           features: [
             { label: "Design responsivo", included: true },
             { label: "Botão para WhatsApp", included: true },
@@ -581,6 +587,9 @@ const translations: Record<Locale, TranslationSchema> = {
           title: "Landing page",
           description: "A conversion-focused page with WhatsApp and lead capture.",
           price: "R$ 749",
+          discountPercent: 33,
+          discountBadgeText: "R$ 250",
+          discountedPrice: "R$ 499",
           features: [
             { label: "Responsive design", included: true },
             { label: "WhatsApp button", included: true },
@@ -898,6 +907,9 @@ const translations: Record<Locale, TranslationSchema> = {
           title: "Landing page",
           description: "Página enfocada en conversión, WhatsApp y captación de leads.",
           price: "R$ 749",
+          discountPercent: 33,
+          discountBadgeText: "R$ 250",
+          discountedPrice: "R$ 499",
           features: [
             { label: "Diseño responsivo", included: true },
             { label: "Botón de WhatsApp", included: true },

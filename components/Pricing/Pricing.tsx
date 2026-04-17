@@ -68,6 +68,9 @@ const Pricing = () => {
           {t.pricing.items.map((item, index) => {
             const Icon = icons[index % icons.length]
             const optionalPlan = isOptionalPlan(item.price)
+            const discountPercent = item.discountPercent ?? DISCOUNT_PERCENT
+            const discountBadgeText = item.discountBadgeText ?? `${discountPercent}%`
+            const finalPrice = item.discountedPrice ?? getDiscountedPrice(item.price)
 
             return (
               <div
@@ -92,7 +95,7 @@ const Pricing = () => {
                     </>
                   ) : (
                     <>
-                      <span className="text-lg font-black leading-none text-white">{DISCOUNT_PERCENT}%</span>
+                      <span className="text-lg font-black leading-none text-white">{discountBadgeText}</span>
                       <span className="mt-1 text-[9px] font-bold uppercase tracking-[0.22em] text-white/90">
                         {t.pricing.discountLabel}
                       </span>
@@ -108,7 +111,7 @@ const Pricing = () => {
                 <div className="mt-3 pr-16">
                   <p className="text-base font-semibold text-white/50 line-through decoration-2">{item.price}</p>
                   <p className="mt-2 text-3xl font-black text-yellow-300 drop-shadow-[0_0_18px_rgba(253,224,71,0.35)]">
-                    {getDiscountedPrice(item.price)}
+                    {finalPrice}
                   </p>
                 </div>
 

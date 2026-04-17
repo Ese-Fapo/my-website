@@ -1,5 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sitesprofissionai.com"
+const fallbackSiteUrl = "https://sitesprofissionai.com"
+const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || fallbackSiteUrl).replace(/\/$/, "")
 
 module.exports = {
   siteUrl,

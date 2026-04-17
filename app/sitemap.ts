@@ -1,35 +1,34 @@
 import type { MetadataRoute } from "next"
+import { SITE_URL } from "@/lib/site"
 
 export const dynamic = "force-static"
-
-const siteUrl = "https://sitesprofissionai.com"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date()
 
   return [
     {
-      url: `${siteUrl}/`,
+      url: `${SITE_URL}/`,
       lastModified,
     },
     {
-      url: `${siteUrl}/about/`,
+      url: `${SITE_URL}/about/`,
       lastModified,
     },
     {
-      url: `${siteUrl}/services/`,
+      url: `${SITE_URL}/services/`,
       lastModified,
     },
     {
-      url: `${siteUrl}/projects/`,
+      url: `${SITE_URL}/projects/`,
       lastModified,
     },
     {
-      url: `${siteUrl}/pricing/`,
+      url: `${SITE_URL}/pricing/`,
       lastModified,
     },
     {
-      url: `${siteUrl}/contact/`,
+      url: `${SITE_URL}/contact/`,
       lastModified,
     },
   ]

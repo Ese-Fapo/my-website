@@ -1,16 +1,16 @@
 import React from "react"
 import Home from "@/components/Home/Home"
+import { SITE_URL } from "@/lib/site"
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sitesprofissionai.com"
 const whatsappUrl = "https://wa.me/554898127673"
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Sites ProfissionAI",
-  url: siteUrl,
-  image: `${siteUrl}/images.web/logo.png`,
-  logo: `${siteUrl}/images.web/logo.png`,
+  url: SITE_URL,
+  image: `${SITE_URL}/images.web/logo.png`,
+  logo: `${SITE_URL}/images.web/logo.png`,
   telephone: "+554898127673",
   description:
     "Serviços de desenvolvimento de sites em São José, Florianópolis, Joinville e Balneário Camboriú, com profissional que faz site com foco em performance e SEO local.",

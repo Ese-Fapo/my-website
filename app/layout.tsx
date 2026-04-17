@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Provider from "@/components/Hoc/Provider";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
+import { SITE_URL } from "@/lib/site";
 
-const siteUrl = "https://sitesprofissionai.com";
 const siteTitle = "Sites ProfissionAI | Criação de Sites em Santa Catarina";
 const siteDescription =
   "Criação de sites profissionais em Santa Catarina para empresas de Florianópolis, São José, Joinville e Balneário Camboriú. Se você busca um profissional que faz site com foco em SEO local, Google Business Profile e integração com Google Maps, nós podemos ajudar.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: siteTitle,
     template: "%s | Sites ProfissionAI",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: siteTitle,
     description: siteDescription,
-    url: siteUrl,
+    url: `${SITE_URL}/`,
     siteName: "Sites ProfissionAI",
     locale: "pt_BR",
     type: "website",
