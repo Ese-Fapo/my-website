@@ -83,7 +83,7 @@ const MobileNav = ({
 
           <div className="">
             <Link
-              href="#contact"
+              href="/contact"
               onClick={onClose}
               className="inline-flex items-center justify-center rounded-full border border-slate-900/15 bg-white px-4 py-3 text-sm font-bold tracking-wide text-slate-900 shadow-sm transition hover:border-slate-900/30 hover:bg-slate-100"
             >
@@ -92,7 +92,7 @@ const MobileNav = ({
               </span>
             </Link>
             <Link
-              href="#contact"
+              href="/contact"
               onClick={onClose}
               className="inline-flex items-center justify-center rounded-full bg-slate-900 px-4 py-3 text-sm font-bold tracking-wide text-white shadow-lg shadow-[#0b1020]/20 transition hover:-translate-y-0.5 hover:bg-slate-800"
             >

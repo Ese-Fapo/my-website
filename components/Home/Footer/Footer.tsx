@@ -22,7 +22,7 @@ export const Footer = () => {
               </h3>
             </div>
             <Link
-              href="#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#0b1020] shadow-lg shadow-white/10 transition hover:opacity-90"
             >
               {t.footer.ctaButton}
@@ -83,11 +83,11 @@ export const Footer = () => {
               {t.footer.navigation}
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-slate-300">
-              <li><Link className="transition hover:text-cyan-200" href="#about">{t.footer.navigationLinks.about}</Link></li>
-              <li><Link className="transition hover:text-emerald-200" href="#services">{t.footer.navigationLinks.services}</Link></li>
-              <li><Link className="transition hover:text-indigo-200" href="#projects">{t.footer.navigationLinks.projects}</Link></li>
-              <li><Link className="transition hover:text-fuchsia-200" href="#faqs">{t.footer.navigationLinks.faqs}</Link></li>
-              <li><Link className="transition hover:text-sky-200" href="#contact">{t.footer.navigationLinks.contact}</Link></li>
+              <li><Link className="transition hover:text-cyan-200" href="/about">{t.footer.navigationLinks.about}</Link></li>
+              <li><Link className="transition hover:text-emerald-200" href="/services">{t.footer.navigationLinks.services}</Link></li>
+              <li><Link className="transition hover:text-indigo-200" href="/projects">{t.footer.navigationLinks.projects}</Link></li>
+              <li><Link className="transition hover:text-fuchsia-200" href="/#faqs">{t.footer.navigationLinks.faqs}</Link></li>
+              <li><Link className="transition hover:text-sky-200" href="/contact">{t.footer.navigationLinks.contact}</Link></li>
             </ul>
           </div>
 
@@ -117,6 +117,7 @@ export const Footer = () => {
                   WhatsApp: +55 48 9812-7673
                 </a>
               </li>
+              <li>{t.footer.cnpj}</li>
               <li>{t.footer.remoteSupport}</li>
             </ul>
           </div>

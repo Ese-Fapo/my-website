@@ -172,6 +172,7 @@ type TranslationSchema = {
     services: string
     serviceItems: string[]
     contact: string
+    cnpj: string
     remoteSupport: string
     rights: string
     privacy: string
@@ -493,6 +494,7 @@ const translations: Record<Locale, TranslationSchema> = {
       services: "Serviços",
       serviceItems: ["Sites institucionais", "Landing pages", "E-commerce", "SEO (Visibilidade) & Performance", "Manutenção"],
       contact: "Contato",
+      cnpj: "CNPJ: 45.041.116/0001-07",
       remoteSupport: "Brasil • Atendimento remoto",
       rights: "Todos os direitos reservados.",
       privacy: "Política de privacidade",
@@ -815,6 +817,7 @@ const translations: Record<Locale, TranslationSchema> = {
       services: "Services",
       serviceItems: ["Business websites", "Landing pages", "E-commerce", "SEO (Visibility) & Performance", "Maintenance"],
       contact: "Contact",
+      cnpj: "CNPJ: 45.041.116/0001-07",
       remoteSupport: "Brazil • Remote support",
       rights: "All rights reserved.",
       privacy: "Privacy policy",
@@ -1132,6 +1135,7 @@ const translations: Record<Locale, TranslationSchema> = {
       services: "Servicios",
       serviceItems: ["Sitios corporativos", "Landing pages", "E-commerce", "SEO (Visibilidad) y rendimiento", "Mantenimiento"],
       contact: "Contacto",
+      cnpj: "CNPJ: 45.041.116/0001-07",
       remoteSupport: "Brasil • Atención remota",
       rights: "Todos los derechos reservados.",
       privacy: "Política de privacidad",

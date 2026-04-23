@@ -36,7 +36,7 @@ const Nav = ({ links }: { links: NavLink[] }) => {
       </div>
       <div className="flex items-center gap-3">
         <Link
-          href="#contact"
+          href="/contact"
           className="hidden xl:inline-flex items-center rounded-full border border-slate-900/15 bg-white/60 px-4 py-2 text-sm font-bold tracking-wide text-slate-900 shadow-sm transition hover:border-slate-900/30 hover:bg-white"
         >
           <span className="text-slate-900">
