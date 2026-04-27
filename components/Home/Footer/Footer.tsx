@@ -108,8 +108,8 @@ export const Footer = () => {
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-slate-300">
               <li>
-                <a className="transition hover:text-cyan-200" href="mailto:esefapohunda@gmail.com">
-                  Email: esefapohunda@gmail.com
+                <a className="transition hover:text-cyan-200" href="mailto:info@sitesprofissionai.com">
+                  Email: info@sitesprofissionai.com 
                 </a>
               </li>
               <li>
