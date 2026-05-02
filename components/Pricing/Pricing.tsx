@@ -47,7 +47,7 @@ const getDiscountedPrice = (price: string) => {
 const Pricing = () => {
   const { t } = useLanguage()
   const icons = [GlobeAltIcon, BanknotesIcon, ShoppingCartIcon, WrenchScrewdriverIcon]
-  const whatsappLink = `https://wa.me/554898127673?text=${encodeURIComponent(t.contact.whatsappIntro)}`
+  const whatsappLink = `https://wa.me/554891817031?text=${encodeURIComponent(t.contact.whatsappIntro)}`
 
   return (
     <section id="pricing" className="scroll-mt-28 bg-slate-950 py-16 sm:py-24">

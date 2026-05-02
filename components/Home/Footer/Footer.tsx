@@ -113,8 +113,8 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a className="transition hover:text-emerald-200" href="https://wa.me/554898127673?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20meu%20projeto." target="_blank" rel="noreferrer">
-                  WhatsApp: +55 48 9812-7673
+                <a className="transition hover:text-emerald-200" href="https://wa.me/554891817031?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20meu%20projeto." target="_blank" rel="noreferrer">
+                  WhatsApp: +554891817031
                 </a>
               </li>
               <li>{t.footer.cnpj}</li>

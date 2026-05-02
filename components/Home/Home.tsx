@@ -58,7 +58,7 @@ const Home = () => {
       <Chatbot />
 
       <a
-        href={`https://wa.me/554898127673?text=${whatsappQuickMessage}`}
+        href={`https://wa.me/554891817031?text=${whatsappQuickMessage}`}
         target="_blank"
         rel="noreferrer"
         aria-label={t.home.whatsappAria}

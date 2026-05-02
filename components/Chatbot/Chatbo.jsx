@@ -63,7 +63,7 @@ export default function Chatbot() {
 
   const whatsappLink = useMemo(() => {
     const message = `Olá! Vim pelo site.\n${copy.welcome}\n${copy.offer}\n\n${copy.prompt}\n${selectedOption || "-"}`;
-    return `https://wa.me/554898127673?text=${encodeURIComponent(message)}`;
+    return `https://wa.me/554891817031?text=${encodeURIComponent(message)}`;
   }, [copy, selectedOption]);
 
   return (
