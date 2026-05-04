@@ -5,31 +5,38 @@ export const dynamic = "force-static"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date()
+  const sharedPageFields = {
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }
 
   return [
     {
       url: `${SITE_URL}/`,
       lastModified,
+      changeFrequency: "weekly",
+      priority: 1,
     },
     {
       url: `${SITE_URL}/about/`,
-      lastModified,
+      ...sharedPageFields,
     },
     {
       url: `${SITE_URL}/services/`,
-      lastModified,
+      ...sharedPageFields,
     },
     {
       url: `${SITE_URL}/projects/`,
-      lastModified,
+      ...sharedPageFields,
     },
     {
       url: `${SITE_URL}/pricing/`,
-      lastModified,
+      ...sharedPageFields,
     },
     {
       url: `${SITE_URL}/contact/`,
-      lastModified,
+      ...sharedPageFields,
     },
   ]
 }

@@ -54,7 +54,7 @@ const Hero = () => {
 
           <div className="mt-7 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-linear-to-r from-cyan-400 via-sky-500 to-indigo-500 px-8 py-3.5 text-base font-bold text-white shadow-[0_18px_40px_rgba(56,189,248,0.35)] transition-all duration-200 hover:-translate-y-0.5 hover:from-sky-500 hover:to-indigo-600 focus:outline-none focus:ring-2 focus:ring-cyan-400 sm:w-auto"
             >
               <BoltIcon className="h-5 w-5" />
@@ -62,7 +62,7 @@ const Hero = () => {
             </Link>
 
             <Link
-              href="/projects"
+              href="/projects/"
               className="inline-flex w-full items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 py-3.5 text-base font-bold text-white backdrop-blur transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/40 sm:w-auto"
             >
               {t.hero.secondaryCta}

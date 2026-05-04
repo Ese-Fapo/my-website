@@ -44,7 +44,7 @@ export default function ProjectsSection() {
               {t.projects.portfolioLink}
             </Link>
             {t.projects.descriptionAfterPortfolio}{" "}
-            <Link href="/contact" className="font-semibold text-emerald-200 hover:text-emerald-100">
+            <Link href="/contact/" className="font-semibold text-emerald-200 hover:text-emerald-100">
               {t.projects.contactLink}
             </Link>
           </p>

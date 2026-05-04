@@ -15,9 +15,9 @@ const DOT_ALPHA = 0.7;
 const SPEED = 0.35;
 
 const getNodeCount = (width: number) => {
-  if (width < 640) return 22;
-  if (width < 1024) return 36;
-  return 52;
+  if (width < 640) return 14;
+  if (width < 1024) return 24;
+  return 34;
 };
 
 export default function WebBackground() {
@@ -31,6 +31,9 @@ export default function WebBackground() {
 
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     let rafId = 0;
+    let idleId: ReturnType<typeof window.requestIdleCallback> | undefined;
+    let timeoutId: ReturnType<typeof setTimeout> | undefined;
+    let cancelled = false;
     let particles: Particle[] = [];
 
     const init = () => {
@@ -110,13 +113,25 @@ export default function WebBackground() {
       }
     };
 
-    init();
-    draw();
+    const start = () => {
+      if (cancelled) return;
+      init();
+      draw();
+    };
+
+    if ("requestIdleCallback" in window) {
+      idleId = window.requestIdleCallback(start, { timeout: 1800 });
+    } else {
+      timeoutId = globalThis.setTimeout(start, 900);
+    }
 
     window.addEventListener("resize", onResize);
     document.addEventListener("visibilitychange", onVisibilityChange);
 
     return () => {
+      cancelled = true;
+      if (idleId !== undefined) window.cancelIdleCallback(idleId);
+      if (timeoutId !== undefined) globalThis.clearTimeout(timeoutId);
       cancelAnimationFrame(rafId);
       window.removeEventListener("resize", onResize);
       document.removeEventListener("visibilitychange", onVisibilityChange);

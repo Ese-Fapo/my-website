@@ -140,7 +140,7 @@ export default function Chatbot() {
                 {copy.whatsappCta}
               </a>
               <a
-                href="#projects"
+                href="/projects/"
                 onClick={() => setOpen(false)}
                 className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
               >

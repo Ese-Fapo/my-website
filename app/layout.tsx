@@ -1,77 +1,15 @@
 import React from "react";
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import Provider from "@/components/Hoc/Provider";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
-import { SITE_URL } from "@/lib/site";
-
-const siteTitle = "Sites Profissionai | Criação de Sites em Santa Catarina";
-const siteDescription =
-  "Criação de sites profissionais em Santa Catarina para empresas de Florianópolis, São José, Joinville e Balneário Camboriú. Se você busca um profissional que faz site com foco em SEO local, Google Business Profile e integração com Google Maps, nós podemos ajudar.";
+import { defaultMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
-  title: {
-    default: siteTitle,
-    template: "%s | Sites Profissionai",
-  },
-  description: siteDescription,
-  applicationName: "Sites Profissionai",
+  ...defaultMetadata,
   verification: {
     google: "googlea7763214ff9959e3",
-  },
-  alternates: {
-    canonical: "/",
-  },
-  keywords: [
-    "criação de sites em santa catarina",
-    "site profissional em florianópolis",
-    "criação de sites em são josé sc",
-    "desenvolvimento de sites em joinville",
-    "criação de sites em balneário camboriú",
-    "seo local santa catarina",
-    "google business profile",
-    "google maps integração",
-    "profissional que faz site",
-    "profissional que faz site em santa catarina",
-    "agência de sites santa catarina",
-    "sites para empresas sc",
-  ],
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
-  },
-  openGraph: {
-    title: siteTitle,
-    description: siteDescription,
-    url: `${SITE_URL}/`,
-    siteName: "Sites Profissionai",
-    locale: "pt_BR",
-    type: "website",
-    images: [
-      {
-        url: "/images.web/logo.png",
-        width: 512,
-        height: 512,
-        alt: "Sites Profissionai logo",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: siteTitle,
-    description: siteDescription,
-    images: ["/images.web/logo.png"],
-  },
-  icons: {
-    icon: "/images.web/logo.png",
   },
 };
 
@@ -82,34 +20,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <head>
-        {/* Google Tag Manager */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      <body className="antialiased">
+        <Script id="google-tag-manager" strategy="lazyOnload">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KBGNRDK6');`,
-          }}
-        />
-        {/* End Google Tag Manager */}
-        {/* Google tag (gtag.js) */}
-        <script
-          async
+})(window,document,'script','dataLayer','GTM-KBGNRDK6');`}
+        </Script>
+        <Script
+          strategy="lazyOnload"
           src="https://www.googletagmanager.com/gtag/js?id=G-TJLK8R1JYN"
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];
+        <Script id="google-analytics" strategy="lazyOnload">
+          {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
-gtag('config', 'G-TJLK8R1JYN');`,
-          }}
-        />
-      </head>
-      <body className="antialiased">
+gtag('config', 'G-TJLK8R1JYN');`}
+        </Script>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-KBGNRDK6"

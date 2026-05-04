@@ -22,7 +22,7 @@ export const Footer = () => {
               </h3>
             </div>
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#0b1020] shadow-lg shadow-white/10 transition hover:opacity-90"
             >
               {t.footer.ctaButton}
@@ -83,11 +83,11 @@ export const Footer = () => {
               {t.footer.navigation}
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-slate-300">
-              <li><Link className="transition hover:text-cyan-200" href="/about">{t.footer.navigationLinks.about}</Link></li>
-              <li><Link className="transition hover:text-emerald-200" href="/services">{t.footer.navigationLinks.services}</Link></li>
-              <li><Link className="transition hover:text-indigo-200" href="/projects">{t.footer.navigationLinks.projects}</Link></li>
+              <li><Link className="transition hover:text-cyan-200" href="/about/">{t.footer.navigationLinks.about}</Link></li>
+              <li><Link className="transition hover:text-emerald-200" href="/services/">{t.footer.navigationLinks.services}</Link></li>
+              <li><Link className="transition hover:text-indigo-200" href="/projects/">{t.footer.navigationLinks.projects}</Link></li>
               <li><Link className="transition hover:text-fuchsia-200" href="/#faqs">{t.footer.navigationLinks.faqs}</Link></li>
-              <li><Link className="transition hover:text-sky-200" href="/contact">{t.footer.navigationLinks.contact}</Link></li>
+              <li><Link className="transition hover:text-sky-200" href="/contact/">{t.footer.navigationLinks.contact}</Link></li>
             </ul>
           </div>
 
@@ -126,8 +126,8 @@ export const Footer = () => {
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-slate-400 sm:flex-row">
           <p>© 2026 Sites Profissionai</p>
           <div className="flex items-center gap-4">
-            <Link href="#" className="transition hover:text-white hover:underline">{t.footer.privacy}</Link>
-            <Link href="#" className="transition hover:text-white hover:underline">{t.footer.terms}</Link>
+            <span>{t.footer.privacy}</span>
+            <span>{t.footer.terms}</span>
           </div>
         </div>
       </div>

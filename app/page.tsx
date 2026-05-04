@@ -1,6 +1,16 @@
 import React from "react"
+import type { Metadata } from "next"
 import Home from "@/components/Home/Home"
 import { SITE_URL } from "@/lib/site"
+import { createPageMetadata } from "@/lib/seo"
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Home",
+  description:
+    "Sites profissionais em Santa Catarina para empresas que precisam de presença digital, SEO local, Google Business Profile e integração com Google Maps.",
+  path: "/",
+  keywords: ["home sites profissionais", "sites profissionais santa catarina"],
+})
 
 const whatsappUrl = "https://wa.me/554891817031"
 
