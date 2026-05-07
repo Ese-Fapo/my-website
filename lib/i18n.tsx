@@ -336,6 +336,12 @@ const translations: Record<Locale, TranslationSchema> = {
       noMore: "Confira nosso portfólio para ver mais projetos.",
       cardCta: "Ver projeto →",
       items: [
+         {
+          title: "Site para Carpinteiro",
+          description: "Site profissional para carpinteiro, apresentando serviços de marcenaria, portfólio de trabalhos e contato direto.",
+          image: "/images.web/carpenter.jpeg",
+          link: "https://carpenter-friend.vercel.app/",
+        },
         {
           title: "Site para escritório de contabilidade",
           description: "Site profissional para uma firma de contabilidade, com visual premium, apresentação clara dos serviços e foco em confiança, compliance e consultoria financeira.",
@@ -378,6 +384,7 @@ const translations: Record<Locale, TranslationSchema> = {
           image: "/images.web/diffrent-screen.jpg",
           link: "https://tech-blog-i77h.vercel.app/",
         },
+       
       ],
     },
     contact: {
@@ -658,6 +665,12 @@ const translations: Record<Locale, TranslationSchema> = {
       noMore: "Check out our portfolio for more projects.",
       cardCta: "View project →",
       items: [
+         {
+          title: "Carpenter Website",
+          description: "Professional website for a carpenter, showcasing woodworking services, project portfolio, and direct contact.",
+          image: "/images.web/carpenter.jpeg",
+          link: "https://carpenter-friend.vercel.app/",
+        },
         {
           title: "Accounting firm website",
           description: "A professional website for an accounting firm with a premium look, clear service presentation, and a strong focus on trust, compliance, and financial advisory support.",
@@ -702,6 +715,7 @@ const translations: Record<Locale, TranslationSchema> = {
           image: "/images.web/diffrent-screen.jpg",
           link: "https://tech-blog-i77h.vercel.app/",
         },
+       
       ],
     },
     contact: {
@@ -980,6 +994,12 @@ const translations: Record<Locale, TranslationSchema> = {
       cardCta: "Ver proyecto →",
       items: [
         {
+          title: "Sitio web para Carpintero",
+          description: "Sitio profesional para carpintero, presentando servicios de carpintería, portafolio de trabajos y contacto directo.",
+          image: "/images.web/carpenter.jpeg",
+          link: "https://carpenter-friend.vercel.app/",
+        },
+        {
           title: "Sitio web para firma contable",
           description: "Sitio profesional para una firma contable, con imagen premium, presentación clara de servicios y enfoque en confianza, cumplimiento y asesoría financiera.",
           image: "/images.web/accountant screenshoot.jpeg",
@@ -1021,6 +1041,7 @@ const translations: Record<Locale, TranslationSchema> = {
           image: "/images.web/diffrent-screen.jpg",
           link: "https://tech-blog-i77h.vercel.app/",
         },
+        
       ],
     },
     contact: {
