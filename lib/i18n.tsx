@@ -940,7 +940,7 @@ const translations: Record<Locale, TranslationSchema> = {
         {
           title: "Sitio institucional",
           description: "Sitio profesional para presentar tu empresa y servicios.",
-          price: "R$ 1.500",
+          price: "R$ 1.800",
           features: [
             { label: "Hasta 5 páginas", included: true },
             { label: "SEO básico (Visibilidad)", included: true },
