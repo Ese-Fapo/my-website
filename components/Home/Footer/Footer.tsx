@@ -58,7 +58,7 @@ export const Footer = () => {
                 <FaInstagram className="h-5 w-5" aria-hidden="true" />
               </a>
               <a
-                href="https://www.linkedin.com/in/ese-fapohunda-118594360/"
+                href="https://www.linkedin.com/company/sitesprofissionai"
                 target="_blank"
                 rel="noreferrer"
                 className="group inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-linear-to-br from-[#0A66C2]/25 via-[#0A66C2]/15 to-[#38BDF8]/15 text-white/90 shadow-[0_0_0_rgba(10,102,194,0)] transition hover:border-white/20 hover:text-white hover:shadow-[0_0_26px_rgba(10,102,194,0.85)]"
@@ -108,13 +108,13 @@ export const Footer = () => {
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-slate-300">
               <li>
-                <a className="transition hover:text-cyan-200" href="mailto:info@sitesprofissionai.com">
+                <a className="transition hover:text-cyan-200" href="mailto:esefapohunda.com">
                   Email: info@sitesprofissionai.com 
                 </a>
               </li>
               <li>
                 <a className="transition hover:text-emerald-200" href="https://wa.me/554891817031?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20meu%20projeto." target="_blank" rel="noreferrer">
-                  WhatsApp: +554891817031
+                  WhatsApp: +55 489181-7031
                 </a>
               </li>
               <li>{t.footer.cnpj}</li>
@@ -124,7 +124,7 @@ export const Footer = () => {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-slate-400 sm:flex-row">
-          <p>© 2026 Sites Profissionai</p>
+          <p>© 2020 - 2026 Sites Profissionai</p>
           <div className="flex items-center gap-4">
             <span>{t.footer.privacy}</span>
             <span>{t.footer.terms}</span>
