@@ -612,7 +612,7 @@ const translations: Record<Locale, TranslationSchema> = {
         {
           title: "Business website",
           description: "A professional website to present your company and services.",
-          price: "R$ 1500",
+          price: "R$ 1800",
           features: [
             { label: "Up to 5 pages", included: true },
             { label: "Basic SEO (Visibility)", included: true },
@@ -626,7 +626,7 @@ const translations: Record<Locale, TranslationSchema> = {
         {
           title: "Online store",
           description: "E-commerce with catalog, cart, and checkout flow.",
-          price: "R$ 3500",
+          price: "R$ 4500",
           features: [
             { label: "Product catalog", included: true },
             { label: "Cart and checkout", included: true },
