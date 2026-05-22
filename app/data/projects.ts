@@ -4,7 +4,7 @@ export const projects = [
     description:
       "A professional accounting firm website with a premium feel, clear service sections, and a strong focus on trust, compliance, and financial advisory enquiries.",
     image: "/images.web/accountant screenshoot.jpeg",
-    link: "https://acc-busayo.vercel.app/",
+    link: "https://busayo-acct.vercel.app/",
   },
   {
     title: "School site",

@@ -346,7 +346,7 @@ const translations: Record<Locale, TranslationSchema> = {
           title: "Site para escritório de contabilidade",
           description: "Site profissional para uma firma de contabilidade, com visual premium, apresentação clara dos serviços e foco em confiança, compliance e consultoria financeira.",
           image: "/images.web/accountant screenshoot.jpeg",
-          link: "https://acc-busayo.vercel.app/",
+          link: "https://busayo-acct.vercel.app/",
         },
         {
           title: "Plataforma de educação",
@@ -675,7 +675,7 @@ const translations: Record<Locale, TranslationSchema> = {
           title: "Accounting firm website",
           description: "A professional website for an accounting firm with a premium look, clear service presentation, and a strong focus on trust, compliance, and financial advisory support.",
           image: "/images.web/accountant screenshoot.jpeg",
-          link: "https://acc-busayo.vercel.app/",
+          link: "https://busayo-acct.vercel.app/",
         },
         {
           title: "Education platform",
@@ -1003,7 +1003,7 @@ const translations: Record<Locale, TranslationSchema> = {
           title: "Sitio web para firma contable",
           description: "Sitio profesional para una firma contable, con imagen premium, presentación clara de servicios y enfoque en confianza, cumplimiento y asesoría financiera.",
           image: "/images.web/accountant screenshoot.jpeg",
-          link: "https://acc-busayo.vercel.app/",
+          link: "https://busayo-acct.vercel.app/",
         },
         {
           title: "Plataforma educativa",
