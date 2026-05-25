@@ -269,7 +269,7 @@ const translations: Record<Locale, TranslationSchema> = {
           price: "R$ 749",
           discountPercent: 33,
           discountBadgeText: "R$ 250",
-          discountedPrice: "R$ 749",
+          discountedPrice: "R$ 499",
           features: [
             { label: "Design responsivo", included: true },
             { label: "Botão para WhatsApp", included: true },
@@ -598,7 +598,7 @@ const translations: Record<Locale, TranslationSchema> = {
           price: "R$ 749",
           discountPercent: 33,
           discountBadgeText: "R$ 250",
-          discountedPrice: "R$ 749",
+          discountedPrice: "R$ 499",
           features: [
             { label: "Responsive design", included: true },
             { label: "WhatsApp button", included: true },
@@ -926,7 +926,7 @@ const translations: Record<Locale, TranslationSchema> = {
           price: "R$ 749",
           discountPercent: 33,
           discountBadgeText: "R$ 250",
-          discountedPrice: "R$ 749",
+          discountedPrice: "R$ 499",
           features: [
             { label: "Diseño responsivo", included: true },
             { label: "Botón de WhatsApp", included: true },
