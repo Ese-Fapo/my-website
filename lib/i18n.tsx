@@ -62,6 +62,12 @@ type TranslationSchema = {
     badge: string
     title: string
     description: string
+    subtitle: string
+    highlights: string[]
+    secondaryDescription: string
+    bottomTitle: string
+    bottomText: string
+    popularBadge: string
     note: string
     cta: string
     discountLabel: string
@@ -74,6 +80,7 @@ type TranslationSchema = {
       discountPercent?: number
       discountBadgeText?: string
       discountedPrice?: string
+      popular?: boolean
       features: Array<{ label: string; included: boolean }>
     }>
   }
@@ -255,9 +262,19 @@ const translations: Record<Locale, TranslationSchema> = {
     },
     pricing: {
       badge: "preços",
-      title: "Valores iniciais dos serviços",
-      description: "Veja uma faixa de investimento em real brasileiro para os serviços mais pedidos.",
-      note: "Valores em BRL (R$) e podem variar de projeto para projeto, conforme as necessidades de cada cliente. Novos clientes ainda podem receber 20% de desconto no primeiro projeto.",
+      title: "Valores iniciais para serviços",
+      description: "Veja valores iniciais e opções de pacote que ajudam empresas locais a vender, agendar e crescer online.",
+      subtitle: "Escolha o plano certo para sua presença digital com transparência e resultados.",
+      highlights: [
+        "Entrega rápida e segura",
+        "WhatsApp integrado e formulário de contato",
+        "Design pensado para conversão local",
+      ],
+      secondaryDescription: "Cada projeto inclui conteúdo otimizado, atenção ao SEO local e suporte inicial direto com nossa equipe.",
+      bottomTitle: "Quer um plano sob medida?",
+      bottomText: "Fale no WhatsApp e receba um orçamento personalizado com prazo, escopo e suporte claro desde o primeiro contato.",
+      popularBadge: "Mais popular",
+      note: "Valores em BRL (R$) e podem variar de projeto para projeto, conforme as necessidades de cada cliente. O suporte mensal é cobrado separadamente, com orçamento personalizado para cada necessidade.",
       cta: "Pedir orçamento",
       discountLabel: "desc.",
       optionalBadge: "opcional",
@@ -284,6 +301,7 @@ const translations: Record<Locale, TranslationSchema> = {
           title: "Site institucional",
           description: "Site profissional para apresentar sua empresa e serviços.",
           price: "R$ 1.500",
+          popular: true,
           features: [
             { label: "Até 5 páginas", included: true },
             { label: "SEO básico (Visibilidade)", included: true },
@@ -297,7 +315,7 @@ const translations: Record<Locale, TranslationSchema> = {
         {
           title: "Loja virtual",
           description: "E-commerce com catálogo, carrinho e finalização de pedido.",
-          price: "R$ 3.500",
+          price: "R$ 3.500+",
           features: [
             { label: "Catálogo de produtos", included: true },
             { label: "Carrinho e checkout", included: true },
@@ -310,15 +328,15 @@ const translations: Record<Locale, TranslationSchema> = {
         },
         {
           title: "Suporte mensal",
-          description: "Atualizações, pequenos ajustes e acompanhamento contínuo.",
-          price: "R$ 300/mês",
+          description: "Suporte contínuo para seu site e ajustes conforme sua empresa cresce, cobrados por demanda.",
+          price: "A combinar",
           features: [
             { label: "Ajustes mensais", included: true },
             { label: "Atualização de conteúdo", included: true },
             { label: "Suporte técnico", included: true },
             { label: "Correções rápidas", included: true },
-            { label: "Acompanhamento contínuo", included: true },
-            { label: "Novo site completo", included: false },
+            { label: "Monitoramento de performance", included: true },
+            { label: "Segurança e backup", included: true },
             { label: "Redesign total", included: false },
           ],
         },
@@ -585,8 +603,18 @@ const translations: Record<Locale, TranslationSchema> = {
     pricing: {
       badge: "pricing",
       title: "Starting prices for services",
-      description: "Here is a BRL price guide for the services clients request most often.",
-      note: "All prices are in Brazilian Real (R$) and may vary from project to project depending on each client's needs. New clients can still qualify for 20% off the first project.",
+      description: "Explore starting prices and package options designed to help local businesses sell, book, and grow online.",
+      subtitle: "Pick the right web package for a polished online presence that attracts customers.",
+      highlights: [
+        "Fast delivery with clear scope",
+        "WhatsApp and lead capture ready",
+        "Design built to convert visitors",
+      ],
+      secondaryDescription: "Every package includes mobile-first design, starter SEO, and a smooth handoff so your site launches with confidence.",
+      bottomTitle: "Need a custom plan?",
+      bottomText: "Message us on WhatsApp to get a personalized quote with timelines, goals, and direct support from our team.",
+      popularBadge: "Most popular",
+      note: "All prices are in Brazilian Real (R$) and may vary from project to project depending on each client's needs. Monthly support is priced separately and quoted individually.",
       cta: "Request a quote",
       discountLabel: "off",
       optionalBadge: "optional",
@@ -613,6 +641,7 @@ const translations: Record<Locale, TranslationSchema> = {
           title: "Business website",
           description: "A professional website to present your company and services.",
           price: "R$ 1800",
+          popular: true,
           features: [
             { label: "Up to 5 pages", included: true },
             { label: "Basic SEO (Visibility)", included: true },
@@ -626,7 +655,7 @@ const translations: Record<Locale, TranslationSchema> = {
         {
           title: "Online store",
           description: "E-commerce with catalog, cart, and checkout flow.",
-          price: "R$ 4500",
+          price: "R$ 4500+",
           features: [
             { label: "Product catalog", included: true },
             { label: "Cart and checkout", included: true },
@@ -639,15 +668,15 @@ const translations: Record<Locale, TranslationSchema> = {
         },
         {
           title: "Monthly support",
-          description: "Updates, minor improvements, and ongoing support.",
-          price: "R$ 300/month",
+          description: "Ongoing site care and updates priced per request, so your plan grows with your business.",
+          price: "For a fee",
           features: [
             { label: "Monthly adjustments", included: true },
             { label: "Content updates", included: true },
             { label: "Technical support", included: true },
             { label: "Quick fixes", included: true },
-            { label: "Ongoing follow-up", included: true },
-            { label: "Full new website", included: false },
+            { label: "Performance monitoring", included: true },
+            { label: "Security and backups", included: true },
             { label: "Full redesign", included: false },
           ],
         },
@@ -913,8 +942,18 @@ const translations: Record<Locale, TranslationSchema> = {
     pricing: {
       badge: "precios",
       title: "Precios iniciales de los servicios",
-      description: "Consulta una guía de inversión en real brasileño para los servicios más solicitados.",
-      note: "Todos los valores están en real brasileño (R$) y pueden variar de un proyecto a otro según las necesidades de cada cliente. Los nuevos clientes aún pueden recibir 20% de descuento en el primer proyecto.",
+      description: "Consulta precios base y opciones de paquete diseñadas para ayudar a empresas locales a vender, agendar y crecer online.",
+      subtitle: "Elige el plan adecuado para una presencia digital confiable que atraiga clientes.",
+      highlights: [
+        "Entrega rápida y segura",
+        "WhatsApp y captación de leads listos",
+        "Diseño pensado para convertir",
+      ],
+      secondaryDescription: "Cada paquete incluye diseño móvil, SEO inicial y apoyo directo para que tu sitio se lance con seguridad.",
+      bottomTitle: "¿Necesitas un plan personalizado?",
+      bottomText: "Envíanos un mensaje por WhatsApp y recibe un presupuesto hecho a medida con plazos claros y soporte directo.",
+      popularBadge: "Más popular",
+      note: "Todos los valores están en real brasileño (R$) y pueden variar de un proyecto a otro según las necesidades de cada cliente. El soporte mensual se cobra por separado y se cotiza individualmente.",
       cta: "Solicitar presupuesto",
       discountLabel: "dto.",
       optionalBadge: "opcional",
@@ -941,6 +980,7 @@ const translations: Record<Locale, TranslationSchema> = {
           title: "Sitio institucional",
           description: "Sitio profesional para presentar tu empresa y servicios.",
           price: "R$ 1.800",
+          popular: true,
           features: [
             { label: "Hasta 5 páginas", included: true },
             { label: "SEO básico (Visibilidad)", included: true },
@@ -954,7 +994,7 @@ const translations: Record<Locale, TranslationSchema> = {
         {
           title: "Tienda online",
           description: "E-commerce con catálogo, carrito y finalización de pedido.",
-          price: "R$ 3.500",
+          price: "R$ 3.500+",
           features: [
             { label: "Catálogo de productos", included: true },
             { label: "Carrito y checkout", included: true },
@@ -967,15 +1007,15 @@ const translations: Record<Locale, TranslationSchema> = {
         },
         {
           title: "Soporte mensual",
-          description: "Actualizaciones, ajustes menores y acompañamiento continuo.",
-          price: "R$ 300/mes",
+          description: "Cuidado continuo para tu sitio y ajustes según crece tu negocio, con tarifa a medida.",
+          price: "A convenir",
           features: [
             { label: "Ajustes mensuales", included: true },
             { label: "Actualización de contenido", included: true },
             { label: "Soporte técnico", included: true },
             { label: "Correcciones rápidas", included: true },
-            { label: "Acompañamiento continuo", included: true },
-            { label: "Nuevo sitio completo", included: false },
+            { label: "Monitoreo de rendimiento", included: true },
+            { label: "Seguridad y respaldos", included: true },
             { label: "Rediseño total", included: false },
           ],
         },

@@ -52,7 +52,7 @@ const Pricing = () => {
   return (
     <section id="pricing" className="scroll-mt-28 bg-slate-950 py-16 sm:py-24">
       <div className="mx-auto w-full max-w-6xl px-5 sm:px-8">
-        <div className="text-center">
+        <div className="relative z-10 text-center">
           <p className="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-8 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-cyan-200">
             {t.pricing.badge}
           </p>
@@ -62,6 +62,24 @@ const Pricing = () => {
           <p className="mx-auto mt-4 max-w-2xl text-sm text-slate-200/80 sm:text-base">
             {t.pricing.description}
           </p>
+          <p className="mx-auto mt-4 max-w-3xl text-sm text-slate-300 sm:text-base">
+            {t.pricing.subtitle}
+          </p>
+
+          <div className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-3 sm:grid-cols-3">
+            {t.pricing.highlights.map((highlight) => (
+              <div
+                key={highlight}
+                className="rounded-3xl border border-cyan-400/10 bg-slate-900/80 px-4 py-3 text-sm text-slate-100 shadow-[0_18px_60px_rgba(15,23,42,0.2)]"
+              >
+                {highlight}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-8 rounded-3xl border border-white/10 bg-slate-900/70 p-5 text-center text-sm text-slate-300 shadow-[0_30px_80px_rgba(15,23,42,0.2)] backdrop-blur-xl">
+          {t.pricing.secondaryDescription}
         </div>
 
         <div className="mt-10 grid gap-5 sm:mt-12 sm:grid-cols-2 xl:grid-cols-4">
@@ -75,7 +93,8 @@ const Pricing = () => {
             return (
               <div
                 key={item.title}
-                className="relative flex h-full flex-col rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_24px_80px_rgba(15,23,42,0.35)] transition hover:-translate-y-1 hover:border-cyan-300/40"
+                style={{ animationDelay: `${index * 100}ms` }}
+                className="animate-[fade-slide-up_0.6s_ease-out_both] relative flex h-full flex-col rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_24px_80px_rgba(15,23,42,0.35)] transition duration-500 hover:-translate-y-2 hover:border-cyan-300/40 hover:shadow-[0_32px_90px_rgba(14,165,233,0.22)]"
               >
                 <div
                   className={`absolute -right-2 -top-2 z-10 flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-full border-2 text-center shadow-[0_16px_40px_rgba(15,23,42,0.35)] ${
@@ -106,7 +125,14 @@ const Pricing = () => {
                 <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-linear-to-br from-cyan-400/30 via-emerald-400/20 to-indigo-400/30 ring-1 ring-white/10">
                   <Icon className="h-6 w-6 text-white/90" />
                 </div>
-                <h3 className="text-lg font-semibold text-white">{item.title}</h3>
+                <div className="flex items-center gap-3">
+                  <h3 className="text-lg font-semibold text-white">{item.title}</h3>
+                  {item.popular ? (
+                    <span className="rounded-full border border-cyan-300/30 bg-cyan-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-cyan-200 ring-1 ring-cyan-300/20">
+                      {t.pricing.popularBadge}
+                    </span>
+                  ) : null}
+                </div>
 
                 <div className="mt-3 pr-16">
                   <p className="text-base font-semibold text-white/50 line-through decoration-2">{item.price}</p>
@@ -146,16 +172,23 @@ const Pricing = () => {
           })}
         </div>
 
-        <div className="mt-8 flex flex-col items-start justify-between gap-4 rounded-3xl border border-emerald-400/20 bg-emerald-500/10 p-5 sm:flex-row sm:items-center">
-          <p className="max-w-3xl text-sm text-emerald-50">{t.pricing.note}</p>
+        <div className="mt-8 grid gap-5 rounded-3xl border border-emerald-400/20 bg-emerald-500/10 p-5 sm:grid-cols-[1fr_auto] sm:items-center">
+          <div>
+            <p className="text-sm font-semibold text-slate-100">{t.pricing.bottomTitle}</p>
+            <p className="mt-3 max-w-3xl text-sm text-emerald-50">{t.pricing.bottomText}</p>
+          </div>
           <a
             href={whatsappLink}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-950 transition hover:opacity-90"
+            className="inline-flex items-center justify-center rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-950 transition hover:opacity-90"
           >
             {t.pricing.cta}
           </a>
+        </div>
+
+        <div className="mt-5 rounded-3xl border border-white/10 bg-slate-900/80 p-5 text-sm text-slate-300">
+          {t.pricing.note}
         </div>
       </div>
     </section>

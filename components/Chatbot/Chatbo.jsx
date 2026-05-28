@@ -5,53 +5,53 @@ import { useLanguage } from "@/lib/i18n";
 
 const chatbotCopy = {
   pt: {
-    badge: "20% OFF no primeiro projeto",
-    title: "Quer um site com desconto especial?",
-    subtitle: "Clique e fale com a gente quando quiser.",
+    badge: "Fale conosco",
+    title: "Precisa de um site profissional?",
+    subtitle: "Clique e converse com nosso time quando estiver pronto.",
     welcome:
       "Olá 👋 Posso ajudar você a criar o site ideal para o seu negócio.",
-    offer: "🎉 Novos clientes ganham 20% de desconto no primeiro projeto.",
+    offer: "🎉 Atendimento rápido e orçamento personalizado para o seu site.",
     prompt: "O que você precisa agora?",
     options: ["Quero um site novo", "Melhorar meu site", "Criar uma loja online"],
-    reply: "Perfeito! E seu primeiro projeto pode sair com 20% OFF.",
+    reply: "Ótimo! Vamos conversar sobre o melhor plano para o seu projeto.",
     whatsappCta: "Falar no WhatsApp",
     examplesCta: "Ver projetos",
     restart: "Escolher outra opção",
     openLabel: "Abrir chat",
     closeLabel: "Fechar chat",
-    bubbleLabel: "20% OFF",
+    bubbleLabel: "Chat",
   },
   en: {
-    badge: "20% OFF for new clients",
-    title: "Need a website with a special discount?",
-    subtitle: "Click and chat with us whenever you're ready.",
+    badge: "Talk to us",
+    title: "Need a professional website?",
+    subtitle: "Click and chat with our team whenever you're ready.",
     welcome: "Hi 👋 I can help you choose the right website for your business.",
-    offer: "🎉 New clients get 20% off their first project.",
+    offer: "🎉 Fast support and a custom quote for your website.",
     prompt: "What do you need right now?",
     options: ["I need a new website", "Improve my current site", "Build an online store"],
-    reply: "Great! Your first project can qualify for 20% OFF.",
+    reply: "Great! Let's talk about the best plan for your project.",
     whatsappCta: "Chat on WhatsApp",
     examplesCta: "See projects",
     restart: "Choose another option",
     openLabel: "Open chat",
     closeLabel: "Close chat",
-    bubbleLabel: "20% OFF",
+    bubbleLabel: "Chat",
   },
   es: {
-    badge: "20% OFF para nuevos clientes",
-    title: "¿Quieres un sitio con descuento especial?",
-    subtitle: "Haz clic y habla con nosotros cuando quieras.",
+    badge: "Habla con nosotros",
+    title: "¿Necesitas un sitio profesional?",
+    subtitle: "Haz clic y habla con nuestro equipo cuando estés listo.",
     welcome: "Hola 👋 Puedo ayudarte a elegir el mejor sitio para tu negocio.",
-    offer: "🎉 Los nuevos clientes reciben 20% de descuento en su primer proyecto.",
+    offer: "🎉 Atención rápida y presupuesto personalizado para tu sitio.",
     prompt: "¿Qué necesitas ahora?",
     options: ["Quiero un sitio nuevo", "Mejorar mi sitio", "Crear una tienda online"],
-    reply: "¡Perfecto! Tu primer proyecto puede tener 20% OFF.",
+    reply: "¡Perfecto! Hablemos del mejor plan para tu proyecto.",
     whatsappCta: "Hablar por WhatsApp",
     examplesCta: "Ver proyectos",
     restart: "Elegir otra opción",
     openLabel: "Abrir chat",
     closeLabel: "Cerrar chat",
-    bubbleLabel: "20% OFF",
+    bubbleLabel: "Chat",
   },
 };
 
@@ -165,11 +165,8 @@ export default function Chatbot() {
         type="button"
         onClick={() => setOpen((prev) => !prev)}
         aria-label={open ? copy.closeLabel : copy.openLabel}
-        className="group relative inline-flex items-center gap-2 rounded-full bg-linear-to-r from-emerald-400 via-cyan-400 to-indigo-500 px-3.5 py-3 font-bold text-slate-950 shadow-[0_12px_30px_rgba(34,211,238,0.35)] transition hover:-translate-y-0.5 sm:px-4"
+        className="group inline-flex items-center gap-2 rounded-full bg-linear-to-r from-emerald-400 via-cyan-400 to-indigo-500 px-3.5 py-3 font-bold text-slate-950 shadow-[0_12px_30px_rgba(34,211,238,0.35)] transition hover:-translate-y-0.5 sm:px-4"
       >
-        <span className="absolute -right-2 -top-2 flex h-7 min-w-7 items-center justify-center rounded-full bg-white px-1 text-[9px] font-bold text-emerald-600">
-          20%
-        </span>
         <span className="text-lg">💬</span>
         <span className="hidden text-sm sm:inline">{copy.bubbleLabel}</span>
       </button>

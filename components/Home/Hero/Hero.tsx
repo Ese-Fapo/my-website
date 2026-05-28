@@ -37,7 +37,7 @@ const Hero = () => {
             </p>
             <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.28em] text-emerald-100 shadow-sm backdrop-blur sm:text-xs">
               <SparklesIcon className="h-3.5 w-3.5" />
-              Limited • 20% OFF first project
+              Limited availability • custom first project quote
             </span>
           </div>
 
