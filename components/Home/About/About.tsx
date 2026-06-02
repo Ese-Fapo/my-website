@@ -38,7 +38,7 @@ const About = () => {
             </div>
             <div className="group relative overflow-hidden rounded-3xl border border-fuchsia-400/30 bg-linear-to-br from-fuchsia-500/20 via-pink-500/10 to-transparent px-4 py-4 sm:px-5 sm:py-5 shadow-[0_18px_45px_rgba(244,114,182,0.25)] backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(244,114,182,0.35)]">
               <div className="pointer-events-none absolute -left-10 -bottom-10 h-24 w-24 rounded-full bg-fuchsia-400/30 blur-2xl" />
-              <p className="text-2xl sm:text-3xl font-extrabold text-white">4 anos</p>
+              <p className="text-2xl sm:text-3xl font-extrabold text-white">6 anos</p>
               <p className="mt-1 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.3em] text-fuchsia-100/90">{t.about.stats.experience}</p>
             </div>
             <div className="group relative overflow-hidden rounded-3xl border border-indigo-400/30 bg-linear-to-br from-indigo-500/20 via-violet-500/10 to-transparent px-4 py-4 sm:px-5 sm:py-5 shadow-[0_18px_45px_rgba(129,140,248,0.25)] backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(129,140,248,0.35)]">
