@@ -19,7 +19,7 @@ const About = () => {
             <div className="absolute -right-12 -bottom-12 h-24 w-24 rounded-full border border-white/10" />
             <div className="relative h-full w-full">
               <Image
-                src="/images.web/group-people-working-website-template_.avif"
+                src="/images.web/ese.jpeg"
                 alt={t.about.imageAlt}
                 fill
                 className="object-cover transition duration-700 ease-out group-hover:scale-105"
@@ -68,9 +68,53 @@ const About = () => {
           </p>
 
           <div className="mt-6 sm:mt-8 flex flex-wrap justify-center lg:justify-start gap-3">
-            <span className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-2 text-xs sm:text-sm text-cyan-200">{t.about.pills[0]}</span>
-            <span className="rounded-full border border-fuchsia-400/30 bg-fuchsia-400/10 px-3 py-2 text-xs sm:text-sm text-fuchsia-200">{t.about.pills[1]}</span>
-            <span className="rounded-full border border-indigo-400/30 bg-indigo-400/10 px-3 py-2 text-xs sm:text-sm text-indigo-200">{t.about.pills[2]}</span>
+            {t.about.pills.map((pill, index) => {
+              const baseClasses =
+                "rounded-full border px-3 py-2 text-xs sm:text-sm font-semibold transition duration-200"
+
+              if (index === 0) {
+                return (
+                  <a
+                    key={pill}
+                    href="https://ese-faps-xbvb.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${baseClasses} border-cyan-400/40 bg-cyan-400/10 text-cyan-200 hover:border-cyan-300 hover:bg-cyan-400/20 hover:text-white hover:shadow-lg hover:-translate-y-0.5 cursor-pointer`}
+                    aria-label="Learn more about me on my portfolio site"
+                  >
+                    {pill}
+                    <span className="ml-2 text-cyan-100">→</span>
+                  </a>
+                )
+              }
+
+              if (index === 1) {
+                return (
+                  <a
+                    key={pill}
+                    href="https://share.google/LLEtg3zD2pqgspSXd"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${baseClasses} border-[#dadce0] bg-white text-[#1a73e8] shadow-sm shadow-[#1a73e8]/10 hover:border-[#4285f4] hover:bg-[#e8f0fe] hover:text-[#174ea6] hover:shadow-md hover:-translate-y-0.5 cursor-pointer`}
+                    aria-label="Read Google reviews"
+                  >
+                    <span className="inline-flex items-center gap-1">
+                      <span className="h-2.5 w-2.5 rounded-full bg-[#4285F4]" />
+                      <span className="h-2.5 w-2.5 rounded-full bg-[#EA4335]" />
+                      <span className="h-2.5 w-2.5 rounded-full bg-[#FBBC05]" />
+                      <span className="h-2.5 w-2.5 rounded-full bg-[#34A853]" />
+                      <span className="ml-2">{pill}</span>
+                    </span>
+                  </a>
+                )
+              }
+
+              return (
+                <span key={pill} className={`${baseClasses} border-indigo-400/30 bg-indigo-400/10 text-indigo-200`}>
+                  {pill}
+                </span>
+              )
+            })}
           </div>
         </div>
       </div>
