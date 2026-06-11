@@ -95,7 +95,13 @@ type TranslationSchema = {
     loading: string
     noMore: string
     cardCta: string
-    items: Array<{ title: string; description: string; image: string; link: string }>
+    items: Array<{
+      title: string
+      description: string
+      image: string
+      link: string
+      recent?: boolean
+    }>
   }
   contact: {
     timelineBadge: string
