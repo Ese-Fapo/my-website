@@ -9,6 +9,7 @@ type ProjectProps = {
   image: string;
   link: string;
   ctaLabel: string;
+  recent?: boolean;
 };
 
 export default function ProjectCard({
@@ -17,6 +18,7 @@ export default function ProjectCard({
   image,
   link,
   ctaLabel,
+  recent = false,
 }: ProjectProps) {
   const isExternal = link.startsWith("http");
 
@@ -44,7 +46,14 @@ export default function ProjectCard({
 
       <div className="relative mt-4 flex flex-1 flex-col">
         <div className="flex items-start justify-between gap-3">
-          <h3 className="text-xl font-semibold text-white sm:text-[1.35rem]">{title}</h3>
+          <div>
+            {recent ? (
+              <span className="inline-flex items-center rounded-full bg-emerald-500/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-emerald-200 shadow-sm shadow-emerald-500/20">
+                Recent
+              </span>
+            ) : null}
+            <h3 className="mt-3 text-xl font-semibold text-white sm:text-[1.35rem]">{title}</h3>
+          </div>
           <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-cyan-400/30 bg-cyan-400/10 text-cyan-200 transition group-hover:bg-cyan-400 group-hover:text-slate-950">
             <ArrowUpRightIcon className="h-5 w-5" />
           </span>

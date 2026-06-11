@@ -354,6 +354,13 @@ const translations: Record<Locale, TranslationSchema> = {
       noMore: "Confira nosso portfólio para ver mais projetos.",
       cardCta: "Ver projeto →",
       items: [
+        {
+          title: "Real Park Sapateria e Costureira",
+          description: "Consertos, ajustes e serviços rápidos em um só lugar. Sapataria, costura, foto 3x4, chaveiro e xerox com atendimento prático para o seu dia a dia.",
+          image: "/images.web/sapaterio-screenhot.jpeg",
+          link: "https://fantatastic-hair-3i89.vercel.app/",
+          recent: true,
+        },
          {
           title: "Site para Carpinteiro",
           description: "Site profissional para carpinteiro, apresentando serviços de marcenaria, portfólio de trabalhos e contato direto.",
@@ -383,6 +390,7 @@ const translations: Record<Locale, TranslationSchema> = {
           description: "Design moderno, performance otimizada e SEO (Visibilidade) para atrair clientes locais.",
           image: "/images.web/image_berber.jpeg",
           link: "https://berber-shop-ruby.vercel.app/",
+          recent: true,
         },
         {
           title: "Mini e-commerce",
@@ -402,7 +410,13 @@ const translations: Record<Locale, TranslationSchema> = {
           image: "/images.web/diffrent-screen.jpg",
           link: "https://tech-blog-i77h.vercel.app/",
         },
-       
+        {
+          title: "Fantastic Hair",
+          description: "Loja online de perucas e extensões com identidade premium, vendas via WhatsApp e imagem elegante.",
+          image: "/images.web/cabelo screenshot.jpeg",
+          link: "https://fantatastic-hair-3i89.vercel.app/",
+          recent: true,
+        },
       ],
     },
     contact: {
@@ -739,12 +753,25 @@ const translations: Record<Locale, TranslationSchema> = {
         
         
         {
+          title: "Real Park Sapateria e Costureira",
+          description: "Quick shoe repair, sewing, 3x4 photos, key cutting and Xerox with practical service for your daily needs.",
+          image: "/images.web/sapaterio-screenhot.jpeg",
+          link: "https://fantatastic-hair-3i89.vercel.app/",
+          recent: true,
+        },
+        {
           title: "Tech blog",
           description: "Scalable content, strong performance, and smooth navigation.",
           image: "/images.web/diffrent-screen.jpg",
           link: "https://tech-blog-i77h.vercel.app/",
         },
-       
+        {
+          title: "Fantastic Hair",
+          description: "Premium wig and hair extension shop with polished branding and fast WhatsApp ordering.",
+          image: "/images.web/cabelo screenshot.jpeg",
+          link: "https://fantatastic-hair-3i89.vercel.app/",
+          recent: true,
+        },
       ],
     },
     contact: {
@@ -1062,6 +1089,7 @@ const translations: Record<Locale, TranslationSchema> = {
           description: "Diseño moderno, rendimiento optimizado y SEO (Visibilidad) para atraer clientes locales.",
           image: "/images.web/image_berber.jpeg",
           link: "https://berber-shop-ruby.vercel.app/",
+          recent: true,
         },
         {
           title: "Mini e-commerce",
@@ -1076,12 +1104,25 @@ const translations: Record<Locale, TranslationSchema> = {
           link: "#",
         },
         {
+          title: "Real Park Sapateria e Costureira",
+          description: "Reparaciones rápidas, ajustes y servicios en un solo lugar. Zapatería, costura, foto 3x4, llaves y Xerox con atención práctica para tu día a día.",
+          image: "/images.web/sapaterio-screenhot.jpeg",
+          link: "https://fantatastic-hair-3i89.vercel.app/",
+          recent: true,
+        },
+        {
           title: "Blog tech",
           description: "Contenido escalable, rendimiento y navegación fluida.",
           image: "/images.web/diffrent-screen.jpg",
           link: "https://tech-blog-i77h.vercel.app/",
         },
-        
+        {
+          title: "Fantastic Hair",
+          description: "Tienda online de pelucas y extensiones con presencia premium y contacto rápido por WhatsApp.",
+          image: "/images.web/cabelo screenshot.jpeg",
+          link: "https://fantatastic-hair-3i89.vercel.app/",
+          recent: true,
+        },
       ],
     },
     contact: {

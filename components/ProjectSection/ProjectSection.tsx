@@ -7,13 +7,25 @@ import { useLanguage } from "@/lib/i18n";
 
 export default function ProjectsSection() {
   const { t } = useLanguage();
-  const projects = t.projects.items;
+  type ProjectItem = {
+    title: string;
+    description: string;
+    image: string;
+    link: string;
+    recent?: boolean;
+  };
+
+  const projects = t.projects.items as ProjectItem[];
+  const orderedProjects = useMemo(
+    () => [...projects].sort((a, b) => Number(!!b.recent) - Number(!!a.recent)),
+    [projects]
+  );
   const [visibleCount, setVisibleCount] = useState(3);
   const [isLoading, setIsLoading] = useState(false);
 
   const visibleProjects = useMemo(
-    () => projects.slice(0, visibleCount),
-    [projects, visibleCount]
+    () => orderedProjects.slice(0, visibleCount),
+    [orderedProjects, visibleCount]
   );
 
   const hasMore = visibleCount < projects.length;
@@ -53,7 +65,12 @@ export default function ProjectsSection() {
         {/* Grid */}
         <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {visibleProjects.map((project, index) => (
-            <ProjectCard key={`${project.title}-${index}`} {...project} ctaLabel={t.projects.cardCta} />
+            <ProjectCard
+              key={`${project.title}-${index}`}
+              {...project}
+              ctaLabel={t.projects.cardCta}
+              recent={project.recent}
+            />
           ))}
         </div>
 
