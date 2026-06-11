@@ -364,7 +364,7 @@ const translations: Record<Locale, TranslationSchema> = {
           title: "Real Park Sapateria e Costureira",
           description: "Consertos, ajustes e serviços rápidos em um só lugar. Sapataria, costura, foto 3x4, chaveiro e xerox com atendimento prático para o seu dia a dia.",
           image: "/images.web/sapaterio-screenhot.jpeg",
-          link: "https://fantatastic-hair-3i89.vercel.app/",
+          link: "https://www.sapatariarealpark.com.br/",
           recent: true,
         },
          {
@@ -762,7 +762,7 @@ const translations: Record<Locale, TranslationSchema> = {
           title: "Real Park Sapateria e Costureira",
           description: "Quick shoe repair, sewing, 3x4 photos, key cutting and Xerox with practical service for your daily needs.",
           image: "/images.web/sapaterio-screenhot.jpeg",
-          link: "https://fantatastic-hair-3i89.vercel.app/",
+          link: "https://www.sapatariarealpark.com.br/",
           recent: true,
         },
         {
@@ -1113,7 +1113,7 @@ const translations: Record<Locale, TranslationSchema> = {
           title: "Real Park Sapateria e Costureira",
           description: "Reparaciones rápidas, ajustes y servicios en un solo lugar. Zapatería, costura, foto 3x4, llaves y Xerox con atención práctica para tu día a día.",
           image: "/images.web/sapaterio-screenhot.jpeg",
-          link: "https://fantatastic-hair-3i89.vercel.app/",
+          link: "https://www.sapatariarealpark.com.br/",
           recent: true,
         },
         {

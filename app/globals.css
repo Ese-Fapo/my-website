@@ -42,4 +42,10 @@
 	}
 }
 
+@layer utilities {
+	.bg-contact-section {
+		background-color: #0b1220;
+	}
+}
+
 
