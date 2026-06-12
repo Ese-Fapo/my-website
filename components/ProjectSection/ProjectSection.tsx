@@ -5,7 +5,15 @@ import ProjectCard from "@/components/Project/ProjectCard";
 import Link from "next/link";
 import { useLanguage } from "@/lib/i18n";
 
-export default function ProjectsSection() {
+type ProjectsSectionProps = {
+  initialVisibleCount?: number;
+  loadMoreUrl?: string | null;
+};
+
+export default function ProjectsSection({
+  initialVisibleCount = 3,
+  loadMoreUrl = "/projects/",
+}: ProjectsSectionProps) {
   const { t } = useLanguage();
   type ProjectItem = {
     title: string;
@@ -20,8 +28,7 @@ export default function ProjectsSection() {
     () => [...projects].sort((a, b) => Number(!!b.recent) - Number(!!a.recent)),
     [projects]
   );
-  const [visibleCount, setVisibleCount] = useState(3);
-  const [isLoading, setIsLoading] = useState(false);
+  const [visibleCount] = useState(initialVisibleCount);
 
   const visibleProjects = useMemo(
     () => orderedProjects.slice(0, visibleCount),
@@ -29,22 +36,17 @@ export default function ProjectsSection() {
   );
 
   const hasMore = visibleCount < projects.length;
-
-  const handleLoadMore = () => {
-    if (!hasMore || isLoading) return;
-    setIsLoading(true);
-    setTimeout(() => {
-      setVisibleCount((prev) => Math.min(prev + 3, projects.length));
-      setIsLoading(false);
-    }, 700);
-  };
+  const showLoadMoreLink = Boolean(loadMoreUrl && hasMore);
 
   return (
-    <section id="projects" className="scroll-mt-28 bg-black py-16 sm:py-24">
+    <section
+      id="projects"
+      className="scroll-mt-28 bg-linear-to-br from-slate-950 via-slate-900 to-indigo-950 py-16 sm:py-24"
+    >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         {/* Header */}
         <div className="mb-10 text-center sm:mb-14">
-          <p className="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-cyan-200">
+          <p className="inline-flex items-center gap-2 rounded-full border border-indigo-400/30 bg-indigo-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-indigo-200">
             {t.projects.badge}
           </p>
           <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
@@ -52,11 +54,11 @@ export default function ProjectsSection() {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm sm:text-base text-slate-200/80">
             {t.projects.descriptionBeforePortfolio}{" "}
-            <Link href="https://ese-faps-xbvb.vercel.app/" className="font-semibold text-cyan-200 hover:text-cyan-100">
+            <Link href="https://ese-faps-xbvb.vercel.app/" className="font-semibold text-indigo-200 hover:text-indigo-100">
               {t.projects.portfolioLink}
             </Link>
             {t.projects.descriptionAfterPortfolio}{" "}
-            <Link href="/contact/" className="font-semibold text-emerald-200 hover:text-emerald-100">
+            <Link href="/contact/" className="font-semibold text-violet-200 hover:text-violet-100">
               {t.projects.contactLink}
             </Link>
           </p>
@@ -75,24 +77,15 @@ export default function ProjectsSection() {
         </div>
 
         <div className="mt-10 flex items-center justify-center">
-          {hasMore ? (
-            <button
-              type="button"
-              onClick={handleLoadMore}
-              disabled={isLoading}
-              className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/20 hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-70"
-              aria-live="polite"
-              aria-busy={isLoading}
+          {showLoadMoreLink ? (
+            <Link
+              href={loadMoreUrl!}
+              className="inline-flex items-center gap-3 rounded-full border border-indigo-300/20 bg-indigo-500/10 px-6 py-3 text-sm font-semibold text-indigo-100 transition hover:border-indigo-200/30 hover:bg-indigo-500/15"
             >
-              {isLoading ? (
-                <span className="inline-flex items-center gap-2">
-                  <span className="h-4 w-4 animate-spin rounded-full border-2 border-white/30 border-t-white" />
-                  {t.projects.loading}
-                </span>
-              ) : (
-                t.projects.loadMore
-              )}
-            </button>
+              {t.projects.loadMore}
+            </Link>
+          ) : hasMore ? (
+            <p className="text-sm text-slate-400">{t.projects.loadMore}</p>
           ) : (
             <p className="text-sm text-slate-400">{t.projects.noMore}</p>
           )}
