@@ -92,7 +92,7 @@ const About = () => {
                 return (
                   <a
                     key={pill}
-                    href="https://share.google/LLEtg3zD2pqgspSXd"
+                    href="https://g.page/r/CZ1LfPpfu_ZrEBM/review"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`${baseClasses} border-[#dadce0] bg-white text-[#1a73e8] shadow-sm shadow-[#1a73e8]/10 hover:border-[#4285f4] hover:bg-[#e8f0fe] hover:text-[#174ea6] hover:shadow-md hover:-translate-y-0.5 cursor-pointer`}

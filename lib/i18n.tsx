@@ -249,7 +249,7 @@ const translations: Record<Locale, TranslationSchema> = {
         "Desde uma landing page simples até um site institucional profissional ou loja virtual, ajudo empresas de Florianópolis, São José, Joinville e Balneário Camboriú a atrair mais clientes e vender mais.",
         "Meu foco é design limpo, SEO local e performance rápida para que seu site carregue bem e converta visitantes em clientes.",
       ],
-      pills: ["Portfólio", "Avaliações do Google", "SEO local"],
+      pills: ["Portfólio", "Avaliações do Google"],
     },
     services: {
       badge: "serviços",
@@ -603,7 +603,7 @@ const translations: Record<Locale, TranslationSchema> = {
         "From a simple landing page to a professional business website or online store, I create sites that help companies in Florianópolis, São José, Joinville, and Balneário Camboriú attract more clients and close more sales.",
         "My focus is clean design, local SEO, and fast performance so your website looks great, loads quickly, and converts visitors into customers.",
       ],
-      pills: ["Portfolio", "Google reviews", "Local SEO"],
+      pills: ["Portfolio", "Google reviews"],
     },
     services: {
       badge: "services",
@@ -955,7 +955,7 @@ const translations: Record<Locale, TranslationSchema> = {
         "Desde una landing page simple hasta un sitio institucional profesional o una tienda online, ayudo a empresas de Florianópolis, São José, Joinville y Balneário Camboriú a atraer más clientes y cerrar más ventas.",
         "Mi enfoque es diseño limpio, SEO local y rendimiento rápido para que tu sitio cargue bien y convierta visitantes en clientes.",
       ],
-      pills: ["Portafolio", "Reseñas de Google", "SEO local"],
+      pills: ["Portafolio", "Reseñas de Google"],
     },
     services: {
       badge: "servicios",
