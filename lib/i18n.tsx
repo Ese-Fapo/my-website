@@ -360,6 +360,21 @@ const translations: Record<Locale, TranslationSchema> = {
       noMore: "Confira nosso portfólio para ver mais projetos.",
       cardCta: "Ver projeto →",
       items: [
+          {
+          title: "Site para fotografia",
+          description: "Site elegante para fotógrafo, com portfólio visual, apresentação de serviços e contato rápido para transformar visitantes em novos clientes.",
+          image: "/images.web/photographer-website.jpeg",
+          link: "https://soulacephotography.com/",
+          recent: true,
+        },
+        {
+          title: "Portfólio profissional",
+          description: "Portfólio moderno e responsivo para apresentar serviços, projetos e informações de contato com visual claro, elegante e focado em gerar confiança.",
+          image: "/images.web/portfiolo.jpeg",
+          link: "https://ese-faps-xbvb.vercel.app/",
+          recent: true,
+        },
+      
         {
           title: "Real Park Sapateria e Costureira",
           description: "Consertos, ajustes e serviços rápidos em um só lugar. Sapataria, costura, foto 3x4, chaveiro e xerox com atendimento prático para o seu dia a dia.",
@@ -715,6 +730,21 @@ const translations: Record<Locale, TranslationSchema> = {
       cardCta: "View project →",
       items: [
          {
+          title: "Photography website",
+          description: "An elegant website for a photographer, with a visual portfolio, service presentation, and fast contact flow to turn visitors into new clients.",
+          image: "/images.web/photographer-website.jpeg",
+          link: "https://soulacephotography.com/",
+          recent: true,
+        },
+        {
+          title: "Professional portfolio",
+          description: "A modern responsive portfolio for presenting services, projects, and contact information with a clean, elegant design built to create trust.",
+          image: "/images.web/portfiolo.jpeg",
+          link: "https://ese-faps-xbvb.vercel.app/",
+          recent: true,
+        },
+       
+         {
           title: "Carpenter Website",
           description: "Professional website for a carpenter, showcasing woodworking services, project portfolio, and direct contact.",
           image: "/images.web/carpenter.jpeg",
@@ -1066,6 +1096,21 @@ const translations: Record<Locale, TranslationSchema> = {
       noMore: "Revisa nuestro portafolio para ver más proyectos.",
       cardCta: "Ver proyecto →",
       items: [
+        {
+          title: "Sitio web para fotografía",
+          description: "Sitio elegante para fotógrafo, con portafolio visual, presentación de servicios y contacto rápido para convertir visitantes en nuevos clientes.",
+          image: "/images.web/photographer-website.jpeg",
+          link: "https://soulacephotography.com/",
+          recent: true,
+        },
+        {
+          title: "Portafolio profesional",
+          description: "Portafolio moderno y responsivo para presentar servicios, proyectos e información de contacto con un diseño limpio, elegante y enfocado en generar confianza.",
+          image: "/images.web/portfiolo.jpeg",
+          link: "https://ese-faps-xbvb.vercel.app/",
+          recent: true,
+        },
+        
         {
           title: "Sitio web para Carpintero",
           description: "Sitio profesional para carpintero, presentando servicios de carpintería, portafolio de trabajos y contacto directo.",

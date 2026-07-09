@@ -70,7 +70,7 @@ export default function ProjectsSection({
         <div className="grid gap-4 sm:grid-cols-3 mb-10">
           <div className="rounded-[28px] border border-white/10 bg-slate-900/75 p-5 text-left shadow-[0_20px_60px_rgba(15,23,42,0.35)] backdrop-blur-sm">
             <p className="text-xs uppercase tracking-[0.25em] text-indigo-300/90">Launches</p>
-            <p className="mt-3 text-3xl font-semibold text-white">12+</p>
+            <p className="mt-3 text-3xl font-semibold text-white">120+</p>
             <p className="mt-2 text-sm text-slate-400">Live digital experiences built for growth.</p>
           </div>
           <div className="rounded-[28px] border border-white/10 bg-slate-900/75 p-5 text-left shadow-[0_20px_60px_rgba(15,23,42,0.35)] backdrop-blur-sm">
