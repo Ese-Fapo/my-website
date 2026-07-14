@@ -27,19 +27,21 @@ const Home = () => {
         <Hero />
 
         <div className="[content-visibility:auto] [contain-intrinsic-size:1px_900px]">
-          <About />
-        </div>
-        <div className="[content-visibility:auto] [contain-intrinsic-size:1px_900px]">
           <Services />
         </div>
         <div className="[content-visibility:auto] [contain-intrinsic-size:1px_1000px]">
           <ProjectsSection />
         </div>
         <div className="[content-visibility:auto] [contain-intrinsic-size:1px_900px]">
-          <Pricing />
+          <LocalSeo />
+        </div>
+        <div className="[content-visibility:auto] [contain-intrinsic-size:1px_900px]">
+
+          <About />
         </div>
         <div className="[content-visibility:auto] [contain-intrinsic-size:1px_850px]">
-          <LocalSeo />
+          
+          <Pricing />
         </div>
         <div className="[content-visibility:auto] [contain-intrinsic-size:1px_800px]">
           <Reviews />

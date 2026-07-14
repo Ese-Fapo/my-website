@@ -41,57 +41,65 @@ export default function ProjectsSection({
   const showLoadMoreLink = Boolean(loadMoreUrl && hasMore);
 
   return (
-    <section id="projects" className="relative overflow-hidden scroll-mt-28 bg-slate-100 py-16 text-slate-950 sm:py-24">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-96 bg-[radial-gradient(circle_at_top_left,_rgba(14,165,233,0.24),_transparent_36%)]" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-96 bg-[radial-gradient(circle_at_bottom_right,_rgba(168,85,247,0.18),_transparent_38%)]" />
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.045)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.045)_1px,transparent_1px)] bg-[size:40px_40px]" />
-      <div className="mx-auto relative max-w-7xl px-5 sm:px-8">
-        <div className="mb-10 text-center sm:mb-14">
-          <p className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white/80 px-3 py-1 text-xs font-bold uppercase tracking-[0.3em] text-sky-700 shadow-sm backdrop-blur">
-            {t.projects.badge}
-          </p>
+    <section id="projects" className="relative overflow-hidden scroll-mt-28 bg-slate-950 py-16 text-white sm:py-24">
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.055)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.055)_1px,transparent_1px)] bg-[size:44px_44px] opacity-35" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-cyan-300/70 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-black/45 to-transparent" />
 
-          <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-5xl">
-            {t.projects.title}
-          </h2>
+      <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
+        <div className="mb-10 grid items-end gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p className="inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-cyan-300/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.3em] text-cyan-100 shadow-sm backdrop-blur">
+              <span className="h-2 w-2 rounded-full bg-cyan-300 shadow-[0_0_16px_rgba(103,232,249,0.85)]" />
+              {t.projects.badge}
+            </p>
 
-          <p className="mx-auto mt-4 max-w-3xl text-sm sm:text-base leading-7 text-slate-700">
-            {t.projects.descriptionBeforePortfolio}{" "}
-            <Link href="https://ese-faps-xbvb.vercel.app/" className="font-bold text-sky-700 hover:text-slate-950">
-              {t.projects.portfolioLink}
-            </Link>
-            {t.projects.descriptionAfterPortfolio}{" "}
-            <Link href="/contact/" className="font-bold text-violet-700 hover:text-slate-950">
-              {t.projects.contactLink}
-            </Link>
-          </p>
-        </div>
-
-        <div className="grid gap-4 sm:grid-cols-3 mb-10">
-          <div className="rounded-[28px] border border-white bg-white/85 p-5 text-left shadow-[0_20px_60px_rgba(15,23,42,0.12)] backdrop-blur-sm">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-sky-700">Launches</p>
-            <p className="mt-3 text-3xl font-black text-slate-950">120+</p>
-            <p className="mt-2 text-sm text-slate-600">Live digital experiences built for growth.</p>
+            <h2 className="mt-5 max-w-3xl text-4xl font-black tracking-tight text-white sm:text-6xl">
+              {t.projects.title}
+            </h2>
           </div>
-          <div className="rounded-[28px] border border-white bg-white/85 p-5 text-left shadow-[0_20px_60px_rgba(15,23,42,0.12)] backdrop-blur-sm">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-fuchsia-700">Client rating</p>
-            <p className="mt-3 text-3xl font-black text-slate-950">4.9/5</p>
-            <p className="mt-2 text-sm text-slate-600">Designs that feel premium and perform beautifully.</p>
-          </div>
-          <div className="rounded-[28px] border border-white bg-white/85 p-5 text-left shadow-[0_20px_60px_rgba(15,23,42,0.12)] backdrop-blur-sm">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-cyan-700">Responsive</p>
-            <p className="mt-3 text-3xl font-black text-slate-950">Mobile-first</p>
-            <p className="mt-2 text-sm text-slate-600">Every project is optimized for all screens and devices.</p>
+
+          <div className="rounded-2xl border border-white/10 bg-white/[0.06] p-5 shadow-[0_22px_70px_rgba(0,0,0,0.26)] backdrop-blur">
+            <p className="text-sm leading-7 text-slate-200 sm:text-base">
+              {t.projects.descriptionBeforePortfolio}{" "}
+              <Link href="https://ese-faps-xbvb.vercel.app/" className="font-bold text-cyan-200 hover:text-white">
+                {t.projects.portfolioLink}
+              </Link>
+              {t.projects.descriptionAfterPortfolio}{" "}
+              <Link href="/contact/" className="font-bold text-amber-200 hover:text-white">
+                {t.projects.contactLink}
+              </Link>
+            </p>
           </div>
         </div>
 
-        <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mb-8 grid gap-3 sm:grid-cols-3">
+          <div className="border border-white/10 bg-white/[0.06] p-5 text-left backdrop-blur">
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-cyan-200">Launches</p>
+            <p className="mt-3 text-4xl font-black text-white">120+</p>
+            <p className="mt-2 text-sm text-slate-300">Live digital experiences built for growth.</p>
+          </div>
+          <div className="border border-white/10 bg-white/[0.06] p-5 text-left backdrop-blur">
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-amber-200">Client rating</p>
+            <p className="mt-3 text-4xl font-black text-white">4.9/5</p>
+            <p className="mt-2 text-sm text-slate-300">Designs that feel premium and perform beautifully.</p>
+          </div>
+          <div className="border border-white/10 bg-white/[0.06] p-5 text-left backdrop-blur">
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-fuchsia-200">Responsive</p>
+            <p className="mt-3 text-4xl font-black text-white">Mobile-first</p>
+            <p className="mt-2 text-sm text-slate-300">Every project is optimized for all screens and devices.</p>
+          </div>
+        </div>
+
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {visibleProjects.map((project, index) => (
             <ProjectCard
               key={`${project.title}-${index}`}
               {...project}
               ctaLabel={t.projects.cardCta}
               recent={project.recent}
+              featured={index === 0}
+              className={index === 0 ? "md:col-span-2 lg:col-span-2" : ""}
             />
           ))}
         </div>
@@ -100,14 +108,14 @@ export default function ProjectsSection({
           {showLoadMoreLink ? (
             <Link
               href={loadMoreUrl!}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3 text-sm font-bold text-white shadow-[0_20px_60px_rgba(15,23,42,0.18)] transition duration-300 hover:scale-[1.01] hover:bg-sky-700 hover:shadow-[0_22px_66px_rgba(14,165,233,0.24)]"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-slate-950 shadow-[0_20px_60px_rgba(0,0,0,0.24)] transition duration-300 hover:scale-[1.01] hover:bg-cyan-300 hover:shadow-[0_22px_66px_rgba(14,165,233,0.24)]"
             >
               {t.projects.loadMore}
             </Link>
           ) : hasMore ? (
-            <p className="text-sm text-slate-600">{t.projects.loadMore}</p>
+            <p className="text-sm text-slate-300">{t.projects.loadMore}</p>
           ) : (
-            <p className="text-sm text-slate-600">{t.projects.noMore}</p>
+            <p className="text-sm text-slate-300">{t.projects.noMore}</p>
           )}
         </div>
       </div>
