@@ -21,7 +21,7 @@ type ProjectItem = {
 };
 
 export default function ProjectsSection({
-  initialVisibleCount = 3,
+  initialVisibleCount = 4,
   loadMoreUrl = "/projects/",
 }: ProjectsSectionProps) {
   const { t } = useLanguage();
@@ -91,15 +91,13 @@ export default function ProjectsSection({
           </div>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-5 md:grid-cols-2">
           {visibleProjects.map((project, index) => (
             <ProjectCard
               key={`${project.title}-${index}`}
               {...project}
               ctaLabel={t.projects.cardCta}
               recent={project.recent}
-              featured={index === 0}
-              className={index === 0 ? "md:col-span-2 lg:col-span-2" : ""}
             />
           ))}
         </div>

@@ -6,12 +6,13 @@ import { useLanguage } from "@/lib/i18n"
 
 const About = () => {
   const { t } = useLanguage()
+  const [titleBeforeYears, titleAfterYears] = t.about.title.split("6+")
 
   return (
     <section id="about" className="scroll-mt-28 py-16 sm:py-24 lg:py-32">
       <div className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10 sm:gap-12 lg:gap-20 px-5 sm:px-8">
         {/** image */}
-        <div className="relative mx-auto w-full max-w-md sm:max-w-lg lg:max-w-xl">
+        <div className="relative order-2 mx-auto w-full max-w-md sm:max-w-lg lg:order-1 lg:row-span-2 lg:max-w-xl">
           <div className="absolute -inset-6 rounded-4xl bg-linear-to-br from-cyan-500/20 via-fuchsia-500/10 to-indigo-500/20 blur-2xl" />
           <div className="group relative aspect-4/3 w-full overflow-hidden rounded-[28px] border border-white/10 bg-slate-900/40 shadow-[0_35px_120px_rgba(15,23,42,0.45)] backdrop-blur">
             <div className="absolute inset-0 opacity-70 bg-[radial-gradient(100%_80%_at_70%_0%,rgba(56,189,248,0.25)_0%,transparent_55%)]" />
@@ -49,14 +50,28 @@ const About = () => {
           </div>
         </div>
 
-        {/** content */}
-        <div className="text-center lg:text-left">
+        {/** heading */}
+        <div className="order-1 text-center lg:order-2 lg:text-left">
           <p className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs sm:text-sm font-semibold uppercase tracking-[0.25em] text-blue-200">
             {t.about.badge}
           </p>
           <h2 className="mt-4 text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
-            {t.about.title}
+            {titleAfterYears === undefined ? (
+              t.about.title
+            ) : (
+              <>
+                {titleBeforeYears}
+                <span className="mx-1 inline-flex rounded-xl bg-linear-to-r from-cyan-300 via-emerald-300 to-fuchsia-300 bg-clip-text font-extrabold text-transparent drop-shadow-[0_0_18px_rgba(34,211,238,0.35)]">
+                  6+
+                </span>
+                {titleAfterYears}
+              </>
+            )}
           </h2>
+        </div>
+
+        {/** content */}
+        <div className="order-3 text-center lg:text-left">
           <p className="mt-5 sm:mt-6 text-base sm:text-lg leading-relaxed text-slate-200/90">
             {t.about.paragraphs[0]}
           </p>

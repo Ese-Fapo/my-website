@@ -49,7 +49,7 @@ export const Footer = () => {
             </p>
             <div className="mt-5 flex items-center gap-4">
               <a
-                href="https://www.instagram.com/easy_ese_1/"
+                href="https://www.instagram.com/sites_profissionai/"
                 target="_blank"
                 rel="noreferrer"
                 className="group inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-linear-to-br from-[#F58529]/25 via-[#DD2A7B]/25 to-[#515BD4]/25 text-white/90 shadow-[0_0_0_rgba(221,42,123,0)] transition hover:border-white/20 hover:text-white hover:shadow-[0_0_26px_rgba(221,42,123,0.85)]"
