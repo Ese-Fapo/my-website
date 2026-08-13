@@ -306,7 +306,7 @@ const translations: Record<Locale, TranslationSchema> = {
         {
           title: "Site institucional",
           description: "Site profissional para apresentar sua empresa e serviços.",
-          price: "R$ 1.500",
+          price: "",
           popular: true,
           features: [
             { label: "Até 5 páginas", included: true },
@@ -321,7 +321,7 @@ const translations: Record<Locale, TranslationSchema> = {
         {
           title: "Loja virtual",
           description: "E-commerce com catálogo, carrinho e finalização de pedido.",
-          price: "R$ 3.500+",
+          price: "",
           features: [
             { label: "Catálogo de produtos", included: true },
             { label: "Carrinho e checkout", included: true },
@@ -335,7 +335,7 @@ const translations: Record<Locale, TranslationSchema> = {
         {
           title: "Suporte mensal",
           description: "Suporte contínuo para seu site e ajustes conforme sua empresa cresce, cobrados por demanda.",
-          price: "A combinar",
+          price: "",
           features: [
             { label: "Ajustes mensais", included: true },
             { label: "Atualização de conteúdo", included: true },
@@ -360,13 +360,28 @@ const translations: Record<Locale, TranslationSchema> = {
       noMore: "Confira nosso portfólio para ver mais projetos.",
       cardCta: "Ver projeto →",
       items: [
-          {
+        {
+          title: "App de delivery",
+          description: "Plataforma completa de delivery com painel administrativo, app para parceiros e área do cliente para pedidos, acompanhamento e gestão.",
+          image: "/images.web/deliver-app.png",
+          link: "https://bisque-baboon-527027.hostingersite.com/",
+          recent: true,
+        },
+        {
+          title: "Site para restaurante",
+          description: "Site moderno para restaurante, com cardápio bonito, layout elegante e informações essenciais para clientes conhecerem o espaço e entrarem em contato.",
+          image: "/images.web/resturante.png",
+          link: "https://darkgoldenrod-toad-190001.hostingersite.com/",
+          recent: true,
+        },
+        {
           title: "Site para fotografia",
           description: "Site elegante para fotógrafo, com portfólio visual, apresentação de serviços e contato rápido para transformar visitantes em novos clientes.",
           image: "/images.web/photographer-website.jpeg",
           link: "https://soulacephotography.com/",
           recent: true,
         },
+        
         {
           title: "Portfólio profissional",
           description: "Portfólio moderno e responsivo para apresentar serviços, projetos e informações de contato com visual claro, elegante e focado em gerar confiança.",
@@ -675,7 +690,7 @@ const translations: Record<Locale, TranslationSchema> = {
         {
           title: "Business website",
           description: "A professional website to present your company and services.",
-          price: "R$ 1800",
+          price: "",
           popular: true,
           features: [
             { label: "Up to 5 pages", included: true },
@@ -690,7 +705,7 @@ const translations: Record<Locale, TranslationSchema> = {
         {
           title: "Online store",
           description: "E-commerce with catalog, cart, and checkout flow.",
-          price: "R$ 4500+",
+          price: "",
           features: [
             { label: "Product catalog", included: true },
             { label: "Cart and checkout", included: true },
@@ -704,7 +719,7 @@ const translations: Record<Locale, TranslationSchema> = {
         {
           title: "Monthly support",
           description: "Ongoing site care and updates priced per request, so your plan grows with your business.",
-          price: "For a fee",
+          price: "",
           features: [
             { label: "Monthly adjustments", included: true },
             { label: "Content updates", included: true },
@@ -729,11 +744,25 @@ const translations: Record<Locale, TranslationSchema> = {
       noMore: "Check out our portfolio for more projects.",
       cardCta: "View project →",
       items: [
-         {
+        {
+          title: "Delivery app",
+          description: "A complete delivery platform with an admin panel, partner app, and customer section for ordering, tracking, and management.",
+          image: "/images.web/deliver-app.png",
+          link: "https://bisque-baboon-527027.hostingersite.com/",
+          recent: true,
+        },
+        {
           title: "Photography website",
           description: "An elegant website for a photographer, with a visual portfolio, service presentation, and fast contact flow to turn visitors into new clients.",
           image: "/images.web/photographer-website.jpeg",
           link: "https://soulacephotography.com/",
+          recent: true,
+        },
+        {
+          title: "Restaurant website",
+          description: "A modern restaurant website with a beautiful menu layout, polished presentation, and clear restaurant information for visitors.",
+          image: "/images.web/resturante.png",
+          link: "https://darkgoldenrod-toad-190001.hostingersite.com/",
           recent: true,
         },
         {
@@ -1042,7 +1071,7 @@ const translations: Record<Locale, TranslationSchema> = {
         {
           title: "Sitio institucional",
           description: "Sitio profesional para presentar tu empresa y servicios.",
-          price: "R$ 1.800",
+          price: "",
           popular: true,
           features: [
             { label: "Hasta 5 páginas", included: true },
@@ -1057,7 +1086,7 @@ const translations: Record<Locale, TranslationSchema> = {
         {
           title: "Tienda online",
           description: "E-commerce con catálogo, carrito y finalización de pedido.",
-          price: "R$ 3.500+",
+          price: "",
           features: [
             { label: "Catálogo de productos", included: true },
             { label: "Carrito y checkout", included: true },
@@ -1071,7 +1100,7 @@ const translations: Record<Locale, TranslationSchema> = {
         {
           title: "Soporte mensual",
           description: "Cuidado continuo para tu sitio y ajustes según crece tu negocio, con tarifa a medida.",
-          price: "A convenir",
+          price: "",
           features: [
             { label: "Ajustes mensuales", included: true },
             { label: "Actualización de contenido", included: true },
@@ -1097,10 +1126,24 @@ const translations: Record<Locale, TranslationSchema> = {
       cardCta: "Ver proyecto →",
       items: [
         {
+          title: "App de delivery",
+          description: "Plataforma completa de delivery con panel administrativo, app para socios y sección de clientes para pedidos, seguimiento y gestión.",
+          image: "/images.web/deliver-app.png",
+          link: "https://bisque-baboon-527027.hostingersite.com/",
+          recent: true,
+        },
+        {
           title: "Sitio web para fotografía",
           description: "Sitio elegante para fotógrafo, con portafolio visual, presentación de servicios y contacto rápido para convertir visitantes en nuevos clientes.",
           image: "/images.web/photographer-website.jpeg",
           link: "https://soulacephotography.com/",
+          recent: true,
+        },
+        {
+          title: "Sitio web para restaurante",
+          description: "Sitio moderno para restaurante, con un menú atractivo, diseño elegante e información clara para que los clientes conozcan el lugar y contacten.",
+          image: "/images.web/resturante.png",
+          link: "https://darkgoldenrod-toad-190001.hostingersite.com/",
           recent: true,
         },
         {

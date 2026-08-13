@@ -85,7 +85,8 @@ const Pricing = () => {
         <div className="mt-10 grid gap-5 sm:mt-12 sm:grid-cols-2 xl:grid-cols-4">
           {t.pricing.items.map((item, index) => {
             const Icon = icons[index % icons.length]
-            const optionalPlan = isOptionalPlan(item.price)
+            const hasPrice = item.price.trim().length > 0
+            const optionalPlan = hasPrice && isOptionalPlan(item.price)
             const discountPercent = item.discountPercent ?? DISCOUNT_PERCENT
             const discountBadgeText = item.discountBadgeText ?? `${discountPercent}%`
             const finalPrice = item.discountedPrice ?? getDiscountedPrice(item.price)
@@ -96,31 +97,33 @@ const Pricing = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
                 className="animate-[fade-slide-up_0.6s_ease-out_both] relative flex h-full flex-col rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_24px_80px_rgba(15,23,42,0.35)] transition duration-500 hover:-translate-y-2 hover:border-cyan-300/40 hover:shadow-[0_32px_90px_rgba(14,165,233,0.22)]"
               >
-                <div
-                  className={`absolute -right-2 -top-2 z-10 flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-full border-2 text-center shadow-[0_16px_40px_rgba(15,23,42,0.35)] ${
-                    optionalPlan
-                      ? "border-cyan-100/80 bg-linear-to-br from-sky-500 via-cyan-500 to-blue-600 shadow-[0_16px_40px_rgba(14,165,233,0.38)]"
-                      : "border-white/80 bg-linear-to-br from-rose-500 via-pink-500 to-orange-400 shadow-[0_16px_40px_rgba(244,63,94,0.45)]"
-                  }`}
-                >
-                  {optionalPlan ? (
-                    <>
-                      <span className="text-[10px] font-black uppercase tracking-[0.08em] text-white">
-                        {t.pricing.optionalBadge}
-                      </span>
-                      <span className="mt-1 text-[8px] font-bold uppercase tracking-[0.16em] text-cyan-50">
-                        {t.pricing.optionalSubtext}
-                      </span>
-                    </>
-                  ) : (
-                    <>
-                      <span className="text-lg font-black leading-none text-white">{discountBadgeText}</span>
-                      <span className="mt-1 text-[9px] font-bold uppercase tracking-[0.22em] text-white/90">
-                        {t.pricing.discountLabel}
-                      </span>
-                    </>
-                  )}
-                </div>
+                {hasPrice ? (
+                  <div
+                    className={`absolute -right-2 -top-2 z-10 flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-full border-2 text-center shadow-[0_16px_40px_rgba(15,23,42,0.35)] ${
+                      optionalPlan
+                        ? "border-cyan-100/80 bg-linear-to-br from-sky-500 via-cyan-500 to-blue-600 shadow-[0_16px_40px_rgba(14,165,233,0.38)]"
+                        : "border-white/80 bg-linear-to-br from-rose-500 via-pink-500 to-orange-400 shadow-[0_16px_40px_rgba(244,63,94,0.45)]"
+                    }`}
+                  >
+                    {optionalPlan ? (
+                      <>
+                        <span className="text-[10px] font-black uppercase tracking-[0.08em] text-white">
+                          {t.pricing.optionalBadge}
+                        </span>
+                        <span className="mt-1 text-[8px] font-bold uppercase tracking-[0.16em] text-cyan-50">
+                          {t.pricing.optionalSubtext}
+                        </span>
+                      </>
+                    ) : (
+                      <>
+                        <span className="text-lg font-black leading-none text-white">{discountBadgeText}</span>
+                        <span className="mt-1 text-[9px] font-bold uppercase tracking-[0.22em] text-white/90">
+                          {t.pricing.discountLabel}
+                        </span>
+                      </>
+                    )}
+                  </div>
+                ) : null}
 
                 <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-linear-to-br from-cyan-400/30 via-emerald-400/20 to-indigo-400/30 ring-1 ring-white/10">
                   <Icon className="h-6 w-6 text-white/90" />
@@ -134,12 +137,14 @@ const Pricing = () => {
                   ) : null}
                 </div>
 
-                <div className="mt-3 pr-16">
-                  <p className="text-base font-semibold text-white/50 line-through decoration-2">{item.price}</p>
-                  <p className="mt-2 text-3xl font-black text-yellow-300 drop-shadow-[0_0_18px_rgba(253,224,71,0.35)]">
-                    {finalPrice}
-                  </p>
-                </div>
+                {hasPrice ? (
+                  <div className="mt-3 pr-16">
+                    <p className="text-base font-semibold text-white/50 line-through decoration-2">{item.price}</p>
+                    <p className="mt-2 text-3xl font-black text-yellow-300 drop-shadow-[0_0_18px_rgba(253,224,71,0.35)]">
+                      {finalPrice}
+                    </p>
+                  </div>
+                ) : null}
 
                 <p className="mt-2 text-sm text-white/70">{item.description}</p>
 
