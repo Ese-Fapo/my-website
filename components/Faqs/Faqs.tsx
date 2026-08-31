@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { useLanguage } from "@/lib/i18n";
 
 export const Faqs = () => {
@@ -33,6 +34,17 @@ export const Faqs = () => {
               </summary>
               <p className="mt-3 text-sm leading-relaxed text-white/80">
                 {faq.answer}
+                {faq.answerLink ? (
+                  <>
+                    {" "}
+                    <Link
+                      href={faq.answerLink.href}
+                      className="font-semibold text-indigo-200 underline-offset-4 transition hover:text-white hover:underline"
+                    >
+                      {faq.answerLink.label}
+                    </Link>
+                  </>
+                ) : null}
               </p>
             </details>
           ))}

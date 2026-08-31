@@ -42,10 +42,27 @@
 	}
 }
 
+@keyframes review-marquee {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
 @layer utilities {
 	.bg-contact-section {
 		background-color: #0b1220;
 	}
+
+	.review-marquee {
+		animation: review-marquee 80s linear infinite;
+	}
 }
 
-
+@media (prefers-reduced-motion: reduce) {
+	.review-marquee {
+		animation: none;
+	}
+}
