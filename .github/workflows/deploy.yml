@@ -24,10 +24,11 @@ jobs:
         run: npm ci
 
       - name: Build static site
-        run: npm run build
+        run: npm run export
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: site-out
           path: out/
+          include-hidden-files: true

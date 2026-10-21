@@ -4,15 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "sitemap": "next-sitemap",
-    "export": "next build",
+    "export": "node scripts/export-static.cjs",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "next": "16.1.6",
+    "next": "16.3.8",
     "next-sitemap": "^4.2.3",
     "react": "19.2.3",
     "react-dom": "19.2.3",
@@ -25,12 +25,15 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9.39.2",
-    "eslint-config-next": "16.1.6",
+    "eslint-config-next": "16.3.8",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^17.3.0",
     "prettier": "^3.8.1",
     "tailwindcss": "^4",
     "typescript": "^5",
     "typescript-eslint": "^8.54.0"
+  },
+  "overrides": {
+    "sharp": "0.35.5"
   }
 }
