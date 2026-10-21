@@ -25,20 +25,6 @@ type LanguageContextValue = {
 
 const LanguageContext = createContext<LanguageContextValue | null>(null)
 
-const getDeviceLanguage = (): Locale => {
-  if (typeof window === "undefined") return "pt"
-  
-  const browserLang = navigator.language || navigator.languages?.[0] || "pt"
-  const langCode = browserLang.split("-")[0].toLowerCase()
-  
-  const supportedLocales: Locale[] = ["pt", "en", "es"]
-  if (supportedLocales.includes(langCode as Locale)) {
-    return langCode as Locale
-  }
-  
-  return "pt"
-}
-
 const getInitialLocale = (): Locale => {
   if (typeof window === "undefined") return "pt"
 
@@ -49,10 +35,10 @@ const getInitialLocale = (): Locale => {
       return storedLocale
     }
   } catch {
-    return getDeviceLanguage()
+    return "pt"
   }
 
-  return getDeviceLanguage()
+  return "pt"
 }
 
 export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
@@ -80,7 +66,11 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
   }, [])
 
   useEffect(() => {
-    void setLocale(getInitialLocale())
+    // Keep the server-rendered language on first visit. A browser-language
+    // guess used to download another dictionary and re-render the entire page.
+    // An explicit, saved choice still restores automatically.
+    const initialLocale = getInitialLocale()
+    if (initialLocale !== "pt") void setLocale(initialLocale)
     return () => { requestId.current++ }
   }, [setLocale])
 

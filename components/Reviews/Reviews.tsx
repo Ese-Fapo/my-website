@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useMemo } from "react"
+import React, { useRef } from "react"
 import { useLanguage } from "@/lib/i18n"
 
 const ratingBars = [
@@ -25,15 +25,12 @@ const getInitials = (name: string) =>
 
 const Reviews = () => {
   const { t } = useLanguage()
-  const movingReviews = useMemo(
-    () => [...t.reviews.items, ...t.reviews.items],
-    [t.reviews.items]
-  )
+  const trackRef = useRef<HTMLDivElement>(null)
 
   return (
     <section
       id="reviews"
-      className="relative overflow-hidden bg-[#05070b] py-16 text-white sm:py-24"
+      className="relative overflow-hidden bg-[#101c19] py-20 text-white sm:py-28"
     >
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.055)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.055)_1px,transparent_1px)] bg-[size:42px_42px] opacity-25" />
       <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-yellow-300/60 to-transparent" />
@@ -87,16 +84,16 @@ const Reviews = () => {
           </div>
         </div>
 
-        <div className="reviews-marquee-shell relative mt-12 overflow-hidden">
-          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-linear-to-r from-[#05070b] to-transparent sm:w-28" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-linear-to-l from-[#05070b] to-transparent sm:w-28" />
-
-          <div className="review-marquee flex w-max gap-4 py-4">
-            {movingReviews.map((item, index) => (
+        <div className="mt-8 flex justify-end gap-2">
+          <button type="button" aria-label={t.reviews.previousLabel} onClick={() => trackRef.current?.scrollBy({ left: -(trackRef.current.clientWidth * 0.85), behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" })} className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-xl text-white transition hover:bg-[#d5f478] hover:text-[#182522]">←</button>
+          <button type="button" aria-label={t.reviews.nextLabel} onClick={() => trackRef.current?.scrollBy({ left: trackRef.current.clientWidth * 0.85, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" })} className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-xl text-white transition hover:bg-[#d5f478] hover:text-[#182522]">→</button>
+        </div>
+        <div className="relative mt-4">
+          <div ref={trackRef} tabIndex={0} role="region" aria-label={t.reviews.title} className="flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain pb-6 [scrollbar-color:#7d9560_#14221f]">
+            {t.reviews.items.map((item, index) => (
               <article
                 key={`${item.name}-${index}`}
-                aria-hidden={index >= t.reviews.items.length}
-                className="flex min-h-[280px] w-[min(82vw,21rem)] flex-col rounded-lg border border-white/10 bg-white/[0.07] p-5 shadow-[0_22px_70px_rgba(0,0,0,0.28)] backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-yellow-200/40 hover:bg-white/[0.1] sm:w-[22rem]"
+                className="flex min-h-[280px] w-[min(82vw,21rem)] shrink-0 snap-start flex-col rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition duration-300 hover:border-lime-200/40 hover:bg-white/[0.07] sm:w-[22rem]"
               >
                 <div className="flex items-center gap-3">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-linear-to-br from-yellow-300 via-cyan-300 to-indigo-400 text-sm font-black text-slate-950">

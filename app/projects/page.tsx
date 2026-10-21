@@ -18,7 +18,7 @@ export default function ProjectsPage() {
   )
 
   return (
-    <main id="main-content" className="min-h-screen bg-black pt-24">
+    <main id="main-content" className="min-h-screen bg-black pt-4 sm:pt-8">
       <h1 className="sr-only">Projetos recentes de sites</h1>
       <ProjectsSection initialVisibleCount={999} loadMoreUrl={null} />
       <Footer />

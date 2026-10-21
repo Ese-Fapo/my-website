@@ -14,7 +14,7 @@ export const metadata: Metadata = createPageMetadata({
 
 export default function AboutPage() {
   return (
-    <main id="main-content" className="min-h-screen bg-black pt-24">
+    <main id="main-content" className="min-h-screen bg-black pt-4 sm:pt-8">
       <h1 className="sr-only">Sobre a Sites Profissionai</h1>
       <About />
       <Footer />

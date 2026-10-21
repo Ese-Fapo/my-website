@@ -71,7 +71,7 @@ export const defaultMetadata: Metadata = {
     images: [siteConfig.image],
   },
   icons: {
-    icon: siteConfig.image,
+    icon: { url: "/images.web/logo.webp", type: "image/webp", sizes: "96x96" },
   },
 }
 

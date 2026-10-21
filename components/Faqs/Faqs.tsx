@@ -20,7 +20,7 @@ export const Faqs = () => {
           </p>
         </div>
 
-        <div className="mt-10 space-y-4 sm:mt-12">
+        <div className="mt-10 grid items-start gap-3 sm:mt-12 lg:grid-cols-2">
           {t.faqs.items.map((faq) => (
             <details
               key={faq.question}
@@ -28,7 +28,7 @@ export const Faqs = () => {
             >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-semibold text-white">
                 {faq.question}
-                <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/80 transition group-open:rotate-45">
+                <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/80 transition group-open:rotate-45">
                   +
                 </span>
               </summary>

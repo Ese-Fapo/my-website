@@ -39,8 +39,8 @@ export default function ProjectsSection({
   const showLoadMoreLink = Boolean(loadMoreUrl && hasMore);
 
   return (
-    <section id="projects" className="relative overflow-hidden scroll-mt-28 bg-slate-950 py-16 text-white sm:py-24">
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.055)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.055)_1px,transparent_1px)] bg-[size:44px_44px] opacity-35" />
+    <section id="projects" className="relative overflow-hidden scroll-mt-28 bg-[#101c19] py-20 text-white sm:py-28">
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.055)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.055)_1px,transparent_1px)] bg-[size:44px_44px] opacity-10" />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-cyan-300/70 to-transparent" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-black/45 to-transparent" />
 
@@ -73,7 +73,7 @@ export default function ProjectsSection({
 
         <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
           {showLoadMoreLink ? (
-            <Link
+            <Link prefetch={false}
               href={loadMoreUrl!}
               className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-slate-950 shadow-[0_20px_60px_rgba(0,0,0,0.24)] transition duration-300 hover:scale-[1.01] hover:bg-cyan-300 hover:shadow-[0_22px_66px_rgba(14,165,233,0.24)]"
             >
@@ -90,28 +90,28 @@ export default function ProjectsSection({
           <div className="rounded-2xl border border-white/10 bg-white/[0.06] p-5 shadow-[0_22px_70px_rgba(0,0,0,0.26)] backdrop-blur">
             <p className="text-sm leading-7 text-slate-200 sm:text-base">
               {t.projects.descriptionBeforePortfolio}{" "}
-              <Link href="https://ese-faps-xbvb.vercel.app/" className="font-bold text-cyan-200 hover:text-white">
+              <Link prefetch={false} href="https://ese-faps-xbvb.vercel.app/" className="font-bold text-cyan-200 hover:text-white">
                 {t.projects.portfolioLink}
               </Link>
               {t.projects.descriptionAfterPortfolio}{" "}
-              <Link href="/contact/" className="font-bold text-amber-200 hover:text-white">
+              <Link prefetch={false} href="/contact/" className="font-bold text-lime-200 hover:text-white">
                 {t.projects.contactLink}
               </Link>
             </p>
           </div>
         <div className="mt-6 grid gap-3 sm:grid-cols-3">
-          <div className="border border-white/10 bg-white/[0.06] p-5 text-left backdrop-blur">
+          <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 text-left backdrop-blur">
             <p className="text-xs font-bold uppercase tracking-[0.25em] text-cyan-200">Launches</p>
             <p className="mt-3 text-4xl font-black text-white">120+</p>
             <p className="mt-2 text-sm text-slate-300">Live digital experiences built for growth.</p>
           </div>
-          <div className="border border-white/10 bg-white/[0.06] p-5 text-left backdrop-blur">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-amber-200">Client rating</p>
+          <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 text-left backdrop-blur">
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-lime-200">Client rating</p>
             <p className="mt-3 text-4xl font-black text-white">4.9/5</p>
             <p className="mt-2 text-sm text-slate-300">Designs that feel premium and perform beautifully.</p>
           </div>
-          <div className="border border-white/10 bg-white/[0.06] p-5 text-left backdrop-blur">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-fuchsia-200">Responsive</p>
+          <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 text-left backdrop-blur">
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-lime-200">Responsive</p>
             <p className="mt-3 text-4xl font-black text-white">Mobile-first</p>
             <p className="mt-2 text-sm text-slate-300">Every project is optimized for all screens and devices.</p>
           </div>

@@ -35,3 +35,5 @@ After build completes, Next.js exports static files to:
 - Static export is enabled in `next.config.ts` with `output: "export"`.
 - `images.unoptimized: true` is enabled to support static hosting.
 - If you update the site, rebuild and re-upload the latest `out/` contents.
+- Include the hidden `.htaccess` file when uploading to Hostinger. It enables text compression and caching for hashed JavaScript/CSS when Apache supports the corresponding modules.
+- For a representative local performance audit, run `node scripts/preview-production.cjs` after building and test `http://127.0.0.1:4173` in Lighthouse. Development mode is not representative of the production build.

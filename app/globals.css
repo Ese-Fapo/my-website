@@ -3,13 +3,52 @@
 @layer base {
 	body {
 		background-color: #000000;
-		color: black ;
+		color: #f4f3ec;
+		font-family: Arial, Helvetica, sans-serif;
+		-webkit-font-smoothing: antialiased;
 	}
 
 	.dark body {
 		background-color: #000000 ;
 		color: #f1f5f9;
 	}
+}
+
+@layer base {
+	html { scroll-padding-top: 6rem; color-scheme: dark; }
+	h1, h2, h3 { text-wrap: balance; }
+	p { text-wrap: pretty; }
+	::selection { background: #d5f478; color: #182522; }
+	:focus-visible { outline: 3px solid #8eaf4e; outline-offset: 5px; }
+	main > section:not(#home) h2,
+	main > div > section:not(#home) h2 { letter-spacing: -0.04em; }
+}
+
+.studio-button { transition: background-color 180ms ease, transform 180ms ease; }
+.studio-button:hover { transform: translateY(-2px); }
+.studio-services h2, .studio-services h3 { color: #f8fafc; }
+.studio-services p { color: #cbd5e1; }
+.studio-services article {
+	border-color: #ffffff1a;
+	background: #0f172a;
+	box-shadow: none;
+	border-radius: 22px;
+	padding: 1.5rem;
+}
+.studio-services article:hover { border-color: #d5f47866; background: #152035; }
+.studio-services article svg { color: #d5f478; }
+.studio-services article span { color: #cbd5e1; border-color: #ffffff1a; }
+.studio-services article div:has(> svg) { background: #d5f47814; border-color: transparent; box-shadow: none; }
+.studio-services > div:last-child > div:first-child > div:last-child { border-color: #ffffff26; }
+.studio-services > div:last-child > div:first-child > div:first-child > p { background: #d5f47814; border-color: #d5f47833; color: #d5f478; }
+.studio-contact-form { color: #f8fafc; }
+.studio-contact-form h2 span { background: none; color: #f8fafc; }
+.studio-contact-form :is(input, select, textarea) { border-radius: 12px; }
+
+@media (max-width: 380px) {
+	.studio-nav img { width: 32px; height: 32px; }
+	.studio-nav a > div > p:first-child span { font-size: 12px; }
+	.studio-nav a > div > p:last-child { font-size: 10px; }
 }
 
 @keyframes fade-slide-up {
@@ -23,27 +62,18 @@
 	}
 }
 
-@keyframes review-marquee {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(-50%);
-	}
-}
-
 @layer utilities {
 	.bg-contact-section {
 		background-color: #0b1220;
 	}
 
-	.review-marquee {
-		animation: review-marquee 80s linear infinite;
-	}
 }
 
 @media (prefers-reduced-motion: reduce) {
-	.review-marquee {
-		animation: none;
+	*, *::before, *::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
 	}
 }

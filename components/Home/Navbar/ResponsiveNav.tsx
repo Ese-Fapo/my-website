@@ -27,27 +27,27 @@ const ResponsiveNav = () => {
   )
 
   return (
-    <header className="sticky top-0 z-50">
-      <div className="border-b border-slate-900/10 bg-white/80 text-slate-900 shadow-[0_18px_60px_-45px_rgba(15,23,42,0.25)] backdrop-blur-3xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-          <Link href="/" className="flex items-center gap-3">
+    <header className="studio-nav sticky top-0 z-50">
+      <div className="border-b border-white/10 bg-slate-950/95 text-slate-100 shadow-[0_18px_60px_-45px_rgba(15,23,42,0.25)] ">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+          <Link prefetch={false} href="/" className="flex min-w-0 items-center gap-2 sm:gap-3">
             <Image
               src="/images.web/logo.webp"
               alt="Logo"
               width={48}
               height={48}
-              className="h-12 w-12 rounded-2xl object-contain"
+              className="h-10 w-10 shrink-0 rounded-xl object-contain"
               priority
             />
             <div className="leading-tight">
               <p className="text-base font-bold tracking-wide">
-                <span className="inline-flex items-center gap-2 text-slate-900 text-2xl">
+                <span className="inline-flex items-center gap-2 text-slate-100 text-sm sm:text-xl">
                   {t.nav.brandName}
                 
                 </span>
               </p>
               <p className="text-xs font-semibold tracking-wide">
-                <span className="inline-flex items-center gap-1 text-slate-700">
+                <span className="inline-flex items-center gap-1 text-slate-300">
                   {t.nav.brandSub}
                  
                 </span>
@@ -57,15 +57,15 @@ const ResponsiveNav = () => {
 
           <Nav links={links} />
 
-          <div className="hidden lg:block">
+          <div className="hidden xl:block">
             <LanguageSwitcher />
           </div>
 
-          <div className="flex items-center gap-3 lg:hidden">
+          <div className="flex shrink-0 items-center gap-2 xl:hidden">
             <LanguageSwitcher />
             <button
               onClick={() => setOpen(true)}
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-900/15 bg-white/70 text-slate-900 shadow-[0_12px_26px_-18px_rgba(15,23,42,0.25)] transition hover:border-slate-900/30 hover:bg-white hover:text-slate-900"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/5 text-slate-100 shadow-[0_12px_26px_-18px_rgba(15,23,42,0.25)] transition hover:border-white/30 hover:bg-slate-800 hover:text-slate-100"
               aria-label={t.nav.openMenu}
               aria-expanded={open}
               aria-controls="mobile-nav-panel"

@@ -50,7 +50,7 @@ const Pricing = () => {
   const whatsappLink = `https://wa.me/554891817031?text=${encodeURIComponent(t.contact.whatsappIntro)}`
 
   return (
-    <section id="pricing" className="scroll-mt-28 bg-slate-950 py-16 sm:py-24">
+    <section id="pricing" className="scroll-mt-28 bg-[#101c19] py-20 sm:py-28">
       <div className="mx-auto w-full max-w-6xl px-5 sm:px-8">
         <div className="relative z-10 text-center">
           <p className="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-8 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-cyan-200">
@@ -128,7 +128,7 @@ const Pricing = () => {
                 <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-linear-to-br from-cyan-400/30 via-emerald-400/20 to-indigo-400/30 ring-1 ring-white/10">
                   <Icon className="h-6 w-6 text-white/90" />
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="flex flex-wrap items-center gap-3">
                   <h3 className="text-lg font-semibold text-white">{item.title}</h3>
                   {item.popular ? (
                     <span className="rounded-full border border-cyan-300/30 bg-cyan-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-cyan-200 ring-1 ring-cyan-300/20">
@@ -138,9 +138,9 @@ const Pricing = () => {
                 </div>
 
                 {hasPrice ? (
-                  <div className="mt-3 pr-16">
+                  <div className="mt-3">
                     <p className="text-base font-semibold text-white/50 line-through decoration-2">{item.price}</p>
-                    <p className="mt-2 text-3xl font-black text-yellow-300 drop-shadow-[0_0_18px_rgba(253,224,71,0.35)]">
+                    <p className="mt-2 text-3xl font-black text-[#d5f478]">
                       {finalPrice}
                     </p>
                   </div>
@@ -168,7 +168,7 @@ const Pricing = () => {
                   href={whatsappLink}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-5 inline-flex w-full items-center justify-center rounded-full bg-linear-to-r from-cyan-400 to-emerald-400 px-4 py-2.5 text-sm font-bold text-slate-950 transition hover:scale-[1.02]"
+                  className="mt-5 inline-flex w-full items-center justify-center rounded-full bg-[#d5f478] px-4 py-2.5 text-sm font-bold text-slate-950 transition hover:scale-[1.02]"
                 >
                   {t.pricing.cta}
                 </a>

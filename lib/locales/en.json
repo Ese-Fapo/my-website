@@ -45,7 +45,9 @@
         "label": "Looks clean and professional",
         "value": "Captivating visuals that hold attention"
       }
-    ]
+    ],
+    "imageAlt": "A developer working on a laptop at a desk",
+    "imageCaption": "Your next chapter starts online."
   },
   "about": {
     "imageAlt": "agency team collaborating",

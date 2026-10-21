@@ -45,7 +45,9 @@
         "label": "Visual limpo e profissional",
         "value": "Passa confiança para quem visita"
       }
-    ]
+    ],
+    "imageAlt": "Mãos de uma desenvolvedora trabalhando em um notebook",
+    "imageCaption": "Seu próximo capítulo começa online."
   },
   "about": {
     "imageAlt": "equipe da agência colaborando",

@@ -24,6 +24,8 @@ export type TranslationSchema = {
     whatsappAria: string
   }
   hero: {
+    imageAlt: string
+    imageCaption: string
     badge: string
     title: string
     titleHighlight: string

@@ -105,20 +105,20 @@ export default function ContactForm() {
           </div>
 
           <div className="order-1 lg:order-2">
-            <div className="max-w-md lg:max-w-none mx-auto rounded-2xl border border-slate-200/70 bg-white/90 p-6 shadow-xl shadow-slate-900/10 backdrop-blur dark:border-slate-800/60 dark:bg-[#0b1020]/80">
+            <div className="max-w-md lg:max-w-none mx-auto studio-contact-form rounded-3xl border border-slate-700/70 bg-slate-900 p-6 sm:p-8 shadow-xl shadow-slate-900/10 backdrop-blur">
               <h2 className="text-xl font-bold text-center mb-2">
-                <span className="bg-linear-to-r from-lime-300 via-emerald-300 to-purple-400 bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-[#182522] to-[#182522] bg-clip-text text-transparent">
                   {t.contact.formTitle}
                 </span>
               </h2>
-              <p className="text-center text-slate-600 mb-6 dark:text-slate-300">
+              <p className="text-center text-slate-300 mb-6">
                 {t.contact.formDescription}
               </p>
 
               <form className="space-y-4" onSubmit={handleSubmit}>
         {/* Nome */}
         <div>
-          <label htmlFor="contact-name" className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
+          <label htmlFor="contact-name" className="block text-sm font-medium mb-1 text-slate-200">
             {t.contact.labels.name}
           </label>
           <input
@@ -128,13 +128,13 @@ export default function ContactForm() {
             autoComplete="name"
             placeholder={t.contact.placeholders.name}
             required
-            className="w-full rounded-xl border border-slate-200 bg-white/80 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 dark:border-slate-800 dark:bg-[#0d1324] dark:text-slate-100"
+            className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-400"
           />
         </div>
 
         {/* Email */}
         <div>
-          <label htmlFor="contact-email" className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
+          <label htmlFor="contact-email" className="block text-sm font-medium mb-1 text-slate-200">
             {t.contact.labels.email}
           </label>
           <input
@@ -144,13 +144,13 @@ export default function ContactForm() {
             autoComplete="email"
             placeholder={t.contact.placeholders.email}
             required
-            className="w-full rounded-xl border border-slate-200 bg-white/80 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 dark:border-slate-800 dark:bg-[#0d1324] dark:text-slate-100"
+            className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-400"
           />
         </div>
 
         {/* Telefone */}
         <div>
-          <label htmlFor="contact-phone" className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
+          <label htmlFor="contact-phone" className="block text-sm font-medium mb-1 text-slate-200">
             {t.contact.labels.phone}
           </label>
           <input
@@ -160,13 +160,13 @@ export default function ContactForm() {
             autoComplete="tel"
             placeholder={t.contact.placeholders.phone}
             required
-            className="w-full rounded-xl border border-slate-200 bg-white/80 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 dark:border-slate-800 dark:bg-[#0d1324] dark:text-slate-100"
+            className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-400"
           />
         </div>
 
         {/* Segmento */}
         <div>
-          <label htmlFor="contact-segment" className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
+          <label htmlFor="contact-segment" className="block text-sm font-medium mb-1 text-slate-200">
             {t.contact.labels.segment}
           </label>
           <input
@@ -174,13 +174,13 @@ export default function ContactForm() {
             type="text"
             name="segment"
             placeholder={t.contact.placeholders.segment}
-            className="w-full rounded-xl border border-slate-200 bg-white/80 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 dark:border-slate-800 dark:bg-[#0d1324] dark:text-slate-100"
+            className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-400"
           />
         </div>
 
         {/* Investimento */}
         <div>
-          <label htmlFor="contact-budget" className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
+          <label htmlFor="contact-budget" className="block text-sm font-medium mb-1 text-slate-200">
             {t.contact.labels.budget}
           </label>
           <select
@@ -188,7 +188,7 @@ export default function ContactForm() {
             name="budget"
             value={budget}
             onChange={(e) => setBudget(e.target.value)}
-            className="w-full rounded-xl border border-slate-200 bg-white/80 px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-400 dark:border-slate-800 dark:bg-[#0d1324] dark:text-slate-100"
+            className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100 focus:outline-none focus:ring-2 focus:ring-emerald-400"
           >
             <option value="">{t.contact.placeholders.budget}</option>
             <option value="0-1000">{t.contact.budgetOptions[0]}</option>
@@ -202,7 +202,7 @@ export default function ContactForm() {
 
         {/* Mensagem */}
         <div>
-          <label htmlFor="contact-message" className="block text-sm font-medium mb-1 text-slate-700 dark:text-slate-200">
+          <label htmlFor="contact-message" className="block text-sm font-medium mb-1 text-slate-200">
             {t.contact.labels.message}
           </label>
           <textarea
@@ -213,7 +213,7 @@ export default function ContactForm() {
             value={message}
             onChange={(event) => setMessage(event.target.value)}
             maxLength={1000}
-            className="w-full rounded-xl border border-slate-200 bg-white/80 px-4 py-3 text-slate-900 placeholder:text-slate-400 resize-none focus:outline-none focus:ring-2 focus:ring-emerald-400 dark:border-slate-800 dark:bg-[#0d1324] dark:text-slate-100"
+            className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100 placeholder:text-slate-400 resize-none focus:outline-none focus:ring-2 focus:ring-emerald-400"
           />
           <p className="text-right text-xs text-slate-400 mt-1">
             {message.length}/1000
@@ -222,14 +222,14 @@ export default function ContactForm() {
 
         {/* Serviços */}
         <div className="space-y-2">
-          <p className="text-sm font-medium text-slate-700 dark:text-slate-200">
+          <p className="text-sm font-medium text-slate-200">
             {t.contact.labels.extraServices}
           </p>
-          <label className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-300">
+          <label className="flex items-center gap-2 text-sm text-slate-300">
             <input type="checkbox" name="paid-traffic" className="rounded accent-emerald-400" />
             {t.contact.labels.paidTraffic}
           </label>
-          <label className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-300">
+          <label className="flex items-center gap-2 text-sm text-slate-300">
             <input type="checkbox" name="digital-marketing" className="rounded accent-emerald-400" />
             {t.contact.labels.digitalMarketing}
           </label>
@@ -238,7 +238,7 @@ export default function ContactForm() {
         {/* Botão */}
         <button
           type="submit"
-          className="w-full mt-4 bg-linear-to-r from-lime-300 via-emerald-300 to-purple-400 text-[#0b1020] py-3 rounded-full font-bold hover:opacity-90 transition"
+          className="w-full mt-4 bg-[#d5f478] text-[#182522] py-3.5 rounded-full font-bold hover:bg-[#c5e962] transition"
         >
           {t.contact.labels.submit}
         </button>

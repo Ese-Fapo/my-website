@@ -6,12 +6,12 @@ import { useLanguage } from "@/lib/i18n";
 export default function LivePreview() {
   const { t } = useLanguage();
   return (
-    <section aria-labelledby="live-preview-title" className="relative overflow-hidden bg-black px-5 py-16 sm:px-8 sm:py-24">
+    <section aria-labelledby="live-preview-title" className="relative overflow-hidden bg-[#0c1512] px-5 py-20 sm:px-8 sm:py-28">
         <div className="relative mx-auto w-full max-w-3xl">
-          <div className="absolute -inset-4 rounded-4xl bg-linear-to-br from-cyan-400/20 via-indigo-500/10 to-emerald-400/20 blur-2xl" />
+          <div className="absolute -inset-4 rounded-4xl bg-linear-to-br from-lime-400/10 via-transparent to-emerald-400/5 blur-2xl" />
 
           <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-white/10 p-4 shadow-[0_30px_80px_rgba(15,23,42,0.42)] backdrop-blur-xl sm:p-5">
-            <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-slate-950/80 px-4 py-3 text-sm text-slate-200">
+            <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-[#101c19] px-4 py-3 text-sm text-slate-200">
               <div className="flex items-center gap-2">
                 <span className="h-2.5 w-2.5 rounded-full bg-rose-400" />
                 <span className="h-2.5 w-2.5 rounded-full bg-amber-400" />
@@ -23,7 +23,7 @@ export default function LivePreview() {
               </span>
             </div>
 
-            <div className="mt-4 rounded-3xl border border-white/10 bg-slate-950/70 p-4 sm:p-5">
+            <div className="mt-4 rounded-3xl border border-white/10 bg-[#101c19] p-4 sm:p-5">
               <div className="flex items-start gap-3">
                 <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-violet-400/15 text-violet-200 ring-1 ring-violet-300/30">
                   <CheckBadgeIcon className="h-5 w-5" />
@@ -47,7 +47,7 @@ export default function LivePreview() {
                   <span>82%</span>
                 </div>
                 <div className="mt-2 h-2 rounded-full bg-white/10">
-                  <div className="h-2 w-[82%] rounded-full bg-linear-to-r from-rose-400 via-amber-400 to-emerald-500" />
+                  <div className="h-2 w-[82%] rounded-full bg-linear-to-r from-[#d5f478] to-emerald-400" />
                 </div>
               </div>
 

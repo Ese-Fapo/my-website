@@ -45,7 +45,9 @@
         "label": "Se ve limpio y profesional",
         "value": "Da confianza a tus clientes"
       }
-    ]
+    ],
+    "imageAlt": "Una desarrolladora trabajando en una computadora portátil",
+    "imageCaption": "Tu próximo capítulo empieza online."
   },
   "about": {
     "imageAlt": "equipo de la agencia colaborando",

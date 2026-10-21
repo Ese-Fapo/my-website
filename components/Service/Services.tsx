@@ -32,7 +32,7 @@ const Services = () => {
   }))
 
   return (
-    <section id="services" className="relative scroll-mt-28 overflow-hidden bg-black py-16 sm:py-24">
+    <section id="services" className="studio-services relative scroll-mt-28 overflow-hidden bg-black py-20 sm:py-28">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-cyan-300/40 to-transparent" />
 
       <div className="mx-auto w-full max-w-6xl px-5 sm:px-8">
@@ -53,7 +53,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-4 sm:mt-12 sm:grid-cols-2 xl:grid-cols-4">
           {services.map((service, index) => {
             const Icon = service.icon
 

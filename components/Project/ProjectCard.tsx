@@ -32,13 +32,13 @@ export default function ProjectCard({
 
   return (
     <div
-      className={`group relative isolate flex h-full flex-col overflow-hidden rounded-[26px] border border-white/10 bg-slate-950 p-3 shadow-[0_28px_80px_rgba(2,6,23,0.38)] transition duration-300 hover:-translate-y-2 hover:border-cyan-300/45 hover:shadow-[0_34px_95px_rgba(6,182,212,0.22)] ${className}`}
+      className={`group relative isolate flex h-full flex-col overflow-hidden rounded-[26px] border border-white/10 bg-[#14221f] p-3 shadow-[0_15px_40px_rgba(0,0,0,0.15)] transition duration-300 hover:-translate-y-1 hover:border-cyan-300/45 hover:shadow-[0_34px_95px_rgba(6,182,212,0.22)] ${className}`}
     >
       <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-linear-to-r from-cyan-300 via-amber-300 to-fuchsia-400 opacity-80" />
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.08),transparent_34%,rgba(34,211,238,0.08))]" />
 
       <div className="relative overflow-hidden rounded-[20px] border border-white/10 bg-slate-900">
-        <div className={`relative w-full ${featured ? "h-72 sm:h-80" : "h-52 sm:h-56"}`}>
+        <div className={`relative w-full ${featured ? "h-72 sm:h-80" : "aspect-[16/10]"}`}>
           <Image
             src={image}
             alt={title}
@@ -57,7 +57,7 @@ export default function ProjectCard({
           ) : (
             <span />
           )}
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-white/15 text-white backdrop-blur transition group-hover:bg-cyan-300 group-hover:text-slate-950">
+          <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-white/15 text-white backdrop-blur transition group-hover:bg-[#c5e962] group-hover:text-slate-950">
             <ArrowUpRightIcon className="h-4 w-4" />
           </span>
         </div>
@@ -90,11 +90,11 @@ export default function ProjectCard({
           </div>
         ) : null}
 
-        <Link
+        <Link prefetch={false}
           href={link}
           target={isExternal ? "_blank" : undefined}
           rel={isExternal ? "noreferrer" : undefined}
-          className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-bold text-slate-950 shadow-[0_14px_30px_rgba(0,0,0,0.22)] transition duration-300 hover:-translate-y-0.5 hover:bg-cyan-300 hover:shadow-[0_18px_44px_rgba(34,211,238,0.24)]"
+          className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#d5f478] px-5 py-3 text-sm font-bold text-slate-950 shadow-[0_14px_30px_rgba(0,0,0,0.22)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#c5e962] hover:shadow-[0_18px_44px_rgba(34,211,238,0.24)]"
         >
           <span>{ctaLabel}</span>
           <ArrowUpRightIcon className="h-4 w-4" />

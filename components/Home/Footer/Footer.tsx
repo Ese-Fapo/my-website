@@ -13,17 +13,17 @@ export const Footer = () => {
       <div className="pointer-events-none absolute -top-24 right-10 h-64 w-64 rounded-full bg-cyan-500/20 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-24 left-10 h-64 w-64 rounded-full bg-fuchsia-500/20 blur-3xl" />
       <div className="mx-auto w-full max-w-7xl px-5 py-14 sm:px-8">
-        <div className="mb-10 rounded-3xl border border-white/10 bg-linear-to-r from-cyan-500/15 via-fuchsia-500/10 to-indigo-500/15 p-6 sm:p-8 shadow-[0_30px_120px_rgba(15,23,42,0.45)]">
+        <div className="mb-10 rounded-3xl border border-white/10 bg-slate-900 p-7 sm:p-12">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="text-sm uppercase tracking-[0.25em] text-slate-300">{t.footer.ctaTag}</p>
-              <h3 className="mt-2 text-2xl font-bold text-white sm:text-3xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-lime-200">{t.footer.ctaTag}</p>
+              <h3 className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-white sm:text-5xl">
                 {t.footer.ctaTitle}
               </h3>
             </div>
-            <Link
+            <Link prefetch={false}
               href="/contact/"
-              className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#0b1020] shadow-lg shadow-white/10 transition hover:opacity-90"
+              className="inline-flex items-center justify-center shrink-0 rounded-full bg-[#d5f478] px-6 py-4 text-sm font-semibold text-[#182522] shadow-lg shadow-white/10 transition hover:opacity-90"
             >
               {t.footer.ctaButton}
             </Link>
@@ -31,7 +31,7 @@ export const Footer = () => {
         </div>
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Link href="/" className="inline-flex items-center gap-2 group">
+            <Link prefetch={false} href="/" className="inline-flex items-center gap-2 group">
               <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-linear-to-br from-[#5fffd2] via-[#599692] to-[#3de0c7] text-[#0b1020] shadow-lg shadow-[#0b1020]/30">
                 SP
               </span>
@@ -83,11 +83,11 @@ export const Footer = () => {
               {t.footer.navigation}
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-slate-300">
-              <li><Link className="transition hover:text-cyan-200" href="/about/">{t.footer.navigationLinks.about}</Link></li>
-              <li><Link className="transition hover:text-emerald-200" href="/services/">{t.footer.navigationLinks.services}</Link></li>
-              <li><Link className="transition hover:text-indigo-200" href="/projects/">{t.footer.navigationLinks.projects}</Link></li>
-              <li><Link className="transition hover:text-fuchsia-200" href="/#faqs">{t.footer.navigationLinks.faqs}</Link></li>
-              <li><Link className="transition hover:text-sky-200" href="/contact/">{t.footer.navigationLinks.contact}</Link></li>
+              <li><Link prefetch={false} className="transition hover:text-cyan-200" href="/about/">{t.footer.navigationLinks.about}</Link></li>
+              <li><Link prefetch={false} className="transition hover:text-emerald-200" href="/services/">{t.footer.navigationLinks.services}</Link></li>
+              <li><Link prefetch={false} className="transition hover:text-indigo-200" href="/projects/">{t.footer.navigationLinks.projects}</Link></li>
+              <li><Link prefetch={false} className="transition hover:text-fuchsia-200" href="/#faqs">{t.footer.navigationLinks.faqs}</Link></li>
+              <li><Link prefetch={false} className="transition hover:text-sky-200" href="/contact/">{t.footer.navigationLinks.contact}</Link></li>
             </ul>
           </div>
 
@@ -108,7 +108,7 @@ export const Footer = () => {
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-slate-300">
               <li>
-                <a className="transition hover:text-cyan-200" href="mailto:esefapohunda.com">
+                <a className="transition hover:text-cyan-200" href="mailto:info@sitesprofissionai.com">
                   Email: info@sitesprofissionai.com 
                 </a>
               </li>

@@ -21,7 +21,7 @@ const LocalSeo = () => {
   const mapQuery = encodeURIComponent("Florianópolis, Santa Catarina")
 
   return (
-    <section id="locations" className="bg-black py-16 sm:py-24">
+    <section id="locations" className="bg-[#0c1512] py-20 sm:py-28">
       <div className="mx-auto w-full max-w-6xl px-5 sm:px-8">
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
           <div>
@@ -29,7 +29,7 @@ const LocalSeo = () => {
               {t.localSeo.badge}
             </p>
 
-            <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-5xl">
               {t.localSeo.title}
             </h2>
 
