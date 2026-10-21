@@ -32,7 +32,7 @@ const ResponsiveNav = () => {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/images.web/logo.png"
+              src="/images.web/logo.webp"
               alt="Logo"
               width={48}
               height={48}

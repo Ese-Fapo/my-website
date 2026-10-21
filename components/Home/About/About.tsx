@@ -20,7 +20,7 @@ const About = () => {
             <div className="absolute -right-12 -bottom-12 h-24 w-24 rounded-full border border-white/10" />
             <div className="relative h-full w-full">
               <Image
-                src="/images.web/ese.jpeg"
+                src="/images.web/ese.webp"
                 alt={t.about.imageAlt}
                 fill
                 className="object-cover transition duration-700 ease-out group-hover:scale-105"

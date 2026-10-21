@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic"
 import React from "react"
 import Hero from "./Hero/Hero"
+import LivePreview from "./LivePreview/LivePreview"
 import { useLanguage } from "@/lib/i18n"
 
 const About = dynamic(() => import("./About/About"))
@@ -50,6 +51,9 @@ const Home = () => {
         </div>
         <div className="[content-visibility:auto] [contain-intrinsic-size:1px_800px]">
           <Faqs />
+        </div>
+        <div className="[content-visibility:auto] [contain-intrinsic-size:1px_500px]">
+          <LivePreview />
         </div>
         <div className="[content-visibility:auto] [contain-intrinsic-size:1px_500px]">
           <Footer />

@@ -29,7 +29,9 @@ export default function WebBackground() {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let inViewport = false;
+    let started = false;
     let rafId = 0;
     let idleId: ReturnType<typeof window.requestIdleCallback> | undefined;
     let timeoutId: ReturnType<typeof setTimeout> | undefined;
@@ -95,12 +97,13 @@ export default function WebBackground() {
         ctx.fill();
       }
 
-      if (!reducedMotion && !document.hidden) {
+      if (!motionPreference.matches && !document.hidden && inViewport) {
         rafId = requestAnimationFrame(draw);
       }
     };
 
     const onResize = () => {
+      if (!started) return;
       cancelAnimationFrame(rafId);
       init();
       draw();
@@ -108,16 +111,23 @@ export default function WebBackground() {
 
     const onVisibilityChange = () => {
       cancelAnimationFrame(rafId);
-      if (!document.hidden) {
+      if (started && !document.hidden && inViewport) {
         draw();
       }
     };
 
     const start = () => {
       if (cancelled) return;
+      started = true;
       init();
       draw();
     };
+
+    const observer = new IntersectionObserver(([entry]) => {
+      inViewport = entry.isIntersecting;
+      onVisibilityChange();
+    });
+    observer.observe(canvas);
 
     if ("requestIdleCallback" in window) {
       idleId = window.requestIdleCallback(start, { timeout: 1800 });
@@ -127,12 +137,15 @@ export default function WebBackground() {
 
     window.addEventListener("resize", onResize);
     document.addEventListener("visibilitychange", onVisibilityChange);
+    motionPreference.addEventListener("change", onVisibilityChange);
 
     return () => {
       cancelled = true;
       if (idleId !== undefined) window.cancelIdleCallback(idleId);
       if (timeoutId !== undefined) globalThis.clearTimeout(timeoutId);
       cancelAnimationFrame(rafId);
+      observer.disconnect();
+      motionPreference.removeEventListener("change", onVisibilityChange);
       window.removeEventListener("resize", onResize);
       document.removeEventListener("visibilitychange", onVisibilityChange);
     };
@@ -140,6 +153,7 @@ export default function WebBackground() {
 
   return (
     <canvas
+      aria-hidden="true"
       ref={canvasRef}
       style={{ width: "100%", height: "100%" }}
       className="absolute inset-0"

@@ -1,0 +1,709 @@
+{
+  "nav": {
+    "brandName": "Sites Profissionai",
+    "brandSub": "Desarrolladores",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "menuTitle": "Menú",
+    "scheduleCall": "Agendar llamada",
+    "start": "Empezar",
+    "links": {
+      "home": "Inicio",
+      "about": "Sobre",
+      "projects": "Proyectos",
+      "services": "Servicios",
+      "pricing": "Precios",
+      "contact": "Contacto",
+      "blog": "Blog",
+      "portfolio": "Portafolio"
+    }
+  },
+  "home": {
+    "whatsappAria": "Hablar por WhatsApp"
+  },
+  "hero": {
+    "badge": "creación de sitios web en Santa Catarina",
+    "title": "Creamos sitios web profesionales",
+    "titleHighlight": "para atraer más clientes a tu negocio",
+    "description": "Desarrollamos sitios rápidos, responsivos y optimizados para Google, ayudando a empresas de Florianópolis, São José, Joinville y Balneário Camboriú a generar más contactos y ventas.",
+    "primaryCta": "Quiero mi sitio",
+    "secondaryCta": "Ver ejemplos",
+    "livePreviewTag": "mira tu sitio",
+    "livePreviewTitle": "Mira tu sitio en vivo",
+    "livePreviewDescription": "Te damos un enlace para ver tu sitio mientras lo estamos creando. Puedes revisarlo en cualquier momento y desde cualquier lugar.",
+    "livePreviewStatus": "online",
+    "cards": [
+      {
+        "label": "Más clientes en internet",
+        "value": "Tu sitio trabaja por ti"
+      },
+      {
+        "label": "Funciona en celular y computadora",
+        "value": "Se ve bien en cualquier pantalla"
+      },
+      {
+        "label": "Se ve limpio y profesional",
+        "value": "Da confianza a tus clientes"
+      }
+    ]
+  },
+  "about": {
+    "imageAlt": "equipo de la agencia colaborando",
+    "stats": {
+      "projects": "proyectos",
+      "experience": "experiencia",
+      "reviews": "reseñas"
+    },
+    "badge": "Mucho gusto",
+    "title": "Diseño y desarrollo web con más de 6 años de experiencia",
+    "paragraphs": [
+      "Soy Ese Victor, diseñador y desarrollador web con más de seis años creando sitios rápidos, atractivos y fáciles de usar para empresas en Santa Catarina.",
+      "Desde una landing page simple hasta un sitio institucional profesional o una tienda online, ayudo a empresas de Florianópolis, São José, Joinville y Balneário Camboriú a atraer más clientes y cerrar más ventas.",
+      "Mi enfoque es diseño limpio, SEO local y rendimiento rápido para que tu sitio cargue bien y convierta visitantes en clientes."
+    ],
+    "pills": [
+      "Portafolio",
+      "Reseñas de Google"
+    ]
+  },
+  "services": {
+    "badge": "servicios",
+    "title": "Lo que hacemos por tu negocio",
+    "description": "Creamos soluciones simples para ayudar a tu empresa a crecer en internet. Cada proyecto se adapta a tu marca con diseño responsive, SEO local y enfoque en convertir visitantes en clientes.",
+    "items": [
+      {
+        "title": "Sitio para negocio",
+        "description": "Un sitio limpio y profesional para mostrar tu empresa y generar confianza en tus clientes."
+      },
+      {
+        "title": "Landing page",
+        "description": "Una página hecha para recibir más mensajes y clientes, con una oferta clara y llamada a la acción rápida."
+      },
+      {
+        "title": "Tienda online",
+        "description": "Una tienda simple y segura para vender tus productos, con catálogo fácil de navegar y pago confiable."
+      },
+      {
+        "title": "Hosting y dominio",
+        "description": "Te ayudamos a poner tu sitio en internet con hosting estable y registro de dominio incluido."
+      },
+      {
+        "title": "Sitio rápido",
+        "description": "Tu sitio carga rápido y funciona bien en cualquier dispositivo, con rendimiento optimizado para mejores resultados."
+      },
+      {
+        "title": "Soporte y mantenimiento",
+        "description": "Cuidamos tu sitio después de publicarlo, con actualizaciones, correcciones y mejoras continuas."
+      },
+      {
+        "title": "Google Business y Maps",
+        "description": "Conectamos tu sitio con Google Business Profile y Google Maps para mejorar tu visibilidad local."
+      },
+      {
+        "title": "Logo y marca",
+        "description": "Creamos tu logo y la imagen de tu marca con identidad coherente para fortalecer tu presencia."
+      }
+    ]
+  },
+  "pricing": {
+    "badge": "precios",
+    "title": "Precios iniciales de los servicios",
+    "description": "Consulta precios base y opciones de paquete diseñadas para ayudar a empresas locales a vender, agendar y crecer online.",
+    "subtitle": "Elige el plan adecuado para una presencia digital confiable que atraiga clientes.",
+    "highlights": [
+      "Entrega rápida y segura",
+      "WhatsApp y captación de leads listos",
+      "Diseño pensado para convertir"
+    ],
+    "secondaryDescription": "Cada paquete incluye diseño móvil, SEO inicial y apoyo directo para que tu sitio se lance con seguridad.",
+    "bottomTitle": "¿Necesitas un plan personalizado?",
+    "bottomText": "Envíanos un mensaje por WhatsApp y recibe un presupuesto hecho a medida con plazos claros y soporte directo.",
+    "popularBadge": "Más popular",
+    "note": "Todos los valores están en real brasileño (R$) y pueden variar de un proyecto a otro según las necesidades de cada cliente. El soporte mensual se cobra por separado y se cotiza individualmente.",
+    "cta": "Solicitar presupuesto",
+    "discountLabel": "dto.",
+    "optionalBadge": "opcional",
+    "optionalSubtext": "extra",
+    "items": [
+      {
+        "title": "Landing page",
+        "description": "Página enfocada en conversión, WhatsApp y captación de leads.",
+        "price": "R$ 749",
+        "discountPercent": 33,
+        "discountBadgeText": "R$ 250",
+        "discountedPrice": "R$ 499",
+        "features": [
+          {
+            "label": "Diseño responsivo",
+            "included": true
+          },
+          {
+            "label": "Botón de WhatsApp",
+            "included": true
+          },
+          {
+            "label": "Captación de leads",
+            "included": true
+          },
+          {
+            "label": "SEO básico (Visibilidad)",
+            "included": true
+          },
+          {
+            "label": "Entrega rápida",
+            "included": true
+          },
+          {
+            "label": "Panel de pedidos",
+            "included": false
+          },
+          {
+            "label": "Checkout online",
+            "included": false
+          }
+        ]
+      },
+      {
+        "title": "Sitio institucional",
+        "description": "Sitio profesional para presentar tu empresa y servicios.",
+        "price": "",
+        "popular": true,
+        "features": [
+          {
+            "label": "Hasta 5 páginas",
+            "included": true
+          },
+          {
+            "label": "SEO básico (Visibilidad)",
+            "included": true
+          },
+          {
+            "label": "Formulario de contacto",
+            "included": true
+          },
+          {
+            "label": "Integración con WhatsApp",
+            "included": true
+          },
+          {
+            "label": "Diseño profesional",
+            "included": true
+          },
+          {
+            "label": "Área de cliente",
+            "included": false
+          },
+          {
+            "label": "Carrito de compras",
+            "included": false
+          }
+        ]
+      },
+      {
+        "title": "Tienda online",
+        "description": "E-commerce con catálogo, carrito y finalización de pedido.",
+        "price": "",
+        "features": [
+          {
+            "label": "Catálogo de productos",
+            "included": true
+          },
+          {
+            "label": "Carrito y checkout",
+            "included": true
+          },
+          {
+            "label": "Pagos online",
+            "included": true
+          },
+          {
+            "label": "Gestión de pedidos",
+            "included": true
+          },
+          {
+            "label": "Cupones de descuento",
+            "included": true
+          },
+          {
+            "label": "App nativa",
+            "included": false
+          },
+          {
+            "label": "ERP avanzado",
+            "included": false
+          }
+        ]
+      },
+      {
+        "title": "Soporte mensual",
+        "description": "Cuidado continuo para tu sitio y ajustes según crece tu negocio, con tarifa a medida.",
+        "price": "",
+        "features": [
+          {
+            "label": "Ajustes mensuales",
+            "included": true
+          },
+          {
+            "label": "Actualización de contenido",
+            "included": true
+          },
+          {
+            "label": "Soporte técnico",
+            "included": true
+          },
+          {
+            "label": "Correcciones rápidas",
+            "included": true
+          },
+          {
+            "label": "Monitoreo de rendimiento",
+            "included": true
+          },
+          {
+            "label": "Seguridad y respaldos",
+            "included": true
+          },
+          {
+            "label": "Rediseño total",
+            "included": false
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "badge": "proyectos",
+    "title": "Proyectos recientes",
+    "descriptionBeforePortfolio": "Mira algunos ejemplos de nuestro trabajo. Revisa nuestro",
+    "portfolioLink": "portafolio completo",
+    "descriptionAfterPortfolio": ". ¿Listo para lanzar tu proyecto?",
+    "contactLink": "¡Creemos algo increíble juntos!",
+    "loadMore": "Ver más",
+    "loading": "Cargando...",
+    "noMore": "Revisa nuestro portafolio para ver más proyectos.",
+    "cardCta": "Ver proyecto →",
+    "items": [
+      {
+        "title": "Multi Vendo E-commerce",
+        "description": "Sitio Multi Vendo donde las tiendas pueden subir productos para vender.",
+        "image": "/images.web/deliver-app.webp",
+        "link": "https://petman.store/",
+        "recent": true
+      },
+      {
+        "title": "Sitio web para fotografía",
+        "description": "Sitio elegante para fotógrafo, con portafolio visual, presentación de servicios y contacto rápido para convertir visitantes en nuevos clientes.",
+        "image": "/images.web/photographer-website.webp",
+        "link": "https://soulacephotography.com/",
+        "recent": true
+      },
+      {
+        "title": "Sitio web para restaurante",
+        "description": "Sitio moderno para restaurante, con un menú atractivo, diseño elegante e información clara para que los clientes conozcan el lugar y contacten.",
+        "image": "/images.web/resturante.webp",
+        "link": "https://darkgoldenrod-toad-190001.hostingersite.com/",
+        "recent": true
+      },
+      {
+        "title": "Portafolio profesional",
+        "description": "Portafolio moderno y responsivo para presentar servicios, proyectos e información de contacto con un diseño limpio, elegante y enfocado en generar confianza.",
+        "image": "/images.web/portfiolo.webp",
+        "link": "https://ese-faps-xbvb.vercel.app/",
+        "recent": true
+      },
+      {
+        "title": "Sitio web para Carpintero",
+        "description": "Sitio profesional para carpintero, presentando servicios de carpintería, portafolio de trabajos y contacto directo.",
+        "image": "/images.web/carpenter.webp",
+        "link": "https://carpenter-friend.vercel.app/"
+      },
+      {
+        "title": "Sitio web para firma contable",
+        "description": "Sitio profesional para una firma contable, con imagen premium, presentación clara de servicios y enfoque en confianza, cumplimiento y asesoría financiera.",
+        "image": "/images.web/accountant screenshoot.webp",
+        "link": "https://busayo-acct.vercel.app/"
+      },
+      {
+        "title": "Plataforma educativa",
+        "description": "Diseño premium, alto rendimiento y SEO (Visibilidad) listo para conversión.",
+        "image": "/images.web/sch-img.webp",
+        "link": "https://rockstarstudyabroad.com/index.html"
+      },
+      {
+        "title": "App de Compras con Presupuesto",
+        "description": "App intuitiva para organizar compras, seguir gastos en tiempo real y mantener cada compra dentro del presupuesto.",
+        "image": "/images.web/budget.webp",
+        "link": "https://budget-eight-bay.vercel.app/"
+      },
+      {
+        "title": "Barbería",
+        "description": "Diseño moderno, rendimiento optimizado y SEO (Visibilidad) para atraer clientes locales.",
+        "image": "/images.web/image_berber.webp",
+        "link": "https://berber-shop-ruby.vercel.app/",
+        "recent": true
+      },
+      {
+        "title": "Mini e-commerce",
+        "description": "Diseño elegante, rendimiento optimizado y SEO (Visibilidad) para atraer clientes.",
+        "image": "/images.web/e-commerce.webp",
+        "link": "https://dotman-s-store-3eax.vercel.app/"
+      },
+      {
+        "title": "App full stack para restaurante",
+        "description": "Aplicación completa para pedidos en línea, menú dinámico y gestión administrativa.",
+        "image": "/images.web/resturant.webp",
+        "link": "#"
+      },
+      {
+        "title": "Real Park Sapateria e Costureira",
+        "description": "Reparaciones rápidas, ajustes y servicios en un solo lugar. Zapatería, costura, foto 3x4, llaves y Xerox con atención práctica para tu día a día.",
+        "image": "/images.web/sapaterio-screenhot.webp",
+        "link": "https://www.sapatariarealpark.com.br/",
+        "recent": true
+      },
+      {
+        "title": "Blog tech",
+        "description": "Contenido escalable, rendimiento y navegación fluida.",
+        "image": "/images.web/diffrent-screen.webp",
+        "link": "https://tech-blog-i77h.vercel.app/"
+      },
+      {
+        "title": "Fantastic Hair",
+        "description": "Tienda online de pelucas y extensiones con presencia premium y contacto rápido por WhatsApp.",
+        "image": "/images.web/cabelo screenshot.webp",
+        "link": "https://fantastichair.com.br/",
+        "recent": true
+      }
+    ]
+  },
+  "contact": {
+    "timelineBadge": "línea de tiempo",
+    "timelineTitle": "Cómo desarrollamos tu proyecto",
+    "timelineDescription": "Transparencia total en cada etapa — del briefing al lanzamiento.",
+    "timelineSteps": [
+      {
+        "title": "Briefing y estrategia",
+        "description": "Entendemos tu negocio, metas y público para definir el plan ideal."
+      },
+      {
+        "title": "Diseño y contenido",
+        "description": "Creamos identidad visual y textos que comunican valor."
+      },
+      {
+        "title": "Desarrollo",
+        "description": "Transformamos el diseño en un sitio rápido, responsivo y seguro."
+      },
+      {
+        "title": "Lanzamiento y soporte",
+        "description": "Publicación, pruebas finales y seguimiento post-lanzamiento."
+      }
+    ],
+    "formTitle": "¡Habla con un especialista!",
+    "formDescription": "Completa el formulario y habla con un especialista sobre tu proyecto.",
+    "labels": {
+      "name": "Nombre",
+      "email": "Correo",
+      "phone": "Teléfono / WhatsApp",
+      "segment": "Segmento",
+      "budget": "Rango de inversión estimado",
+      "message": "¿Cómo podemos ayudarte?",
+      "extraServices": "Servicios adicionales (opcionales):",
+      "paidTraffic": "Tráfico pago",
+      "digitalMarketing": "Marketing digital",
+      "submit": "Enviar mensaje →"
+    },
+    "placeholders": {
+      "name": "Ingresa tu nombre",
+      "email": "Ingresa tu mejor correo",
+      "phone": "Ingresa tu teléfono",
+      "segment": "¿Cuál es el segmento de tu empresa?",
+      "budget": "Inversión del proyecto",
+      "message": "Cuéntanos sobre tu empresa, objetivos y lo que esperas de tu sitio web."
+    },
+    "budgetOptions": [
+      "Hasta R$ 1.000",
+      "R$ 1.000 a R$ 2.000",
+      "R$ 2.000 a R$ 3.000",
+      "R$ 3.000 a R$ 4.000",
+      "R$ 4.000 a R$ 5.000",
+      "Más de R$ 5.000"
+    ],
+    "yes": "Sí",
+    "no": "No",
+    "whatsappIntro": "¡Hola! Vengo del sitio web y me gustaría solicitar un presupuesto para mi proyecto.",
+    "whatsappFields": {
+      "name": "Nombre",
+      "email": "Correo",
+      "phone": "Teléfono",
+      "segment": "Segmento",
+      "budget": "Inversión",
+      "paidTraffic": "Tráfico pago",
+      "digitalMarketing": "Marketing digital",
+      "message": "Mensaje"
+    }
+  },
+  "faqs": {
+    "badge": "preguntas",
+    "title": "Preguntas frecuentes",
+    "description": "Respuestas claras a las dudas más comunes sobre creación de sitios web, plazos, soporte, SEO (Visibilidad), dominio, hosting y todo lo que necesitas saber antes de comenzar tu proyecto.",
+    "items": [
+      {
+        "question": "¿El hosting está incluido en el precio?",
+        "answer": "No. El hosting se cobra aparte porque cada proyecto puede necesitar recursos diferentes. Aun así, te orientamos para elegir la mejor opción, ayudamos con la configuración y ofrecemos condiciones especiales para clientes que desarrollan su sitio con nosotros."
+      },
+      {
+        "question": "¿Ofrecen soporte después del lanzamiento?",
+        "answer": "Sí. Después de publicar el sitio, podemos encargarnos de actualizaciones, pequeños ajustes, correcciones, monitoreo y mejoras continuas. Así tu sitio se mantiene seguro, rápido y alineado con el crecimiento de tu negocio."
+      },
+      {
+        "question": "¿Crean sitios personalizados o usan plantillas?",
+        "answer": "Creamos sitios personalizados según los objetivos, la identidad y el público de tu negocio. Podemos usar referencias visuales para acelerar decisiones, pero el diseño, el contenido y la estructura se planifican para tu marca."
+      },
+      {
+        "question": "¿Mi sitio aparecerá en Google?",
+        "answer": "Sí. Construimos el sitio con buenas prácticas de SEO (Visibilidad), incluyendo estructura organizada, títulos, descripciones, rendimiento y contenido pensado para búsquedas. Los resultados también dependen de la competencia y de la estrategia continua, pero tu sitio nace preparado para ser encontrado."
+      },
+      {
+        "question": "¿Cuánto tiempo tarda crear un sitio?",
+        "answer": "En promedio, de 5 días a 4 semanas, según el número de páginas, contenido, revisiones e integraciones necesarias. Proyectos más pequeños pueden entregarse más rápido, mientras que tiendas online o sitios con funcionalidades específicas pueden requerir más tiempo."
+      },
+      {
+        "question": "¿El sitio estará optimizado para móviles?",
+        "answer": "Sí. Todos los proyectos son responsivos y están pensados para funcionar bien en celulares, tablets y computadoras. También cuidamos botones, formularios, lectura y velocidad para que el visitante pueda contactarte sin dificultad."
+      },
+      {
+        "question": "¿Qué información necesito proporcionar para crear mi sitio web?",
+        "answer": "Necesitamos información sobre su empresa, objetivos, público objetivo, preferencias de diseño y contenido que desea incluir en el sitio web."
+      },
+      {
+        "question": "¿Ofrecen servicios de SEO (Visibilidad) para mejorar el posicionamiento de mi sitio web?",
+        "answer": "Sí. Aplicamos técnicas de SEO (Visibilidad) on-page, como optimización de palabras clave, meta tags, estructura de URL y rendimiento del sitio para mejorar la visibilidad en los motores de búsqueda."
+      },
+      {
+        "question": "¿Crean todos los tipos de sitios web?",
+        "answer": "Desarrollamos la mayoría de los tipos de sitios web, incluidos sitios corporativos, tiendas virtuales, portafolios, blogs, landing pages y más. Sin embargo, no creamos sitios que promuevan pornografía, drogas ilegales, prácticas religiosas engañosas, discurso de odio, estafas o cualquier actividad ilegal o perjudicial. Nuestro objetivo es desarrollar soluciones digitales profesionales, éticas y alineadas con valores que generen un impacto positivo para las empresas y la sociedad."
+      },
+      {
+        "question": "¿Qué servicios adicionales pueden ofrecer?",
+        "answer": "Ofrecemos servicios como creación de contenido, marketing digital, integración con redes sociales, creación de logotipo, papel membretado, tarjeta digital, desarrollo de aplicaciones y consultoría en estrategias online. Estos servicios pueden contratarse junto con el desarrollo del sitio web o como complementos para fortalecer su presencia digital y lograr mejores resultados."
+      },
+      {
+        "question": "¿Puedo ver proyectos anteriores?",
+        "answer": "¡Claro! Visite nuestra sección de Portafolio para ver algunos de nuestros trabajos anteriores. Tenemos una variedad de proyectos que demuestran nuestra experiencia en crear sitios web personalizados, responsivos y optimizados para diferentes sectores y necesidades. Si desea ver más ejemplos o está interesado en un tipo específico de proyecto, contáctenos para que podamos compartir más detalles.",
+        "answerLink": {
+          "href": "/#projects",
+          "label": "Ver sección de proyectos"
+        }
+      },
+      {
+        "question": "¿Qué tipos de sitios web desarrollan?",
+        "answer": "Desarrollamos la mayoría de los tipos de sitios web, incluidos sitios corporativos, tiendas virtuales, portafolios, blogs, landing pages y más."
+      },
+      {
+        "question": "¿Qué formas de pago aceptan?",
+        "answer": "Aceptamos Pix, tarjeta de crédito, boleto bancario y transferencia electrónica. También podemos dividir el pago con tarjeta en un número acordado de cuotas sin interés, según el valor del proyecto y las condiciones definidas en la propuesta."
+      },
+      {
+        "question": "¿Puedo editar el contenido después?",
+        "answer": "Sí. Proporcionamos acceso a un panel de administración intuitivo, donde puede actualizar textos, imágenes y otros contenidos de su sitio web de forma fácil y rápida."
+      },
+      {
+        "question": "¿Para qué sectores crean sitios web?",
+        "answer": "Creamos sitios web personalizados para una amplia variedad de sectores, incluidos comercio electrónico, educación, salud, tecnología, servicios profesionales, entretenimiento y más. Nuestro objetivo es desarrollar soluciones digitales que satisfagan las necesidades específicas de cada sector y ayuden a nuestros clientes a alcanzar sus objetivos comerciales."
+      },
+      {
+        "question": "¿Cuáles son los plazos de desarrollo?",
+        "answer": "El plazo para el desarrollo de un sitio web puede variar según la complejidad del proyecto, número de páginas, funcionalidades e integraciones necesarias. En promedio, el proceso toma de 5 días a 4 semanas, pero proyectos más simples pueden completarse en menos tiempo, mientras que proyectos más complejos pueden tardar un poco más. Durante la fase de briefing, discutiremos el alcance del proyecto y proporcionaremos una estimación de plazo más precisa según sus necesidades específicas."
+      },
+      {
+        "question": "¿Ayudan con dominio y correo profesional?",
+        "answer": "Sí. Podemos orientar el registro del dominio, la configuración de DNS, la conexión con el hosting y la creación de correo profesional. Si ya tienes dominio, revisamos el acceso actual y conectamos todo con cuidado."
+      },
+      {
+        "question": "¿Necesito tener textos e imágenes listos antes de empezar?",
+        "answer": "No necesariamente. Si ya tienes fotos, logo y textos, usamos ese material como base. Si todavía no los tienes, podemos ayudarte a organizar la información, sugerir la estructura del contenido y crear textos más claros para presentar tus servicios."
+      },
+      {
+        "question": "¿Hacen tiendas online con pagos en línea?",
+        "answer": "Sí. Creamos tiendas online con catálogo, carrito, checkout e integración con medios de pago cuando el proyecto lo requiere. Durante el briefing, definimos productos, envío, formas de pago, páginas legales y el mejor flujo de compra para tus clientes."
+      },
+      {
+        "question": "¿Qué sucede después de aprobar el presupuesto?",
+        "answer": "Después de la aprobación, confirmamos el alcance, recopilamos materiales, definimos la estructura de las páginas y comenzamos el diseño. Tú acompañas las etapas, envías comentarios y apruebas el sitio antes del lanzamiento para asegurar que refleje tu marca y tus objetivos."
+      },
+      {
+        "question": "¿Cuántas revisiones puedo solicitar?",
+        "answer": "El número de revisiones depende del paquete y del alcance aprobado. Normalmente incluimos rondas de ajustes para revisar textos, imágenes, secciones y detalles visuales antes del lanzamiento, asegurando que el resultado final esté alineado con lo acordado."
+      },
+      {
+        "question": "¿El precio puede cambiar durante el proyecto?",
+        "answer": "El precio aprobado se mantiene para el alcance acordado. Solo cambia si solicitas nuevas páginas, funcionalidades extra, integraciones adicionales o cambios grandes fuera del plan inicial. En ese caso, avisamos antes y enviamos un nuevo presupuesto para aprobación."
+      },
+      {
+        "question": "¿El sitio será mío después de estar listo?",
+        "answer": "Sí. Después de la entrega y del pago acordado, el sitio pertenece al cliente. También te orientamos sobre accesos importantes, dominio, hosting y administración para que tengas control sobre tu presencia digital."
+      },
+      {
+        "question": "¿Pueden integrar el sitio con WhatsApp, redes sociales y herramientas externas?",
+        "answer": "Sí. Podemos integrar WhatsApp, Instagram, Facebook, Google Maps, formularios, herramientas de análisis, píxeles de anuncios y otras plataformas según las necesidades del proyecto. Estas integraciones ayudan a convertir visitantes en contactos y clientes."
+      },
+      {
+        "question": "¿Cómo puedo empezar?",
+        "answer": "El primer paso es contactarnos por WhatsApp o por el formulario. Vamos a entender tu negocio, objetivos, tipo de sitio, plazo y presupuesto. Después enviamos una propuesta clara con alcance, etapas y próximos pasos."
+      },
+      {
+        "question": "¿Necesito pagar todo antes de comenzar el proyecto?",
+        "answer": "No necesariamente. La forma de pago se define en la propuesta. En muchos casos, trabajamos con un anticipo para iniciar el proyecto y el resto dividido por etapas o pagado cerca del lanzamiento."
+      },
+      {
+        "question": "¿Hacen reuniones durante el proyecto?",
+        "answer": "Sí. Podemos alinear por WhatsApp, videollamada o mensajes, según lo que sea más práctico para ti. El objetivo es resolver dudas, confirmar decisiones importantes y mantener el proyecto avanzando con claridad."
+      },
+      {
+        "question": "¿Mi sitio tendrá certificado de seguridad SSL?",
+        "answer": "Sí. Configuramos el sitio para usar HTTPS/SSL cuando el proveedor de hosting ofrece ese recurso. Esto ayuda a proteger la navegación, mejora la confianza del visitante y apoya las buenas prácticas de SEO (Visibilidad)."
+      },
+      {
+        "question": "¿Pueden mejorar un sitio que ya tengo?",
+        "answer": "Sí. Podemos revisar tu sitio actual y sugerir mejoras de diseño, velocidad, contenido, SEO (Visibilidad), responsividad y conversión. Según el estado del proyecto, podemos mejorar el sitio existente o recomendar una nueva versión."
+      },
+      {
+        "question": "¿Puedo contratar solo una landing page?",
+        "answer": "Sí. Una landing page es una buena opción cuando necesitas promocionar un servicio, campaña, producto u oferta específica. Puede enfocarse en WhatsApp, formulario, captación de leads, tráfico pago o conversión local."
+      }
+    ]
+  },
+  "reviews": {
+    "badge": "resultados reales",
+    "title": "Resultados reales de clientes",
+    "description": "Mira lo que dicen los negocios después de lanzar su sitio con nosotros.",
+    "summaryLabel": "Nota media de clientes",
+    "countLabel": "Basado en 42 reseñas de Google",
+    "sourceLabel": "Reseñas de Google",
+    "previousLabel": "Reseña anterior",
+    "nextLabel": "Siguiente reseña",
+    "items": [
+      {
+        "name": "Emma Parker",
+        "business": "Tienda de ropa",
+        "text": "My website looks great and I started getting more WhatsApp messages from new clients."
+      },
+      {
+        "name": "Daniel Brooks",
+        "business": "Barbería",
+        "text": "The service was fast and my business looks much more professional online now."
+      },
+      {
+        "name": "Sofia Bennett",
+        "business": "Clínica estética",
+        "text": "People find my business more easily and trust my brand much more now."
+      },
+      {
+        "name": "Mariana Souza",
+        "business": "Salón de belleza",
+        "text": "El sitio quedó elegante, rápido y muy fácil para que mis clientas agenden por WhatsApp."
+      },
+      {
+        "name": "Carlos Mendes",
+        "business": "Restaurante",
+        "text": "Después del nuevo sitio, fue mucho más simple mostrar el menú y recibir pedidos de nuevos clientes."
+      },
+      {
+        "name": "Ana Ribeiro",
+        "business": "Consultoría",
+        "text": "La presentación de mi empresa se ve más profesional y aumentaron los contactos por el formulario."
+      },
+      {
+        "name": "Bruno Almeida",
+        "business": "Zapatería",
+        "text": "Me gustó mucho la organización del proyecto. El sitio muestra mis servicios con claridad y genera confianza."
+      },
+      {
+        "name": "Juliana Costa",
+        "business": "Tienda online",
+        "text": "Mi tienda se ve muy bien en celular y mis clientes encuentran los productos sin dificultad."
+      },
+      {
+        "name": "Rafael Martins",
+        "business": "Carpintería",
+        "text": "El portafolio de mis trabajos quedó excelente y ahora envío el enlace en cada nuevo presupuesto."
+      },
+      {
+        "name": "Patricia Gomes",
+        "business": "Clínica de salud",
+        "text": "El sitio quedó limpio, rápido y transmite exactamente la seriedad que necesitaba para la clínica."
+      },
+      {
+        "name": "Lucas Ferreira",
+        "business": "Fotografía",
+        "text": "Las fotos tienen mucho destaque y el sitio carga muy bien. Quedó perfecto para presentar mi trabajo."
+      },
+      {
+        "name": "Camila Rocha",
+        "business": "Educación",
+        "text": "Ahora explicamos mejor nuestros cursos y recibimos mensajes más calificados después del lanzamiento."
+      },
+      {
+        "name": "Thiago Oliveira",
+        "business": "Servicios locales",
+        "text": "Comunicación clara, entrega rápida y un sitio que realmente ayuda a los clientes a entender lo que ofrecemos."
+      }
+    ]
+  },
+  "localSeo": {
+    "badge": "creación de sitios web en Santa Catarina",
+    "title": "Creación de Sitios Web para Empresas en Florianópolis, São José, Joinville y Balneário Camboriú",
+    "description": "Creamos sitios web optimizados para SEO local (Visibilidad), con integración con Google Business Profile y Google Maps, para ayudar a las empresas a atraer más clientes en Santa Catarina.",
+    "cityLabel": "Principales ciudades atendidas",
+    "cities": [
+      "Florianópolis",
+      "São José",
+      "Joinville",
+      "Balneário Camboriú"
+    ],
+    "highlights": [
+      {
+        "title": "Más Clientes para Tu Negocio",
+        "description": "Creamos sitios pensados para generar contactos, presupuestos y ventas. Enfoque total en resultados para negocios locales."
+      },
+      {
+        "title": "Aparece en Google y en Maps",
+        "description": "Integramos tu sitio con Google Business Profile y Google Maps para aumentar tu visibilidad y atraer clientes de tu zona."
+      },
+      {
+        "title": "SEO Local (Visibilidad) en Santa Catarina",
+        "description": "Optimización completa para que tu sitio aparezca en búsquedas de “creación de sitios web” en Florianópolis, São José y toda la región."
+      }
+    ],
+    "mapTitle": "Cobertura local en Santa Catarina",
+    "mapDescription": "Presencia digital para empresas que buscan creación de sitios web en Florianópolis, São José, Joinville y Balneário Camboriú."
+  },
+  "footer": {
+    "ctaTag": "¿listo para acelerar?",
+    "ctaTitle": "Creemos tu próxima experiencia digital",
+    "ctaButton": "Hablar con un especialista →",
+    "brandText": "Creamos experiencias digitales rápidas, bonitas y enfocadas en conversión.",
+    "navigation": "Navegación",
+    "navigationLinks": {
+      "about": "Sobre",
+      "services": "Servicios",
+      "projects": "Proyectos",
+      "faqs": "Preguntas",
+      "contact": "Contacto"
+    },
+    "services": "Servicios",
+    "serviceItems": [
+      "Sitios corporativos",
+      "Landing pages",
+      "E-commerce",
+      "SEO (Visibilidad) y rendimiento",
+      "Mantenimiento"
+    ],
+    "contact": "Contacto",
+    "cnpj": "CNPJ: 45.041.116/0001-07",
+    "remoteSupport": "Brasil • Atención remota",
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de uso"
+  }
+}
