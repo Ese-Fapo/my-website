@@ -144,6 +144,9 @@ export type TranslationSchema = {
     }
   }
   faqs: {
+    moreInvitation: string
+    showMore: string
+    showLess: string
     badge: string
     title: string
     description: string

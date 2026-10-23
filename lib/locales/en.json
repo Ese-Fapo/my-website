@@ -286,6 +286,13 @@
     "cardCta": "View project →",
     "items": [
       {
+        "title": "Limpeza Cleaning — A&N Serviços",
+        "description": "A professional cleaning website for homes, offices, and commercial spaces, with clear service information, WhatsApp quote requests, and access to cleaning appointments.",
+        "image": "/images.web/limpeza.webp",
+        "link": "https://azure-porpoise-251998.hostingersite.com/index.html",
+        "recent": true
+      },
+      {
         "title": "Multi Vendo E-commerce",
         "description": "A Multi Vendo website where shops can upload products for sale.",
         "image": "/images.web/deliver-app.webp",
@@ -444,6 +451,9 @@
     }
   },
   "faqs": {
+    "moreInvitation": "Still have questions? Explore more answers before starting your project.",
+    "showMore": "Show more questions",
+    "showLess": "Show fewer questions",
     "badge": "faq",
     "title": "Frequently asked questions",
     "description": "Clear answers to the most common questions about website design, timelines, support, SEO (Visibility), domain setup, hosting, and everything you need to know before starting your project.",
