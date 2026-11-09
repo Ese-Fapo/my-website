@@ -286,39 +286,60 @@
     "cardCta": "View project →",
     "items": [
       {
-        "title": "Limpeza Cleaning — A&N Serviços",
-        "description": "A professional cleaning website for homes, offices, and commercial spaces, with clear service information, WhatsApp quote requests, and access to cleaning appointments.",
-        "image": "/images.web/limpeza.webp",
-        "link": "https://azure-porpoise-251998.hostingersite.com/index.html",
+        "title": "Airbnb House Guide",
+        "description": "An installable guest guide app for Real Parque Guesthouse, with arrival details, house essentials, Wi-Fi information, checkout steps, and local recommendations in one convenient place.",
+        "image": "/images.web/aibnbscreenshort.png",
+        "link": "https://airbnb-j.vercel.app/#home",
+        "category": "Guest guide app",
+        "tags": [
+          "Installable app",
+          "Guest information",
+          "Local recommendations"
+        ],
         "recent": true
       },
       {
         "title": "Multi Vendo E-commerce",
-        "description": "A Multi Vendo website where shops can upload products for sale.",
-        "image": "/images.web/deliver-app.webp",
+        "description": "An e-commerce marketplace connecting multiple vendors and buyers, where vendors can list products for sale and buyers can explore products from different shops.",
+        "image": "/images.web/multivendi.png",
         "link": "https://petman.store/",
         "recent": true
+      },
+      {
+        "title": "Limpeza Cleaning — A&N Serviços",
+        "description": "A professional cleaning website for homes, offices, and commercial spaces, with clear service information, WhatsApp quote requests, and access to cleaning appointments.",
+        "image": "/images.web/limpeza.webp",
+        "link": "https://azure-porpoise-251998.hostingersite.com/index.html"
       },
       {
         "title": "Photography website",
         "description": "An elegant website for a photographer, with a visual portfolio, service presentation, and fast contact flow to turn visitors into new clients.",
         "image": "/images.web/photographer-website.webp",
-        "link": "https://soulacephotography.com/",
-        "recent": true
+        "link": "https://soulacephotography.com/"
       },
       {
         "title": "Restaurant website",
         "description": "A modern restaurant website with a beautiful menu layout, polished presentation, and clear restaurant information for visitors.",
         "image": "/images.web/resturante.webp",
-        "link": "https://darkgoldenrod-toad-190001.hostingersite.com/",
-        "recent": true
+        "link": "https://darkgoldenrod-toad-190001.hostingersite.com/"
       },
       {
         "title": "Professional portfolio",
         "description": "A modern responsive portfolio for presenting services, projects, and contact information with a clean, elegant design built to create trust.",
         "image": "/images.web/portfiolo.webp",
-        "link": "https://ese-faps-xbvb.vercel.app/",
-        "recent": true
+        "link": "https://ese-faps-xbvb.vercel.app/"
+      },
+      {
+        "title": "Real Park Sapateria e Costureira",
+        "description": "Quick shoe repair, sewing, 3x4 photos, key cutting and Xerox with practical service for your daily needs.",
+        "image": "/images.web/sapaterio-screenhot.webp",
+        "link": "https://www.sapatariarealpark.com.br/"
+      },
+      {
+        "title": "Fantastic Hair",
+        "description": "Premium wig and hair extension shop with polished branding and fast WhatsApp ordering.",
+        "image": "/images.web/cabelo screenshot.webp",
+        "link": "https://fantastichair.com.br/"
       },
       {
         "title": "Carpenter Website",
@@ -363,24 +384,10 @@
         "link": "https://berber-shop-ruby.vercel.app/"
       },
       {
-        "title": "Real Park Sapateria e Costureira",
-        "description": "Quick shoe repair, sewing, 3x4 photos, key cutting and Xerox with practical service for your daily needs.",
-        "image": "/images.web/sapaterio-screenhot.webp",
-        "link": "https://www.sapatariarealpark.com.br/",
-        "recent": true
-      },
-      {
         "title": "Tech blog",
         "description": "Scalable content, strong performance, and smooth navigation.",
         "image": "/images.web/diffrent-screen.webp",
         "link": "https://tech-blog-i77h.vercel.app/"
-      },
-      {
-        "title": "Fantastic Hair",
-        "description": "Premium wig and hair extension shop with polished branding and fast WhatsApp ordering.",
-        "image": "/images.web/cabelo screenshot.webp",
-        "link": "https://fantastichair.com.br/",
-        "recent": true
       }
     ]
   },

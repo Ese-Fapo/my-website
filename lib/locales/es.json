@@ -286,39 +286,66 @@
     "cardCta": "Ver proyecto →",
     "items": [
       {
-        "title": "Limpeza Cleaning — A&N Serviços",
-        "description": "Sitio de limpieza profesional para hogares, oficinas y comercios, con información clara sobre los servicios, solicitudes de presupuesto por WhatsApp y acceso a la programación de limpiezas.",
-        "image": "/images.web/limpeza.webp",
-        "link": "https://azure-porpoise-251998.hostingersite.com/index.html",
+        "title": "Guía de la Casa Airbnb",
+        "description": "Una aplicación instalable para huéspedes de Real Parque Guesthouse, con información de llegada, indicaciones de la casa, Wi-Fi, pasos de salida y recomendaciones locales en un solo lugar.",
+        "image": "/images.web/aibnbscreenshort.png",
+        "link": "https://airbnb-j.vercel.app/#home",
+        "category": "App para huéspedes",
+        "tags": [
+          "Aplicación instalable",
+          "Guía del huésped",
+          "Consejos locales"
+        ],
         "recent": true
       },
       {
         "title": "Multi Vendo E-commerce",
-        "description": "Sitio Multi Vendo donde las tiendas pueden subir productos para vender.",
-        "image": "/images.web/deliver-app.webp",
+        "description": "Un marketplace que conecta a múltiples vendedores y compradores, donde los vendedores pueden publicar productos y los compradores pueden explorar productos de distintas tiendas.",
+        "image": "/images.web/multivendi.png",
         "link": "https://petman.store/",
         "recent": true
+      },
+      {
+        "title": "Limpeza Cleaning — A&N Serviços",
+        "description": "Sitio de limpieza profesional para hogares, oficinas y comercios, con información clara sobre los servicios, solicitudes de presupuesto por WhatsApp y acceso a la programación de limpiezas.",
+        "image": "/images.web/limpeza.webp",
+        "link": "https://azure-porpoise-251998.hostingersite.com/index.html"
       },
       {
         "title": "Sitio web para fotografía",
         "description": "Sitio elegante para fotógrafo, con portafolio visual, presentación de servicios y contacto rápido para convertir visitantes en nuevos clientes.",
         "image": "/images.web/photographer-website.webp",
-        "link": "https://soulacephotography.com/",
-        "recent": true
+        "link": "https://soulacephotography.com/"
       },
       {
         "title": "Sitio web para restaurante",
         "description": "Sitio moderno para restaurante, con un menú atractivo, diseño elegante e información clara para que los clientes conozcan el lugar y contacten.",
         "image": "/images.web/resturante.webp",
-        "link": "https://darkgoldenrod-toad-190001.hostingersite.com/",
-        "recent": true
+        "link": "https://darkgoldenrod-toad-190001.hostingersite.com/"
       },
       {
         "title": "Portafolio profesional",
         "description": "Portafolio moderno y responsivo para presentar servicios, proyectos e información de contacto con un diseño limpio, elegante y enfocado en generar confianza.",
         "image": "/images.web/portfiolo.webp",
-        "link": "https://ese-faps-xbvb.vercel.app/",
-        "recent": true
+        "link": "https://ese-faps-xbvb.vercel.app/"
+      },
+      {
+        "title": "Barbería",
+        "description": "Diseño moderno, rendimiento optimizado y SEO (Visibilidad) para atraer clientes locales.",
+        "image": "/images.web/image_berber.webp",
+        "link": "https://berber-shop-ruby.vercel.app/"
+      },
+      {
+        "title": "Real Park Sapateria e Costureira",
+        "description": "Reparaciones rápidas, ajustes y servicios en un solo lugar. Zapatería, costura, foto 3x4, llaves y Xerox con atención práctica para tu día a día.",
+        "image": "/images.web/sapaterio-screenhot.webp",
+        "link": "https://www.sapatariarealpark.com.br/"
+      },
+      {
+        "title": "Fantastic Hair",
+        "description": "Tienda online de pelucas y extensiones con presencia premium y contacto rápido por WhatsApp.",
+        "image": "/images.web/cabelo screenshot.webp",
+        "link": "https://fantastichair.com.br/"
       },
       {
         "title": "Sitio web para Carpintero",
@@ -345,13 +372,6 @@
         "link": "https://budget-eight-bay.vercel.app/"
       },
       {
-        "title": "Barbería",
-        "description": "Diseño moderno, rendimiento optimizado y SEO (Visibilidad) para atraer clientes locales.",
-        "image": "/images.web/image_berber.webp",
-        "link": "https://berber-shop-ruby.vercel.app/",
-        "recent": true
-      },
-      {
         "title": "Mini e-commerce",
         "description": "Diseño elegante, rendimiento optimizado y SEO (Visibilidad) para atraer clientes.",
         "image": "/images.web/e-commerce.webp",
@@ -364,24 +384,10 @@
         "link": "#"
       },
       {
-        "title": "Real Park Sapateria e Costureira",
-        "description": "Reparaciones rápidas, ajustes y servicios en un solo lugar. Zapatería, costura, foto 3x4, llaves y Xerox con atención práctica para tu día a día.",
-        "image": "/images.web/sapaterio-screenhot.webp",
-        "link": "https://www.sapatariarealpark.com.br/",
-        "recent": true
-      },
-      {
         "title": "Blog tech",
         "description": "Contenido escalable, rendimiento y navegación fluida.",
         "image": "/images.web/diffrent-screen.webp",
         "link": "https://tech-blog-i77h.vercel.app/"
-      },
-      {
-        "title": "Fantastic Hair",
-        "description": "Tienda online de pelucas y extensiones con presencia premium y contacto rápido por WhatsApp.",
-        "image": "/images.web/cabelo screenshot.webp",
-        "link": "https://fantastichair.com.br/",
-        "recent": true
       }
     ]
   },

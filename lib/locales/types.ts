@@ -99,6 +99,8 @@ export type TranslationSchema = {
       image: string
       link: string
       recent?: boolean
+      category?: string
+      tags?: string[]
     }>
   }
   contact: {
